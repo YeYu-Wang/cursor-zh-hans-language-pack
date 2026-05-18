@@ -9,7 +9,7 @@
 使用中如果遇到安装、补丁、界面残留英文或版本兼容问题，可以扫码加入 QQ 群互助交流。
 
 <p align="center">
-  <img src="assets/qq-group-426949658.svg" alt="Cursor 交流 QQ 群二维码" width="220" />
+  <img src="assets/qq-group-426949658.jpg" alt="Cursor 交流 QQ 群二维码" width="220" />
 </p>
 
 - 群名：Cursor交流
