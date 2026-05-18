@@ -1,6 +1,6 @@
 # Cursor 简体中文全局汉化包
 
-这是一个由 Cursor AI 自驱动修改、构建和整理的 Cursor 兼容 VS Code Language Pack 扩展，目标是把 Cursor 的主界面和可本地化扩展资源切换为简体中文。
+这是一个在 Cursor 中由 AI Agent 自驱动修改、构建和整理的 Cursor 兼容 VS Code Language Pack 扩展，目标是把 Cursor 的主界面和可本地化扩展资源切换为简体中文。
 
 项目已尽量把语言包、可逆补丁、开源说明和第三方来源整理成可复用形式，方便其他 Cursor 用户安装、二次验证和继续改进。
 
