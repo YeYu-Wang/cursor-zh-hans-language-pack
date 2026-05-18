@@ -1,0 +1,3787 @@
+[
+  {
+    "file": "out/vs/workbench/workbench.desktop.main.js",
+    "description": "Cursor Workbench / Agent / Composer 硬编码界面文案",
+    "replacements": [
+      {
+        "source": "children:\"New Agent\"",
+        "target": "children:\"新建智能体\""
+      },
+      {
+        "source": "$vd=\"New Agent\"",
+        "target": "$vd=\"新建智能体\""
+      },
+      {
+        "source": "bBi=\"New Agent\"",
+        "target": "bBi=\"新建智能体\""
+      },
+      {
+        "source": "children:\"Build in New Agent\"",
+        "target": "children:\"在新智能体中构建\""
+      },
+      {
+        "source": "children:\"Add an agent to get started\"",
+        "target": "children:\"添加一个智能体开始使用\""
+      },
+      {
+        "source": "a=t.name||\"New Chat\"",
+        "target": "a=t.name||\"新建聊天\""
+      },
+      {
+        "source": "label:\"New Chat\"",
+        "target": "label:\"新建聊天\""
+      },
+      {
+        "source": "textContent=d.title||\"New Chat\"",
+        "target": "textContent=d.title||\"新建聊天\""
+      },
+      {
+        "source": "return e.getComposerTitle(n)||\"New Chat\"",
+        "target": "return e.getComposerTitle(n)||\"新建聊天\""
+      },
+      {
+        "source": "ge?.name??\"New Chat\"",
+        "target": "ge?.name??\"新建聊天\""
+      },
+      {
+        "source": "`Open agent ${a}`",
+        "target": "`打开智能体 ${a}`"
+      },
+      {
+        "source": "`Referenced by ${s} Agent${s!==1?\"s\":\"\"}`",
+        "target": "`${s} 个智能体引用`"
+      },
+      {
+        "source": "title:Ye()===\"narrow\"?\"Auto-run Mode\":void 0",
+        "target": "title:Ye()===\"narrow\"?\"自动运行模式\":void 0"
+      },
+      {
+        "source": "title:\"Allow selected\"",
+        "target": "title:\"允许所选项\""
+      },
+      {
+        "source": "title:\"Select all\"",
+        "target": "title:\"全选\""
+      },
+      {
+        "source": "title:\"Deselect all\"",
+        "target": "title:\"取消全选\""
+      },
+      {
+        "source": "action:\"Ask Question\"",
+        "target": "action:\"询问问题\""
+      },
+      {
+        "source": "action:\"Switch Mode\"",
+        "target": "action:\"切换模式\""
+      },
+      {
+        "source": "action:\"Truncated\"",
+        "target": "action:\"已截断\""
+      },
+      {
+        "source": "action:\"Reflect\"",
+        "target": "action:\"反思\""
+      },
+      {
+        "source": "Cfb={general:\"General\",\"vscode-settings\":\"VS Code Settings\",appearance:\"Appearance\",\"plan-usage\":\"Plan & Usage\",chat:\"Agents\",tab:\"Tab\",models:\"Models\",rules:\"Rules, Skills, Subagents\",plugins:\"Plugins\",indexing:\"Indexing & Docs\",mcp:\"Tools & MCPs\",hooks:\"Hooks\",\"local-automations\":\"Automations\",beta:\"Beta\",network:\"Network\",\"background-composer\":\"Cloud Agents\",worktrees:\"Worktrees\"}",
+        "target": "Cfb={general:\"通用\",\"vscode-settings\":\"VS Code 设置\",appearance:\"外观\",\"plan-usage\":\"套餐与用量\",chat:\"智能体\",tab:\"Tab\",models:\"模型\",rules:\"规则、技能、子智能体\",plugins:\"插件\",indexing:\"索引与文档\",mcp:\"工具与 MCP\",hooks:\"Hooks\",\"local-automations\":\"自动化\",beta:\"Beta\",network:\"网络\",\"background-composer\":\"云端智能体\",worktrees:\"工作树\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Cursor Account\",description:\"Manage your account and billing\"",
+        "target": "label:\"Cursor 账户\",description:\"管理你的账户和账单\""
+      },
+      {
+        "source": "title:\"Open\",type:\"tertiary\"",
+        "target": "title:\"打开\",type:\"tertiary\""
+      },
+      {
+        "source": "title:\"Notifications\"",
+        "target": "title:\"通知\""
+      },
+      {
+        "source": "label:\"System Notifications\",description:\"Show system notifications when Agent completes or needs attention\"",
+        "target": "label:\"系统通知\",description:\"当智能体完成或需要注意时显示系统通知\""
+      },
+      {
+        "source": "label:\"Warning Notifications\",description:\"Show warning-level in-app toasts\"",
+        "target": "label:\"警告通知\",description:\"显示警告级别的应用内提示\""
+      },
+      {
+        "source": "label:Mo?\"Menu Bar Icon\":\"System Tray Icon\",description:Mo?\"Show Cursor in menu bar\":\"Show Cursor in system tray\"",
+        "target": "label:Mo?\"菜单栏图标\":\"系统托盘图标\",description:Mo?\"在菜单栏中显示 Cursor\":\"在系统托盘中显示 Cursor\""
+      },
+      {
+        "source": "label:\"Completion Sound\",description:\"Play a sound when Agent finishes responding\"",
+        "target": "label:\"完成音效\",description:\"当智能体完成响应时播放声音\""
+      },
+      {
+        "source": "children:\"Privacy Mode\"",
+        "target": "children:\"隐私模式\""
+      },
+      {
+        "source": "fallback(){return\"Privacy Mode (Legacy)\"},children:\"Privacy Mode\"",
+        "target": "fallback(){return\"隐私模式（旧版）\"},children:\"隐私模式\""
+      },
+      {
+        "source": "label:\"Privacy Mode (Legacy)\"",
+        "target": "label:\"隐私模式（旧版）\""
+      },
+      {
+        "source": "\u003cdiv\u003e\u003cdiv\u003ePrivacy Mode (Legacy)\u003c/div\u003e\u003cdiv\u003eNo training and no storage. Background Agent and other features that require code storage will be disabled.",
+        "target": "\u003cdiv\u003e\u003cdiv\u003e隐私模式（旧版）\u003c/div\u003e\u003cdiv\u003e不训练且不存储。后台智能体和其他需要代码存储的功能将被禁用。"
+      },
+      {
+        "source": "Your code data will not be trained on or used to improve the product. We will not store your code.",
+        "target": "你的代码数据不会被用于训练或改进产品。我们不会存储你的代码。"
+      },
+      {
+        "source": "Your code data will not be trained on or used to improve the product. Code may be stored to provide features such as Background Agent.",
+        "target": "你的代码数据不会被用于训练或改进产品。代码可能会被存储，用于提供后台智能体等功能。"
+      },
+      {
+        "source": "Privacy Mode (Legacy) is enabled. Background Agent and some features not available.",
+        "target": "隐私模式（旧版）已启用。后台智能体和部分功能不可用。"
+      },
+      {
+        "source": "\u003cdiv\u003e\u003cspan\u003eSwitch to Privacy Mode",
+        "target": "\u003cdiv\u003e\u003cspan\u003e切换到隐私模式"
+      },
+      {
+        "source": "title:\"Log Out\"",
+        "target": "title:\"退出登录\""
+      },
+      {
+        "source": "primaryLabel:\"Log Out\"",
+        "target": "primaryLabel:\"退出登录\""
+      },
+      {
+        "source": "children:\"Log Out\"",
+        "target": "children:\"退出登录\""
+      },
+      {
+        "source": "$vd=\"新建 Agent\"",
+        "target": "$vd=\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "bBi=\"新建 Agent\"",
+        "target": "bBi=\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"在新 Agent 中构建\"",
+        "target": "children:\"在新智能体中构建\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"添加一个 Agent 开始使用\"",
+        "target": "children:\"添加一个智能体开始使用\"",
+        "optional": true
+      },
+      {
+        "source": "`打开 Agent ${a}`",
+        "target": "`打开智能体 ${a}`",
+        "optional": true
+      },
+      {
+        "source": "`${s} 个 Agent 引用`",
+        "target": "`${s} 个智能体引用`",
+        "optional": true
+      },
+      {
+        "source": "Cfb={general:\"通用\",\"vscode-settings\":\"VS Code 设置\",appearance:\"外观\",\"plan-usage\":\"套餐与用量\",chat:\"Agents\",tab:\"Tab\",models:\"模型\",rules:\"规则、技能、子 Agent\",plugins:\"插件\",indexing:\"索引与文档\",mcp:\"工具与 MCP\",hooks:\"Hooks\",\"local-automations\":\"自动化\",beta:\"Beta\",network:\"网络\",\"background-composer\":\"云端 Agents\",worktrees:\"工作树\"}",
+        "target": "Cfb={general:\"通用\",\"vscode-settings\":\"VS Code 设置\",appearance:\"外观\",\"plan-usage\":\"套餐与用量\",chat:\"智能体\",tab:\"Tab\",models:\"模型\",rules:\"规则、技能、子智能体\",plugins:\"插件\",indexing:\"索引与文档\",mcp:\"工具与 MCP\",hooks:\"Hooks\",\"local-automations\":\"自动化\",beta:\"Beta\",network:\"网络\",\"background-composer\":\"云端智能体\",worktrees:\"工作树\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"系统通知\",description:\"当 Agent 完成或需要注意时显示系统通知\"",
+        "target": "label:\"系统通知\",description:\"当智能体完成或需要注意时显示系统通知\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"完成音效\",description:\"当 Agent 完成响应时播放声音\"",
+        "target": "label:\"完成音效\",description:\"当智能体完成响应时播放声音\"",
+        "optional": true
+      },
+      {
+        "source": "fallback(){return\"Privacy Mode (Legacy)\"},children:\"隐私模式\"",
+        "target": "fallback(){return\"隐私模式（旧版）\"},children:\"隐私模式\"",
+        "optional": true
+      },
+      {
+        "source": "不训练且不存储。Background Agent 和其他需要代码存储的功能将被禁用。",
+        "target": "不训练且不存储。后台智能体和其他需要代码存储的功能将被禁用。",
+        "optional": true
+      },
+      {
+        "source": "代码可能会被存储，用于提供 Background Agent 等功能。",
+        "target": "代码可能会被存储，用于提供后台智能体等功能。",
+        "optional": true
+      },
+      {
+        "source": "隐私模式（旧版）已启用。Background Agent 和部分功能不可用。",
+        "target": "隐私模式（旧版）已启用。后台智能体和部分功能不可用。",
+        "optional": true
+      },
+      {
+        "source": "title:\"Agents\"",
+        "target": "title:\"智能体\""
+      },
+      {
+        "source": "title:\"Context\"",
+        "target": "title:\"上下文\""
+      },
+      {
+        "source": "title:\"Auto-Run\"",
+        "target": "title:\"自动运行\""
+      },
+      {
+        "source": "title:\"Applying Changes\"",
+        "target": "title:\"应用更改\""
+      },
+      {
+        "source": "title:\"Inline Editing & Terminal\"",
+        "target": "title:\"内联编辑与终端\""
+      },
+      {
+        "source": "title:\"Voice Mode\"",
+        "target": "title:\"语音模式\""
+      },
+      {
+        "source": "title:\"Agent Review\"",
+        "target": "title:\"智能体审查\""
+      },
+      {
+        "source": "title:\"Attribution\"",
+        "target": "title:\"署名\""
+      },
+      {
+        "source": "label:\"Text Size\"",
+        "target": "label:\"文本大小\""
+      },
+      {
+        "source": "label:\"Auto-Clear Chat\"",
+        "target": "label:\"自动清空聊天\""
+      },
+      {
+        "source": "label:`Submit with ${Mo?\"\\u2318 + \":\"Ctrl + \"}Enter`",
+        "target": "label:`使用 ${Mo?\"\\u2318 + \":\"Ctrl + \"}Enter 提交`"
+      },
+      {
+        "source": "label:\"Max Tab Count\"",
+        "target": "label:\"最大标签数\""
+      },
+      {
+        "source": "label:\"Unlimited\"",
+        "target": "label:\"无限制\""
+      },
+      {
+        "source": "label:\"Custom\"",
+        "target": "label:\"自定义\""
+      },
+      {
+        "source": "label:\"Queue Messages\"",
+        "target": "label:\"排队发送消息\""
+      },
+      {
+        "source": "label:\"Send after current message\"",
+        "target": "label:\"当前消息后发送\""
+      },
+      {
+        "source": "label:\"Stop & send right away\"",
+        "target": "label:\"停止并立即发送\""
+      },
+      {
+        "source": "label:\"Usage Summary\"",
+        "target": "label:\"用量摘要\""
+      },
+      {
+        "source": "label:\"Auto\"",
+        "target": "label:\"自动\""
+      },
+      {
+        "source": "label:\"Always\"",
+        "target": "label:\"始终\""
+      },
+      {
+        "source": "label:\"Never\"",
+        "target": "label:\"从不\""
+      },
+      {
+        "source": "label:\"Agent Autocomplete\"",
+        "target": "label:\"智能体自动补全\""
+      },
+      {
+        "source": "label:\"Follow-Up Prompt Suggestions\"",
+        "target": "label:\"后续提示词建议\""
+      },
+      {
+        "source": "label:\"Auto-Approve Mode Transitions\"",
+        "target": "label:\"自动批准模式切换\""
+      },
+      {
+        "source": "label:\"Open Agents Window on startup\"",
+        "target": "label:\"启动时打开智能体窗口\""
+      },
+      {
+        "source": "label:\"Compact Terminal Tool Calls\"",
+        "target": "label:\"紧凑显示终端工具调用\""
+      },
+      {
+        "source": "label:\"Explore subagent model\"",
+        "target": "label:\"探索子智能体模型\""
+      },
+      {
+        "source": "label:\"Auto-Accept Web Search\"",
+        "target": "label:\"自动接受网页搜索\""
+      },
+      {
+        "source": "label:\"Hierarchical Cursor Ignore\"",
+        "target": "label:\"分层 Cursor 忽略规则\""
+      },
+      {
+        "source": "label:\"Ignore Symlinks in Cursor Ignore Search\"",
+        "target": "label:\"Cursor 忽略搜索中忽略符号链接\""
+      },
+      {
+        "source": "label:\"Inline Diffs\"",
+        "target": "label:\"内联差异\""
+      },
+      {
+        "source": "label:\"Jump to Next Diff on Accept\"",
+        "target": "label:\"接受后跳到下一个差异\""
+      },
+      {
+        "source": "label:\"Auto Format on Agent Finish\"",
+        "target": "label:\"智能体完成后自动格式化\""
+      },
+      {
+        "source": "label:\"Legacy Terminal Tool\"",
+        "target": "label:\"旧版终端工具\""
+      },
+      {
+        "source": "label:\"Toolbar on Selection\"",
+        "target": "label:\"选中文本时显示工具栏\""
+      },
+      {
+        "source": "label:\"Auto-Parse Links\"",
+        "target": "label:\"自动解析链接\""
+      },
+      {
+        "source": "label:\"Themed Diff Backgrounds\"",
+        "target": "label:\"主题化差异背景\""
+      },
+      {
+        "source": "label:\"Terminal Hint\"",
+        "target": "label:\"终端提示\""
+      },
+      {
+        "source": "label:`Preview Box for Terminal ${Mo?\"\\u2318\":\"Ctrl+\"}K`",
+        "target": "label:`终端 ${Mo?\"\\u2318\":\"Ctrl+\"}K 预览框`"
+      },
+      {
+        "source": "label:\"Submit Keywords\"",
+        "target": "label:\"提交关键词\""
+      },
+      {
+        "source": "label:\"Auto-Run Network Access\"",
+        "target": "label:\"自动运行网络访问\""
+      },
+      {
+        "source": "label:\"sandbox.json Only\"",
+        "target": "label:\"仅 sandbox.json\""
+      },
+      {
+        "source": "label:\"sandbox.json + Defaults\"",
+        "target": "label:\"sandbox.json + 默认值\""
+      },
+      {
+        "source": "label:\"Allow All\"",
+        "target": "label:\"全部允许\""
+      },
+      {
+        "source": "label:\"Smart Allowlist\"",
+        "target": "label:\"智能允许列表\""
+      },
+      {
+        "source": "label:\"Command Allowlist\"",
+        "target": "label:\"命令允许列表\""
+      },
+      {
+        "source": "label:\"Command Denylist\"",
+        "target": "label:\"命令拒绝列表\""
+      },
+      {
+        "source": "label:\"MCP Allowlist\"",
+        "target": "label:\"MCP 允许列表\""
+      },
+      {
+        "source": "label:\"Browser Protection\"",
+        "target": "label:\"浏览器保护\""
+      },
+      {
+        "source": "label:\"MCP Tools Protection\"",
+        "target": "label:\"MCP 工具保护\""
+      },
+      {
+        "source": "label:\"File-Deletion Protection\"",
+        "target": "label:\"文件删除保护\""
+      },
+      {
+        "source": "label:\"External-File Protection\"",
+        "target": "label:\"外部文件保护\""
+      },
+      {
+        "source": "label:\"Start Agent Review on Commit\"",
+        "target": "label:\"提交时启动智能体审查\""
+      },
+      {
+        "source": "label:\"Auto-Run On Agent Finish\"",
+        "target": "label:\"智能体完成后自动运行\""
+      },
+      {
+        "source": "label:\"Include Submodules in Agent Review\"",
+        "target": "label:\"智能体审查包含子模块\""
+      },
+      {
+        "source": "label:\"Include Untracked Files in Agent Review\"",
+        "target": "label:\"智能体审查包含未跟踪文件\""
+      },
+      {
+        "source": "label:\"Default Approach\"",
+        "target": "label:\"默认方式\""
+      },
+      {
+        "source": "label:\"Quick\"",
+        "target": "label:\"快速\""
+      },
+      {
+        "source": "label:\"Deep\"",
+        "target": "label:\"深入\""
+      },
+      {
+        "source": "label:\"Commit Attribution\"",
+        "target": "label:\"提交署名\""
+      },
+      {
+        "source": "label:\"PR Attribution\"",
+        "target": "label:\"PR 署名\""
+      },
+      {
+        "source": "label:\"Branch Prefix\"",
+        "target": "label:\"分支前缀\""
+      },
+      {
+        "source": "label:\"Fetch Domain Allowlist\"",
+        "target": "label:\"抓取域名允许列表\""
+      },
+      {
+        "source": "description:\"Adjust the conversation text size\"",
+        "target": "description:\"调整对话文本大小\""
+      },
+      {
+        "source": "description:\"After periods of inactivity, open the Agent Pane to a new conversation\"",
+        "target": "description:\"长时间未活动后，将智能体面板打开到新对话\""
+      },
+      {
+        "source": "description:`When enabled, ${Mo?\"\\u2318 + \":\"Ctrl + \"}Enter submits chat and Enter inserts a newline`",
+        "target": "description:`启用后，${Mo?\"\\u2318 + \":\"Ctrl + \"}Enter 提交聊天，Enter 插入新行`"
+      },
+      {
+        "source": "description:\"Limit how many chat tabs can be open at once\"",
+        "target": "description:\"限制可同时打开的聊天标签数量\""
+      },
+      {
+        "source": "description:\"Adjust the default behavior of sending a message while Agent is running\"",
+        "target": "description:\"调整智能体运行时发送消息的默认行为\""
+      },
+      {
+        "source": "description:\"When to show the usage summary at the bottom of the chat pane\"",
+        "target": "description:\"控制何时在聊天面板底部显示用量摘要\""
+      },
+      {
+        "source": "description:\"Contextual suggestions while prompting Agent\"",
+        "target": "description:\"向智能体输入提示时显示上下文建议\""
+      },
+      {
+        "source": "description:\"Suggest a follow-up for the Agent\"",
+        "target": "description:\"为智能体建议后续问题\""
+      },
+      {
+        "source": "description:\"Allow Agent to switch modes without asking first, such as Agent to Plan or Agent to Debug. When off, Cursor asks before switching.\"",
+        "target": "description:\"允许智能体无需先询问即可切换模式，例如从智能体切到计划或调试。关闭后，Cursor 会在切换前询问。\""
+      },
+      {
+        "source": "description:\"When launching Cursor, open Agents Window by default\"",
+        "target": "description:\"启动 Cursor 时默认打开智能体窗口\""
+      },
+      {
+        "source": "description:\"Show terminal commands in compact view by default\"",
+        "target": "description:\"默认以紧凑视图显示终端命令\""
+      },
+      {
+        "source": "description:\"The Explore subagent is used to do initial research for the main agent\"",
+        "target": "description:\"探索子智能体用于为主智能体做初步调研\""
+      },
+      {
+        "source": "description:\"Allow Agent to search the web for relevant information\"",
+        "target": "description:\"允许智能体搜索网页获取相关信息\""
+      },
+      {
+        "source": "description:\"Show inline diff decorations in the editor instead of only showing changes in the review panel\"",
+        "target": "description:\"在编辑器中显示内联差异装饰，而不只在审查面板中显示更改\""
+      },
+      {
+        "source": "description:`Automatically jump to the next diff when accepting changes with ${Mo?\"\\u2318\":\"Ctrl+\"}Y`",
+        "target": "description:`使用 ${Mo?\"\\u2318\":\"Ctrl+\"}Y 接受更改时自动跳到下一个差异`"
+      },
+      {
+        "source": "description:\"Automatically format files when the agent finishes\"",
+        "target": "description:\"智能体完成后自动格式化文件\""
+      },
+      {
+        "source": "description:\"Use the legacy terminal tool in agent mode, for use on systems with unsupported shell configurations\"",
+        "target": "description:\"在智能体模式下使用旧版终端工具，适用于 shell 配置不受支持的系统\""
+      },
+      {
+        "source": "description:\"Show Add to Chat & Quick Edit buttons when selecting code\"",
+        "target": "description:\"选中代码时显示添加到聊天和快速编辑按钮\""
+      },
+      {
+        "source": "description:`Automatically parse links when pasted into Quick Edit (${Mo?\"\\u2318\":\"Ctrl+\"}K) input`",
+        "target": "description:`粘贴到快速编辑（${Mo?\"\\u2318\":\"Ctrl+\"}K）输入框时自动解析链接`"
+      },
+      {
+        "source": "description:\"Use themed background colors for inline code diffs\"",
+        "target": "description:\"为内联代码差异使用主题背景色\""
+      },
+      {
+        "source": "description:`Show a hint for ${Mo?\"\\u2318\":\"Ctrl+\"}K in the Terminal`",
+        "target": "description:`在终端中显示 ${Mo?\"\\u2318\":\"Ctrl+\"}K 提示`"
+      },
+      {
+        "source": "description:\"Use a preview box instead of streaming responses directly into the shell\"",
+        "target": "description:\"使用预览框，而不是把响应直接流式输出到 shell\""
+      },
+      {
+        "source": "description:\"Custom keywords that trigger auto-submit in voice mode. Only single words (no spaces) are allowed. Punctuation and capitalization are ignored.\"",
+        "target": "description:\"在语音模式中触发自动提交的自定义关键词。只允许单个词（不能有空格），标点和大小写会被忽略。\""
+      },
+      {
+        "source": "description:\"Control which network requests are allowed when commands run in the sandbox. Edit allowed/denied domains in sandbox.json in your workspace.\"",
+        "target": "description:\"控制命令在沙箱中运行时允许哪些网络请求。可在工作区的 sandbox.json 中编辑允许/拒绝的域名。\""
+      },
+      {
+        "source": "description:\"Use AI-powered command classification to intelligently match commands against allowlist patterns and suggest sandbox modes\"",
+        "target": "description:\"使用 AI 命令分类智能匹配允许列表模式并建议沙箱模式\""
+      },
+      {
+        "source": "description:\"Commands that should always require user approval, even if they match allowlist patterns\"",
+        "target": "description:\"即使命中允许列表模式，也始终需要用户批准的命令\""
+      },
+      {
+        "source": "description:\"Automatically review your changes for issues after each commit\"",
+        "target": "description:\"每次提交后自动审查更改中的问题\""
+      },
+      {
+        "source": "description:\"Automatically run Review when Agent finishes and has made file changes\"",
+        "target": "description:\"智能体完成且产生文件更改后自动运行审查\""
+      },
+      {
+        "source": "description:\"Include changes from Git submodules in the review\"",
+        "target": "description:\"审查中包含 Git 子模块的更改\""
+      },
+      {
+        "source": "description:\"Include untracked files (new files not yet added to Git) in the review\"",
+        "target": "description:\"审查中包含未跟踪文件（尚未添加到 Git 的新文件）\""
+      },
+      {
+        "source": "description:\"Choose between quick or more thorough, higher-cost analysis\"",
+        "target": "description:\"选择快速分析，或更彻底但成本更高的分析\""
+      },
+      {
+        "source": "description:\"Prefix for new branches created by Agent (e.g., cursor/, username/)\"",
+        "target": "description:\"智能体创建新分支时使用的前缀（例如 cursor/、username/）\""
+      },
+      {
+        "source": "description:\"Allow Agent to fetch content from URLs\"",
+        "target": "description:\"允许智能体从 URL 抓取内容\""
+      },
+      {
+        "source": "description:\"Domains that Agent can fetch from automatically. Use '*' for all domains, '*.example.com' for wildcard subdomains.\"",
+        "target": "description:\"智能体可自动抓取的域名。使用 '*' 表示所有域名，使用 '*.example.com' 表示通配子域名。\""
+      },
+      {
+        "source": "placeholder:\"e.g., send, submit, cursor\"",
+        "target": "placeholder:\"例如：send, submit, cursor\""
+      },
+      {
+        "source": "placeholder:\"e.g., ls, pwd\"",
+        "target": "placeholder:\"例如：ls, pwd\""
+      },
+      {
+        "source": "placeholder:\"e.g., rm -rf, sudo\"",
+        "target": "placeholder:\"例如：rm -rf, sudo\""
+      },
+      {
+        "source": "placeholder:\"e.g., filesystem:read_file\"",
+        "target": "placeholder:\"例如：filesystem:read_file\""
+      },
+      {
+        "source": "placeholder:\"e.g., docs.github.com, *.example.com\"",
+        "target": "placeholder:\"例如：docs.github.com, *.example.com\""
+      },
+      {
+        "source": "children:\"Rendering diagram...\"",
+        "target": "children:\"正在渲染图表...\""
+      },
+      {
+        "source": "children:\"Mermaid Syntax Error\"",
+        "target": "children:\"Mermaid 语法错误\""
+      },
+      {
+        "source": "children:\"View diagram source\"",
+        "target": "children:\"查看图表源码\""
+      },
+      {
+        "source": "label:\"Autorun mode\"",
+        "target": "label:\"自动运行模式\""
+      },
+      {
+        "source": "label:\"Add to allowlist\"",
+        "target": "label:\"添加到允许列表\""
+      },
+      {
+        "source": "children:\"Open in Terminal Pane\"",
+        "target": "children:\"在终端面板中打开\""
+      },
+      {
+        "source": "children:\"Copy Command\"",
+        "target": "children:\"复制命令\""
+      },
+      {
+        "source": "children:\"Add to Allowlist and Run\"",
+        "target": "children:\"添加到允许列表并运行\""
+      },
+      {
+        "source": "children:\"No results\"",
+        "target": "children:\"无结果\""
+      },
+      {
+        "source": "children:\"No files found\"",
+        "target": "children:\"未找到文件\""
+      },
+      {
+        "source": "children:\"No matches found\"",
+        "target": "children:\"未找到匹配项\""
+      },
+      {
+        "source": "children:\"Empty directory\"",
+        "target": "children:\"空目录\""
+      },
+      {
+        "source": "children:\"No diagnostics found\"",
+        "target": "children:\"未发现诊断信息\""
+      },
+      {
+        "source": "children:\"No results found\"",
+        "target": "children:\"未找到结果\""
+      },
+      {
+        "source": "children:\"No messages yet\"",
+        "target": "children:\"还没有消息\""
+      },
+      {
+        "source": "children:\"No state\"",
+        "target": "children:\"无状态\""
+      },
+      {
+        "source": "children:\"No MCP resources available\"",
+        "target": "children:\"没有可用的 MCP 资源\""
+      },
+      {
+        "source": "children:\"All files and folders\"",
+        "target": "children:\"所有文件和文件夹\""
+      },
+      {
+        "source": "children:\"Add Skills\"",
+        "target": "children:\"添加技能\""
+      },
+      {
+        "source": "children:\"Add Models\"",
+        "target": "children:\"添加模型\""
+      },
+      {
+        "source": "title:\"Restore default parameters\"",
+        "target": "title:\"恢复默认参数\""
+      },
+      {
+        "source": "children:\"Show all models\\u2026\"",
+        "target": "children:\"显示所有模型\\u2026\""
+      },
+      {
+        "source": "label:\"MAX Mode\"",
+        "target": "label:\"MAX 模式\""
+      },
+      {
+        "source": "children:\"MAX Mode\"",
+        "target": "children:\"MAX 模式\""
+      },
+      {
+        "source": "children:\"MAX MODE\"",
+        "target": "children:\"MAX 模式\""
+      },
+      {
+        "source": "children:\"Enable MAX Mode\"",
+        "target": "children:\"启用 MAX 模式\""
+      },
+      {
+        "source": "label:\"Use Multiple Models\"",
+        "target": "label:\"使用多个模型\""
+      },
+      {
+        "source": "children:\"Use Multiple Models\"",
+        "target": "children:\"使用多个模型\""
+      },
+      {
+        "source": "placeholder:\"Search models\"",
+        "target": "placeholder:\"搜索模型\""
+      },
+      {
+        "source": "children:\"No models found\"",
+        "target": "children:\"未找到模型\""
+      },
+      {
+        "source": "title:\"Add skills, MCPs and more\"",
+        "target": "title:\"添加技能、MCP 等\""
+      },
+      {
+        "source": "placeholder:\"Search MCP servers...\"",
+        "target": "placeholder:\"搜索 MCP 服务器...\""
+      },
+      {
+        "source": "children:\"Loading MCP servers...\"",
+        "target": "children:\"正在加载 MCP 服务器...\""
+      },
+      {
+        "source": "label:\"No MCP servers\"",
+        "target": "label:\"没有 MCP 服务器\""
+      },
+      {
+        "source": "label:\"Open MCP Settings\"",
+        "target": "label:\"打开 MCP 设置\""
+      },
+      {
+        "source": "children:\"Open MCP Settings\"",
+        "target": "children:\"打开 MCP 设置\""
+      },
+      {
+        "source": "placeholder:\"Add agents, context, tools...\"",
+        "target": "placeholder:\"添加智能体、上下文、工具...\""
+      },
+      {
+        "source": "children:\"Loading skills...\"",
+        "target": "children:\"正在加载技能...\""
+      },
+      {
+        "source": "children:\"No skills available\"",
+        "target": "children:\"没有可用技能\""
+      },
+      {
+        "source": "label:\"MCP Servers\"",
+        "target": "label:\"MCP 服务器\""
+      },
+      {
+        "source": "children:\"MCP Servers\"",
+        "target": "children:\"MCP 服务器\""
+      },
+      {
+        "source": "children:\"Stop All\"",
+        "target": "children:\"全部停止\""
+      },
+      {
+        "source": "children:\"Waiting for upload...\"",
+        "target": "children:\"等待上传...\""
+      },
+      {
+        "source": "children:\"This agent was working on \"",
+        "target": "children:\"此智能体正在处理 \""
+      },
+      {
+        "source": "children:\"Don't ask again\"",
+        "target": "children:\"不再询问\""
+      },
+      {
+        "source": "children:\"Stay on Current Branch\"",
+        "target": "children:\"停留在当前分支\""
+      },
+      {
+        "source": "children:\"Agent disconnected\"",
+        "target": "children:\"智能体已断开连接\""
+      },
+      {
+        "source": "message:\"Failed to parse repository\"",
+        "target": "message:\"解析仓库失败\""
+      },
+      {
+        "source": "placeholder:\"Search or Paste Link\"",
+        "target": "placeholder:\"搜索或粘贴链接\""
+      },
+      {
+        "source": "children:\"Pasted Link\"",
+        "target": "children:\"已粘贴链接\""
+      },
+      {
+        "source": "children:\"Remote HTTPS\"",
+        "target": "children:\"远程 HTTPS\""
+      },
+      {
+        "source": "label:\"Server URL\"",
+        "target": "label:\"服务器 URL\""
+      },
+      {
+        "source": "label:\"HTTP headers\"",
+        "target": "label:\"HTTP 请求头\""
+      },
+      {
+        "source": "label:\"Client ID\"",
+        "target": "label:\"客户端 ID\""
+      },
+      {
+        "source": "placeholder:\"OAuth Client ID (optional)\"",
+        "target": "placeholder:\"OAuth 客户端 ID（可选）\""
+      },
+      {
+        "source": "label:\"Client Secret\"",
+        "target": "label:\"客户端密钥\""
+      },
+      {
+        "source": "placeholder:\"OAuth Client Secret (optional)\"",
+        "target": "placeholder:\"OAuth 客户端密钥（可选）\""
+      },
+      {
+        "source": "children:\"Add MCP Server\"",
+        "target": "children:\"添加 MCP 服务器\""
+      },
+      {
+        "source": "children:\"(Optional)\"",
+        "target": "children:\"（可选）\""
+      },
+      {
+        "source": "placeholder:`Select ${k.title}`",
+        "target": "placeholder:`选择 ${k.title}`"
+      },
+      {
+        "source": "children:\"Clear variables\"",
+        "target": "children:\"清除变量\""
+      },
+      {
+        "source": "children:\"No plugins found\"",
+        "target": "children:\"未找到插件\""
+      },
+      {
+        "source": "children:\"Add plugins or import from GitHub to make them available for your team.\"",
+        "target": "children:\"添加插件或从 GitHub 导入，使其可供团队使用。\""
+      },
+      {
+        "source": "title:\"Team Access\"",
+        "target": "title:\"团队访问\""
+      },
+      {
+        "source": "title:\"Plugin Settings\"",
+        "target": "title:\"插件设置\""
+      },
+      {
+        "source": "children:\"All Members\"",
+        "target": "children:\"所有成员\""
+      },
+      {
+        "source": "message:\"Failed to refresh marketplace.\"",
+        "target": "message:\"刷新市场失败。\""
+      },
+      {
+        "source": "children:\"Marketplace Settings\"",
+        "target": "children:\"市场设置\""
+      },
+      {
+        "source": "label:\"Marketplace Access\"",
+        "target": "label:\"市场访问权限\""
+      },
+      {
+        "source": "description:\"Select who can see and use plugins from this team marketplace\"",
+        "target": "description:\"选择谁可以查看和使用此团队市场中的插件\""
+      },
+      {
+        "source": "label:\"Enable Auto Refresh\"",
+        "target": "label:\"启用自动刷新\""
+      },
+      {
+        "source": "description:\"Automatically update plugins when changes are pushed to the repository\"",
+        "target": "description:\"当更改推送到仓库时自动更新插件\""
+      },
+      {
+        "source": "label:\"Plugin Repository\"",
+        "target": "label:\"插件仓库\""
+      },
+      {
+        "source": "description:\"Fetch marketplace plugins from the GitHub repository\"",
+        "target": "description:\"从 GitHub 仓库获取市场插件\""
+      },
+      {
+        "source": "label:\"Remove Marketplace\"",
+        "target": "label:\"移除市场\""
+      },
+      {
+        "source": "description:\"This marketplace and its access settings will be removed. The source repository won't be affected.\"",
+        "target": "description:\"此市场及其访问设置将被移除。源仓库不会受影响。\""
+      },
+      {
+        "source": "children:\"Delete Marketplace\"",
+        "target": "children:\"删除市场\""
+      },
+      {
+        "source": "title:\"Delete marketplace?\"",
+        "target": "title:\"删除市场？\""
+      },
+      {
+        "source": "description:\"This marketplace and its access settings will be removed. The repository won't be affected.\"",
+        "target": "description:\"此市场及其访问设置将被移除。仓库不会受影响。\""
+      },
+      {
+        "source": "message:\"Failed to save changes.\"",
+        "target": "message:\"保存更改失败。\""
+      },
+      {
+        "source": "children:\"MCP Server\"",
+        "target": "children:\"MCP 服务器\""
+      },
+      {
+        "source": "children:\"Available Marketplaces\"",
+        "target": "children:\"可用市场\""
+      },
+      {
+        "source": "children:\"Access Settings\"",
+        "target": "children:\"访问设置\""
+      },
+      {
+        "source": "children:\"Plugin Installation\"",
+        "target": "children:\"插件安装\""
+      },
+      {
+        "source": "children:\"Add for Myself\"",
+        "target": "children:\"为我自己添加\""
+      },
+      {
+        "source": "children:\"Add to Project\"",
+        "target": "children:\"添加到项目\""
+      },
+      {
+        "source": "children:\"Add to Team\"",
+        "target": "children:\"添加到团队\""
+      },
+      {
+        "source": "children:\"Finishing setup\\u2026\"",
+        "target": "children:\"正在完成设置\\u2026\""
+      },
+      {
+        "source": "children:\"Verified by Cursor\"",
+        "target": "children:\"由 Cursor 验证\""
+      },
+      {
+        "source": "title:\"Open in Editor\"",
+        "target": "title:\"在编辑器中打开\""
+      },
+      {
+        "source": "children:\"Authenticating\\u2026\"",
+        "target": "children:\"正在认证\\u2026\""
+      },
+      {
+        "source": "children:\"Manage Marketplace\"",
+        "target": "children:\"管理市场\""
+      },
+      {
+        "source": "placeholder:\"Search Plugins, Skills, Tools, Automations...\"",
+        "target": "placeholder:\"搜索插件、技能、工具、自动化...\""
+      },
+      {
+        "source": "children:\"Debug Logs\"",
+        "target": "children:\"调试日志\""
+      },
+      {
+        "source": "children:\"Waiting for log entries...\"",
+        "target": "children:\"等待日志条目...\""
+      },
+      {
+        "source": "children:\"Clear Logs\"",
+        "target": "children:\"清除日志\""
+      },
+      {
+        "source": "label:\"Reproduction Steps\"",
+        "target": "label:\"复现步骤\""
+      },
+      {
+        "source": "children:\"Mark Fixed\"",
+        "target": "children:\"标记为已修复\""
+      },
+      {
+        "source": "title:\"Open debug logs\"",
+        "target": "title:\"打开调试日志\""
+      },
+      {
+        "source": "children:\"Load Diff\"",
+        "target": "children:\"加载差异\""
+      },
+      {
+        "source": "children:\"Generated files are not rendered by default.\"",
+        "target": "children:\"生成的文件默认不渲染。\""
+      },
+      {
+        "source": "children:\"Large diffs are hidden by default.\"",
+        "target": "children:\"大型差异默认隐藏。\""
+      },
+      {
+        "source": "children:\"Diff content not available\"",
+        "target": "children:\"差异内容不可用\""
+      },
+      {
+        "source": "children:\"This file changed, but a text diff could not be rendered.\"",
+        "target": "children:\"此文件已更改，但无法渲染文本差异。\""
+      },
+      {
+        "source": "placeholder:\"Tell us more (optional)...\"",
+        "target": "placeholder:\"补充更多信息（可选）...\""
+      },
+      {
+        "source": "children:\"Submit details\"",
+        "target": "children:\"提交详情\""
+      },
+      {
+        "source": "label:\"Move to Local\"",
+        "target": "label:\"移动到本地\""
+      },
+      {
+        "source": "title:\"Uncommitted Changes\"",
+        "target": "title:\"未提交的更改\""
+      },
+      {
+        "source": "children:\"You have uncommitted changes in your working tree. Choose an option, then continue.\"",
+        "target": "children:\"你的工作树中有未提交的更改。请选择一个选项，然后继续。\""
+      },
+      {
+        "source": "children:\"Do not ask me again\"",
+        "target": "children:\"不再询问我\""
+      },
+      {
+        "source": "children:\"Paste as one line\"",
+        "target": "children:\"粘贴为一行\""
+      },
+      {
+        "source": "placeholder:\"Todo description...\"",
+        "target": "placeholder:\"待办描述...\""
+      },
+      {
+        "source": "children:\"Add a to-do to get started\"",
+        "target": "children:\"添加待办以开始\""
+      },
+      {
+        "source": "label:\"Add to Chat\"",
+        "target": "label:\"添加到聊天\""
+      },
+      {
+        "source": "placeholder:\"Plan body...\"",
+        "target": "placeholder:\"计划内容...\""
+      },
+      {
+        "source": "children:\"Save to workspace\"",
+        "target": "children:\"保存到工作区\""
+      },
+      {
+        "source": "children:\"Build in Parallel\"",
+        "target": "children:\"并行构建\""
+      },
+      {
+        "source": "children:\"Copy as Markdown\"",
+        "target": "children:\"复制为 Markdown\""
+      },
+      {
+        "source": "children:\"Find in Plan\"",
+        "target": "children:\"在计划中查找\""
+      },
+      {
+        "source": "children:\"Save to Workspace\"",
+        "target": "children:\"保存到工作区\""
+      },
+      {
+        "source": "title:\"View plan\"",
+        "target": "title:\"查看计划\""
+      },
+      {
+        "source": "children:\"View Plan\"",
+        "target": "children:\"查看计划\""
+      },
+      {
+        "source": "placeholder:\"Search the marketplace\"",
+        "target": "placeholder:\"搜索市场\""
+      },
+      {
+        "source": "children:\"No result\"",
+        "target": "children:\"无结果\""
+      },
+      {
+        "source": "children:\"Try changing your search query\"",
+        "target": "children:\"请尝试更改搜索词\""
+      },
+      {
+        "source": "children:\"Import Marketplace...\"",
+        "target": "children:\"导入市场...\""
+      },
+      {
+        "source": "children:\"Browse Marketplace\"",
+        "target": "children:\"浏览市场\""
+      },
+      {
+        "source": "children:\"Manage plugins\"",
+        "target": "children:\"管理插件\""
+      },
+      {
+        "source": "children:\"Error loading plugin\"",
+        "target": "children:\"加载插件出错\""
+      },
+      {
+        "source": "children:\"No Result\"",
+        "target": "children:\"无结果\""
+      },
+      {
+        "source": "children:\"Try a different search term or browse by category\"",
+        "target": "children:\"尝试其他搜索词或按类别浏览\""
+      },
+      {
+        "source": "children:\"Try in Chat\"",
+        "target": "children:\"在聊天中试用\""
+      },
+      {
+        "source": "message:\"Failed to import from GitHub\"",
+        "target": "message:\"从 GitHub 导入失败\""
+      },
+      {
+        "source": "children:\"Import from GitHub\"",
+        "target": "children:\"从 GitHub 导入\""
+      },
+      {
+        "source": "children:\"Enter a GitHub repository URL containing a plugin marketplace\"",
+        "target": "children:\"输入包含插件市场的 GitHub 仓库 URL\""
+      },
+      {
+        "source": "children:\"GitHub Repository URL\"",
+        "target": "children:\"GitHub 仓库 URL\""
+      },
+      {
+        "source": "children:\"Open in Chat\"",
+        "target": "children:\"在聊天中打开\""
+      },
+      {
+        "source": "children:\"View Details\"",
+        "target": "children:\"查看详情\""
+      },
+      {
+        "source": "children:\"Remove from Cursor\"",
+        "target": "children:\"从 Cursor 移除\""
+      },
+      {
+        "source": "title:\"Pasted Link\"",
+        "target": "title:\"已粘贴链接\""
+      },
+      {
+        "source": "children:\"No Plugins\"",
+        "target": "children:\"没有插件\""
+      },
+      {
+        "source": "children:\"Browse the marketplace or import custom plugins to extend\"",
+        "target": "children:\"浏览市场或导入自定义插件以扩展\""
+      },
+      {
+        "source": "children:\"Cursor with Skills, Rules, Agents, Hooks, and MCPs.\"",
+        "target": "children:\"Cursor 的技能、规则、智能体、Hooks 和 MCP。\""
+      },
+      {
+        "source": "children:\"Waiting for logs\"",
+        "target": "children:\"等待日志\""
+      },
+      {
+        "source": "placeholder:\"SSH Hostname\"",
+        "target": "placeholder:\"SSH 主机名\""
+      },
+      {
+        "source": "children:\"Type in a host like user@host or select from SSH config\"",
+        "target": "children:\"输入 user@host 这样的主机，或从 SSH 配置中选择\""
+      },
+      {
+        "source": "children:\"Rename tab\"",
+        "target": "children:\"重命名标签\""
+      },
+      {
+        "source": "children:\"Close Others\"",
+        "target": "children:\"关闭其他\""
+      },
+      {
+        "source": "children:\"Close to the Right\"",
+        "target": "children:\"关闭右侧\""
+      },
+      {
+        "source": "children:\"Close All\"",
+        "target": "children:\"全部关闭\""
+      },
+      {
+        "source": "title:\"Copy Code\"",
+        "target": "title:\"复制代码\""
+      },
+      {
+        "source": "title:\"Download file\"",
+        "target": "title:\"下载文件\""
+      },
+      {
+        "source": "title:\"Download image\"",
+        "target": "title:\"下载图片\""
+      },
+      {
+        "source": "children:\"Open external link?\"",
+        "target": "children:\"打开外部链接？\""
+      },
+      {
+        "source": "children:\"You're about to visit an external website.\"",
+        "target": "children:\"你即将访问外部网站。\""
+      },
+      {
+        "source": "children:\"Copy link\"",
+        "target": "children:\"复制链接\""
+      },
+      {
+        "source": "children:\"Open link\"",
+        "target": "children:\"打开链接\""
+      },
+      {
+        "source": "title:\"Download diagram\"",
+        "target": "title:\"下载图表\""
+      },
+      {
+        "source": "title:\"Download diagram as SVG\"",
+        "target": "title:\"下载图表为 SVG\""
+      },
+      {
+        "source": "title:\"Download diagram as PNG\"",
+        "target": "title:\"下载图表为 PNG\""
+      },
+      {
+        "source": "title:\"Download diagram as MMD\"",
+        "target": "title:\"下载图表为 MMD\""
+      },
+      {
+        "source": "title:\"View fullscreen\"",
+        "target": "title:\"全屏查看\""
+      },
+      {
+        "source": "title:\"Exit fullscreen\"",
+        "target": "title:\"退出全屏\""
+      },
+      {
+        "source": "title:\"Copy table\"",
+        "target": "title:\"复制表格\""
+      },
+      {
+        "source": "title:\"Copy table as CSV\"",
+        "target": "title:\"复制表格为 CSV\""
+      },
+      {
+        "source": "title:\"Copy table as TSV\"",
+        "target": "title:\"复制表格为 TSV\""
+      },
+      {
+        "source": "title:\"Download table\"",
+        "target": "title:\"下载表格\""
+      },
+      {
+        "source": "title:\"Download table as CSV\"",
+        "target": "title:\"下载表格为 CSV\""
+      },
+      {
+        "source": "title:\"Download table as Markdown\"",
+        "target": "title:\"下载表格为 Markdown\""
+      },
+      {
+        "source": "title:\"Zoom in\"",
+        "target": "title:\"放大\""
+      },
+      {
+        "source": "title:\"Zoom out\"",
+        "target": "title:\"缩小\""
+      },
+      {
+        "source": "title:\"Reset zoom and pan\"",
+        "target": "title:\"重置缩放和平移\""
+      },
+      {
+        "source": "message:\"Failed to render Mermaid chart\"",
+        "target": "message:\"渲染 Mermaid 图表失败\""
+      },
+      {
+        "source": "children:\"Loading diagram...\"",
+        "target": "children:\"正在加载图表...\""
+      },
+      {
+        "source": "children:\"Show Code\"",
+        "target": "children:\"显示代码\""
+      },
+      {
+        "source": "placeholder:\"Plan and design before coding...\"",
+        "target": "placeholder:\"编码前先规划和设计...\""
+      },
+      {
+        "source": "description:\"Plan and design before coding\"",
+        "target": "description:\"编码前先规划和设计\""
+      },
+      {
+        "source": "placeholder:\"Debug and troubleshoot issues...\"",
+        "target": "placeholder:\"调试并排查问题...\""
+      },
+      {
+        "source": "description:\"Debug and troubleshoot issues\"",
+        "target": "description:\"调试并排查问题\""
+      },
+      {
+        "source": "placeholder:\"Ask questions without making changes...\"",
+        "target": "placeholder:\"只提问，不做更改...\""
+      },
+      {
+        "source": "description:\"Ask questions without making changes\"",
+        "target": "description:\"只提问，不做更改\""
+      },
+      {
+        "source": "placeholder:\"Write something \\u2026\"",
+        "target": "placeholder:\"写点什么 \\u2026\""
+      },
+      {
+        "source": "label:\"Files & Folders\"",
+        "target": "label:\"文件和文件夹\""
+      },
+      {
+        "source": "label:\"Past Chats\"",
+        "target": "label:\"历史聊天\""
+      },
+      {
+        "source": "title:\"Balanced quality and speed, recommended for most tasks\"",
+        "target": "title:\"质量和速度均衡，推荐用于大多数任务\""
+      },
+      {
+        "source": "label:\"Needs attention\"",
+        "target": "label:\"需要注意\""
+      },
+      {
+        "source": "label:\"In progress\"",
+        "target": "label:\"进行中\""
+      },
+      {
+        "source": "label:\"Commit changes\"",
+        "target": "label:\"提交更改\""
+      },
+      {
+        "source": "description:\"Create a checkpoint commit with your current changes\"",
+        "target": "description:\"用当前更改创建一个检查点提交\""
+      },
+      {
+        "source": "label:\"Stash changes\"",
+        "target": "label:\"暂存更改\""
+      },
+      {
+        "source": "description:\"Save your changes to a stash and restore them later\"",
+        "target": "description:\"将更改保存到 stash，稍后再恢复\""
+      },
+      {
+        "source": "label:\"Discard changes\"",
+        "target": "label:\"放弃更改\""
+      },
+      {
+        "source": "description:\"Delete your current uncommitted changes before switching\"",
+        "target": "description:\"切换前删除当前未提交的更改\""
+      },
+      {
+        "source": "label:\"Most Used\"",
+        "target": "label:\"最常用\""
+      },
+      {
+        "source": "children:\"No files\"",
+        "target": "children:\"没有文件\""
+      },
+      {
+        "source": "description:\"Temporarily save uncommitted work, then check out the cloud agent branch.\"",
+        "target": "description:\"临时保存未提交的工作，然后检出云端智能体分支。\""
+      },
+      {
+        "source": "description:\"Create a checkpoint commit of your changes, then check out the branch.\"",
+        "target": "description:\"为你的更改创建检查点提交，然后检出该分支。\""
+      },
+      {
+        "source": "title:\"Mermaid Diagram\"",
+        "target": "title:\"Mermaid 图表\""
+      },
+      {
+        "source": "\"Add Models\"",
+        "target": "\"添加模型\""
+      },
+      {
+        "source": "\"MAX Mode\"",
+        "target": "\"MAX 模式\""
+      },
+      {
+        "source": "\"Search models\"",
+        "target": "\"搜索模型\""
+      },
+      {
+        "source": "\"No models found\"",
+        "target": "\"未找到模型\""
+      },
+      {
+        "source": "\"Open MCP Settings\"",
+        "target": "\"打开 MCP 设置\""
+      },
+      {
+        "source": "\"MCP Servers\"",
+        "target": "\"MCP 服务器\""
+      },
+      {
+        "source": "\"No plugins found\"",
+        "target": "\"未找到插件\""
+      },
+      {
+        "source": "\"Uncommitted Changes\"",
+        "target": "\"未提交的更改\""
+      },
+      {
+        "source": "\"View Plan\"",
+        "target": "\"查看计划\""
+      },
+      {
+        "source": "\"Import from GitHub\"",
+        "target": "\"从 GitHub 导入\""
+      },
+      {
+        "source": "\"Open external link?\"",
+        "target": "\"打开外部链接？\""
+      },
+      {
+        "source": "\"Files & Folders\"",
+        "target": "\"文件和文件夹\""
+      },
+      {
+        "source": "\"Past Chats\"",
+        "target": "\"历史聊天\""
+      },
+      {
+        "source": "\"Discard changes\"",
+        "target": "\"放弃更改\""
+      },
+      {
+        "source": "\"aria-label\":\"Enable MAX Mode\"",
+        "target": "\"aria-label\":\"启用 MAX 模式\""
+      },
+      {
+        "source": "\u003eMAX Mode",
+        "target": "\u003eMAX 模式"
+      },
+      {
+        "source": "\u003eUser MCP Servers",
+        "target": "\u003e用户 MCP 服务器"
+      },
+      {
+        "source": "\u003eWorkspace MCP Servers",
+        "target": "\u003e工作区 MCP 服务器"
+      },
+      {
+        "source": "\u003eTeam MCP Servers",
+        "target": "\u003e团队 MCP 服务器"
+      },
+      {
+        "source": "\u003ePlugin MCP Servers",
+        "target": "\u003e插件 MCP 服务器"
+      },
+      {
+        "source": "\u003eConfigured in the dashboard",
+        "target": "\u003e在仪表盘中配置"
+      },
+      {
+        "source": "title:\"Installed MCP Servers\"",
+        "target": "title:\"已安装的 MCP 服务器\""
+      },
+      {
+        "source": "title:\"Cloud MCP Servers\"",
+        "target": "title:\"云端 MCP 服务器\""
+      },
+      {
+        "source": "description:\"Servers available to cloud agents.\"",
+        "target": "description:\"云端智能体可用的服务器。\""
+      },
+      {
+        "source": "message:\"Loading cloud MCP servers...\"",
+        "target": "message:\"正在加载云端 MCP 服务器...\""
+      },
+      {
+        "source": "title:\"Sign In to View Cloud MCP Servers\"",
+        "target": "title:\"登录以查看云端 MCP 服务器\""
+      },
+      {
+        "source": "description:\"Sign in to load cloud user and team MCP servers from the dashboard and manage which servers are enabled for cloud agents.\"",
+        "target": "description:\"登录后从仪表盘加载云端用户和团队 MCP 服务器，并管理哪些服务器可供云端智能体使用。\""
+      },
+      {
+        "source": "children:\"Open Dashboard\"",
+        "target": "children:\"打开仪表盘\""
+      },
+      {
+        "source": "title:\"Could Not Load Cloud MCP Servers\"",
+        "target": "title:\"无法加载云端 MCP 服务器\""
+      },
+      {
+        "source": "\"Failed to load cloud MCP servers.\"",
+        "target": "\"加载云端 MCP 服务器失败。\""
+      },
+      {
+        "source": "\"No plugins found in this repository.\"",
+        "target": "\"此仓库中未找到插件。\""
+      },
+      {
+        "source": "\"All plugins from this repository have already been added.\"",
+        "target": "\"此仓库中的所有插件都已添加。\""
+      },
+      {
+        "source": "children:\"View Plan and Limits\"",
+        "target": "children:\"查看套餐和限制\""
+      },
+      {
+        "source": "\"View Plan and Limits\"",
+        "target": "\"查看套餐和限制\""
+      },
+      {
+        "source": "\"View more details\"",
+        "target": "\"查看更多详情\""
+      },
+      {
+        "source": "label:\"User Rule\"",
+        "target": "label:\"用户规则\""
+      },
+      {
+        "source": "label:\"Project Rule\"",
+        "target": "label:\"项目规则\""
+      },
+      {
+        "source": "label:\"Import from GitHub/GitLab\"",
+        "target": "label:\"从 GitHub/GitLab 导入\""
+      },
+      {
+        "source": "label:\"Always applied\"",
+        "target": "label:\"始终应用\""
+      },
+      {
+        "source": "label:\"Agent decides when to apply\"",
+        "target": "label:\"由智能体决定何时应用\""
+      },
+      {
+        "source": "label:\"Apply to Specific Files & Folders\"",
+        "target": "label:\"应用到指定文件和文件夹\""
+      },
+      {
+        "source": "\"Always applied\"",
+        "target": "\"始终应用\""
+      },
+      {
+        "source": "\"Agent decides when to apply\"",
+        "target": "\"由智能体决定何时应用\""
+      },
+      {
+        "source": "\"Apply to Specific Files & Folders\"",
+        "target": "\"应用到指定文件和文件夹\""
+      },
+      {
+        "source": "children:\"Cancel\"",
+        "target": "children:\"取消\"",
+        "optional": true
+      },
+      {
+        "source": "\"Saving...\"",
+        "target": "\"正在保存...\""
+      },
+      {
+        "source": "\"Save\"",
+        "target": "\"保存\""
+      },
+      {
+        "source": "`Discard changes to \"${Yt[0]}\"?`",
+        "target": "`放弃对 \"${Yt[0]}\" 的更改？`"
+      },
+      {
+        "source": "`Discard changes to ${Yt.length} files?`",
+        "target": "`放弃对 ${Yt.length} 个文件的更改？`"
+      },
+      {
+        "source": "label:\"Discard Tracked Only\"",
+        "target": "label:\"仅放弃已跟踪文件\""
+      },
+      {
+        "source": "\"Move to Trash\"",
+        "target": "\"移到回收站\""
+      },
+      {
+        "source": "\"Discard\"",
+        "target": "\"放弃\""
+      },
+      {
+        "source": "MCP Servers",
+        "target": "MCP 服务器"
+      },
+      {
+        "source": "\"Discard Tracked Only\"",
+        "target": "\"仅放弃已跟踪文件\""
+      },
+      {
+        "source": "label:\"Find and Replace\"",
+        "target": "label:\"查找和替换\""
+      },
+      {
+        "source": "description:\"unchanged lines\"",
+        "target": "description:\"未更改的行\""
+      },
+      {
+        "source": "description:\"Fold Unchanged\"",
+        "target": "description:\"折叠未更改内容\""
+      },
+      {
+        "source": "children:`This plugin includes unsupported install fields: ${t.unsupportedFieldNames.join(\", \")}`",
+        "target": "children:`此插件包含不支持的安装字段：${t.unsupportedFieldNames.join(\", \")}`"
+      },
+      {
+        "source": "children:\" \\xB7 Author\"",
+        "target": "children:\" \\xB7 作者\""
+      },
+      {
+        "source": "title:\"Blocked URL: \"",
+        "target": "title:\"被阻止的 URL：\""
+      },
+      {
+        "source": "children:\"Tree outline\"",
+        "target": "children:\"树形大纲\""
+      },
+      {
+        "source": "description:\"Plan, search, make edits, run commands\"",
+        "target": "description:\"规划、搜索、编辑并运行命令\""
+      },
+      {
+        "source": "description:\"Coordinate long-horizon tasks with delegated subagents\"",
+        "target": "description:\"通过委派子智能体协调长期任务\""
+      },
+      {
+        "source": "description:\"Create detailed plans for accomplishing tasks\"",
+        "target": "description:\"为完成任务创建详细计划\""
+      },
+      {
+        "source": "description:\"Create structured plans with implementation steps\"",
+        "target": "description:\"创建包含实施步骤的结构化计划\""
+      },
+      {
+        "source": "description:\"Systematically diagnose and fix bugs using runtime traces\"",
+        "target": "description:\"使用运行时追踪系统性诊断并修复问题\""
+      },
+      {
+        "source": "description:\"Run and coordinate multiple tasks in parallel\"",
+        "target": "description:\"并行运行并协调多个任务\""
+      },
+      {
+        "source": "description:\"Ask Cursor questions about your codebase\"",
+        "target": "description:\"向 Cursor 询问有关代码库的问题\""
+      },
+      {
+        "source": "description:\"Special conversation mode for project-level discussions\"",
+        "target": "description:\"用于项目级讨论的特殊对话模式\""
+      },
+      {
+        "source": "description:\"Unfold the content in the editor\"",
+        "target": "description:\"展开编辑器中的内容\""
+      },
+      {
+        "source": "description:\"Fold the content in the editor\"",
+        "target": "description:\"折叠编辑器中的内容\""
+      },
+      {
+        "source": "description:\"Codebase, web\"",
+        "target": "description:\"代码库、网页\""
+      },
+      {
+        "source": "label:\"Grep Search\"",
+        "target": "label:\"Grep 搜索\""
+      },
+      {
+        "source": "label:\"Search files\"",
+        "target": "label:\"搜索文件\""
+      },
+      {
+        "source": "description:\"Files in workspace\"",
+        "target": "description:\"工作区中的文件\""
+      },
+      {
+        "source": "label:\"Edit & Reapply\"",
+        "target": "label:\"编辑并重新应用\""
+      },
+      {
+        "source": "label:\"Delete file\"",
+        "target": "label:\"删除文件\""
+      },
+      {
+        "source": "label:\"Enable auto-keep\"",
+        "target": "label:\"启用自动保留\""
+      },
+      {
+        "source": "message:\"Failed to initialize\"",
+        "target": "message:\"初始化失败\""
+      },
+      {
+        "source": "message:\"Install Cursor CLI?\"",
+        "target": "message:\"安装 Cursor CLI？\""
+      },
+      {
+        "source": "label:\"Google API Key\"",
+        "target": "label:\"Google API 密钥\""
+      },
+      {
+        "source": "label:\"Slack Token\"",
+        "target": "label:\"Slack 令牌\""
+      },
+      {
+        "source": "label:\"GitHub Token\"",
+        "target": "label:\"GitHub 令牌\""
+      },
+      {
+        "source": "label:\"Generic Secret\"",
+        "target": "label:\"通用密钥\""
+      },
+      {
+        "source": "label:\"CLI Credentials\"",
+        "target": "label:\"CLI 凭据\""
+      },
+      {
+        "source": "tooltip:\"Click to switch backend server\"",
+        "target": "tooltip:\"点击切换后端服务器\""
+      },
+      {
+        "source": "message:\"Failed to fetch usage data\"",
+        "target": "message:\"获取用量数据失败\""
+      },
+      {
+        "source": "title:\"Enable Run Everything?\"",
+        "target": "title:\"启用运行所有内容？\""
+      },
+      {
+        "source": "label:\"Enable Run Everything\"",
+        "target": "label:\"启用运行所有内容\""
+      },
+      {
+        "source": "message:\"Unknown error\"",
+        "target": "message:\"未知错误\""
+      },
+      {
+        "source": "title:\"Unsupported Model\"",
+        "target": "title:\"不支持的模型\""
+      },
+      {
+        "source": "title:\"Connection stalled\"",
+        "target": "title:\"连接停滞\""
+      },
+      {
+        "source": "title:\"Connection failed\"",
+        "target": "title:\"连接失败\""
+      },
+      {
+        "source": "message:\"Invalid UriComponents\"",
+        "target": "message:\"无效的 UriComponents\""
+      },
+      {
+        "source": "description:\"Clear the conversation and start fresh\"",
+        "target": "description:\"清空对话并重新开始\""
+      },
+      {
+        "source": "description:\"Summarize the conversation\"",
+        "target": "description:\"总结对话\""
+      },
+      {
+        "source": "action:\"Started to-do\"",
+        "target": "action:\"已开始待办\""
+      },
+      {
+        "source": "action:`Started ${r.length} to-dos`",
+        "target": "action:`已开始 ${r.length} 个待办`"
+      },
+      {
+        "source": "action:\"Cancelled to-do\"",
+        "target": "action:\"已取消待办\""
+      },
+      {
+        "source": "action:`Cancelled ${a.length} to-dos`",
+        "target": "action:`已取消 ${a.length} 个待办`"
+      },
+      {
+        "source": "action:\"Browser tabs\"",
+        "target": "action:\"浏览器标签页\""
+      },
+      {
+        "source": "action:\"Selected option\"",
+        "target": "action:\"已选择选项\""
+      },
+      {
+        "source": "action:\"Opened new tab\"",
+        "target": "action:\"已打开新标签页\""
+      },
+      {
+        "source": "action:\"Installed browser\"",
+        "target": "action:\"已安装浏览器\""
+      },
+      {
+        "source": "action:\"Closed browser\"",
+        "target": "action:\"已关闭浏览器\""
+      },
+      {
+        "source": "action:\"Started CPU profiling\"",
+        "target": "action:\"已开始 CPU 性能分析\""
+      },
+      {
+        "source": "action:\"Stopped CPU profiling\"",
+        "target": "action:\"已停止 CPU 性能分析\""
+      },
+      {
+        "source": "action:\"Checked console logs\"",
+        "target": "action:\"已检查控制台日志\""
+      },
+      {
+        "source": "action:\"Web Search\"",
+        "target": "action:\"网页搜索\""
+      },
+      {
+        "source": "action:\"Read Todos\"",
+        "target": "action:\"读取待办\""
+      },
+      {
+        "source": "action:\"Loading diagram\"",
+        "target": "action:\"正在加载图表\""
+      },
+      {
+        "source": "title:\"Chat history\"",
+        "target": "title:\"聊天历史\""
+      },
+      {
+        "source": "title:\"Files\"",
+        "target": "title:\"文件\""
+      },
+      {
+        "source": "title:\"Code selections\"",
+        "target": "title:\"代码选择\""
+      },
+      {
+        "source": "label:\"Open Existing\"",
+        "target": "label:\"打开现有项\""
+      },
+      {
+        "source": "label:\"Open Rule\"",
+        "target": "label:\"打开规则\""
+      },
+      {
+        "source": "label:\"Open as Editor\"",
+        "target": "label:\"作为编辑器打开\""
+      },
+      {
+        "source": "tooltip:\"Open as Editor\"",
+        "target": "tooltip:\"作为编辑器打开\""
+      },
+      {
+        "source": "label:\"Open as Pane\"",
+        "target": "label:\"作为面板打开\""
+      },
+      {
+        "source": "tooltip:\"Open as Pane\"",
+        "target": "tooltip:\"作为面板打开\""
+      },
+      {
+        "source": "label:\"Open Composer Settings\"",
+        "target": "label:\"打开 Composer 设置\""
+      },
+      {
+        "source": "tooltip:\"Open Composer Settings\"",
+        "target": "tooltip:\"打开 Composer 设置\""
+      },
+      {
+        "source": "title:\"How did the agent do?\"",
+        "target": "title:\"智能体表现如何？\""
+      },
+      {
+        "source": "negativeTitle:\"What went wrong?\"",
+        "target": "negativeTitle:\"哪里出了问题？\""
+      },
+      {
+        "source": "name:\"Open Browser\"",
+        "target": "name:\"打开浏览器\""
+      },
+      {
+        "source": "description:\"Open a browser for web interactions\"",
+        "target": "description:\"打开浏览器进行网页交互\""
+      },
+      {
+        "source": "name:\"Agent Review\"",
+        "target": "name:\"智能体审查\""
+      },
+      {
+        "source": "description:\"Request an agent to review your code\"",
+        "target": "description:\"请求智能体审查你的代码\""
+      },
+      {
+        "source": "description:\"Install a plugin from the marketplace\"",
+        "target": "description:\"从市场安装插件\""
+      },
+      {
+        "source": "description:\"Uninstall an installed plugin\"",
+        "target": "description:\"卸载已安装的插件\""
+      },
+      {
+        "source": "children:\"Browse and install plugins from the Cursor marketplace. Type a search query after the command to find plugins.\"",
+        "target": "children:\"从 Cursor 市场浏览并安装插件。在命令后输入搜索词以查找插件。\""
+      },
+      {
+        "source": "children:\"Remove an installed plugin. Type a search query after the command to find plugins to uninstall.\"",
+        "target": "children:\"移除已安装的插件。在命令后输入搜索词以查找要卸载的插件。\""
+      },
+      {
+        "source": "children:g?\"No servers match your search\":\"No MCP servers available\"",
+        "target": "children:g?\"没有服务器匹配你的搜索\":\"没有可用的 MCP 服务器\""
+      },
+      {
+        "source": "label:\"Models\"",
+        "target": "label:\"模型\""
+      },
+      {
+        "source": "children:\"Models\"",
+        "target": "children:\"模型\""
+      },
+      {
+        "source": "\"aria-label\":\"Model selection\"",
+        "target": "\"aria-label\":\"模型选择\""
+      },
+      {
+        "source": "label:\"Skills\"",
+        "target": "label:\"技能\""
+      },
+      {
+        "source": "children:\"Skills\"",
+        "target": "children:\"技能\""
+      },
+      {
+        "source": "message:\"Unable to get code selection\"",
+        "target": "message:\"无法获取代码选择\""
+      },
+      {
+        "source": "description:\"Add Symbol to Current Chat...\"",
+        "target": "description:\"将符号添加到当前聊天...\""
+      },
+      {
+        "source": "description:\"Add Symbol to New Chat...\"",
+        "target": "description:\"将符号添加到新聊天...\""
+      },
+      {
+        "source": "description:\"Create a cursor rule from the highlighted text\"",
+        "target": "description:\"从高亮文本创建 Cursor 规则\""
+      },
+      {
+        "source": "message:`Created manual rule '${y}' in .cursor/rules. Attach it explicitly when you want it applied.`",
+        "target": "message:`已在 .cursor/rules 中创建手动规则 '${y}'。需要应用时请显式附加它。`"
+      },
+      {
+        "source": "\"aria-label\":\"Agent actions\"",
+        "target": "\"aria-label\":\"智能体操作\""
+      },
+      {
+        "source": "children:\"New Agent in Project\"",
+        "target": "children:\"在项目中新建智能体\""
+      },
+      {
+        "source": "children:k?\"Unpin\":\"Pin\"",
+        "target": "children:k?\"取消固定\":\"固定\""
+      },
+      {
+        "source": "children:\"Rename\"",
+        "target": "children:\"重命名\""
+      },
+      {
+        "source": "children:me.hasUnreadMessages?\"Mark as Read\":\"Mark as Unread\"",
+        "target": "children:me.hasUnreadMessages?\"标记为已读\":\"标记为未读\""
+      },
+      {
+        "source": "children:\"Move to\"",
+        "target": "children:\"移动到\""
+      },
+      {
+        "source": "\"aria-label\":\"Move agent\"",
+        "target": "\"aria-label\":\"移动智能体\""
+      },
+      {
+        "source": "children:\"Fork Chat\"",
+        "target": "children:\"派生聊天\""
+      },
+      {
+        "source": "children:\"Export Chat\"",
+        "target": "children:\"导出聊天\""
+      },
+      {
+        "source": "children:\"Open in Web\"",
+        "target": "children:\"在网页中打开\""
+      },
+      {
+        "source": "children:\"Unarchive\"",
+        "target": "children:\"取消归档\""
+      },
+      {
+        "source": "children:\"Open in New Window\"",
+        "target": "children:\"在新窗口中打开\""
+      },
+      {
+        "source": "yn=rn?\"放弃\":\"Archive\"",
+        "target": "yn=rn?\"放弃\":\"归档\""
+      },
+      {
+        "source": "\"aria-label\":\"Unarchive\"",
+        "target": "\"aria-label\":\"取消归档\""
+      },
+      {
+        "source": "label:\"Mark as Read\"",
+        "target": "label:\"标记为已读\""
+      },
+      {
+        "source": "tooltip:\"Mark chat as read\"",
+        "target": "tooltip:\"将聊天标记为已读\""
+      },
+      {
+        "source": "label:\"Mark as Unread\"",
+        "target": "label:\"标记为未读\""
+      },
+      {
+        "source": "tooltip:\"Mark chat as unread\"",
+        "target": "tooltip:\"将聊天标记为未读\""
+      },
+      {
+        "source": "label:\"Fork Chat\"",
+        "target": "label:\"派生聊天\""
+      },
+      {
+        "source": "tooltip:\"Fork this chat\"",
+        "target": "tooltip:\"派生此聊天\""
+      },
+      {
+        "source": "label:\"Open in New Tab\"",
+        "target": "label:\"在新标签页中打开\""
+      },
+      {
+        "source": "title:{value:\"Fork Chat\",original:\"Fork Chat\"}",
+        "target": "title:{value:\"派生聊天\",original:\"Fork Chat\"}"
+      },
+      {
+        "source": "title:\"Go Back\"",
+        "target": "title:\"返回\""
+      },
+      {
+        "source": "title:\"Go Forward\"",
+        "target": "title:\"前进\""
+      },
+      {
+        "source": "label:\"In Progress\"",
+        "target": "label:\"进行中\""
+      },
+      {
+        "source": "children:\"No matching options.\"",
+        "target": "children:\"没有匹配选项。\""
+      },
+      {
+        "source": "children:\"Select\"",
+        "target": "children:\"选择\""
+      },
+      {
+        "source": "children:\"NEW\"",
+        "target": "children:\"新\""
+      },
+      {
+        "source": ">Browser Automation<",
+        "target": ">浏览器自动化<",
+        "optional": true
+      },
+      {
+        "source": "\"Checking status...\"",
+        "target": "\"正在检查状态...\"",
+        "optional": true
+      },
+      {
+        "source": "\"Connected to Browser Tab\"",
+        "target": "\"已连接到浏览器标签页\"",
+        "optional": true
+      },
+      {
+        "source": "\"Browser automation disabled by admin\"",
+        "target": "\"浏览器自动化已被管理员禁用\"",
+        "optional": true
+      },
+      {
+        "source": "\"Browser automation disabled\"",
+        "target": "\"浏览器自动化已禁用\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Browser Tab\"",
+        "target": "label:\"浏览器标签页\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Show Localhost Links in Browser\"",
+        "target": "label:\"在浏览器中显示本地主机链接\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Automatically open localhost links in the Browser Tab\"",
+        "target": "description:\"自动在浏览器标签页中打开 localhost 链接\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Open Web Links in Browser\"",
+        "target": "label:\"在浏览器中打开网页链接\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Automatically open http and https links in the Browser Tab\"",
+        "target": "description:\"自动在浏览器标签页中打开 http 和 https 链接\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Home\"",
+        "target": "label:\"主页\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Cloud\"",
+        "target": "label:\"云端\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Editor Window\"",
+        "target": "children:\"编辑器窗口\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Editor Window\"",
+        "target": "\"aria-label\":\"编辑器窗口\"",
+        "optional": true
+      },
+      {
+        "source": "Ht(4811,\"Open or Focus Editor Window\")",
+        "target": "Ht(4811,\"打开或聚焦编辑器窗口\")",
+        "optional": true
+      },
+      {
+        "source": "description:\"Open or focus the editor (IDE) window from the Agents window.\"",
+        "target": "description:\"从 Agents 窗口打开或聚焦编辑器（IDE）窗口。\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Plan New Idea\"",
+        "target": "label:\"规划新想法\"",
+        "optional": true
+      },
+      {
+        "source": "wg.label===\"Plan New Idea\"",
+        "target": "wg.label===\"规划新想法\"",
+        "optional": true
+      },
+      {
+        "source": "$h.label!==\"Plan New Idea\"",
+        "target": "$h.label!==\"规划新想法\"",
+        "optional": true
+      },
+      {
+        "source": "\"Plan, Build, / for commands, @ for context\"",
+        "target": "\"规划、构建，/ 使用命令，@ 添加上下文\"",
+        "optional": true
+      },
+      {
+        "source": "\"Drop here to attach...\"",
+        "target": "\"拖到此处以附加...\"",
+        "optional": true
+      },
+      {
+        "source": "I.inlineLabel??(MP(d)?\"Cloud\":I.icon===void 0?\"Local\":I.tooltip)",
+        "target": "I.inlineLabel??(MP(d)?\"云端\":I.icon===void 0?\"本地\":I.tooltip)",
+        "optional": true
+      },
+      {
+        "source": "return[Xe,Xe||nt||\"Home\"]",
+        "target": "return[Xe,Xe||nt||\"主页\"]",
+        "optional": true
+      },
+      {
+        "source": "{title:\"Local\",icon:et.laptop,id:\"send-mode-local\"",
+        "target": "{title:\"本地\",icon:et.laptop,id:\"send-mode-local\"",
+        "optional": true
+      },
+      {
+        "source": "{title:\"Cloud\",icon:et.cloud,id:\"send-mode-cloud\"",
+        "target": "{title:\"云端\",icon:et.cloud,id:\"send-mode-cloud\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Cloud\",color:\"cyan\",icon:\"cloud\",title:\"Target environment: cloud\"",
+        "target": "label:\"云端\",color:\"cyan\",icon:\"cloud\",title:\"目标环境：云端\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Local\",color:\"green\",icon:\"laptop\",title:\"Target environment: local\"",
+        "target": "label:\"本地\",color:\"green\",icon:\"laptop\",title:\"目标环境：本地\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Tools\"",
+        "target": "title:\"工具\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Installed MCP Servers\"",
+        "target": "title:\"已安装的 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "Q()?.label??\"Workspace\"",
+        "target": "Q()?.label??\"工作区\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Servers available in this workspace.\"",
+        "target": "description:\"此工作区中可用的服务器。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No User MCP Tools\"",
+        "target": "title:\"没有用户 MCP 工具\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Add a custom MCP tool in your user MCP config.\"",
+        "target": "description:\"在你的用户 MCP 配置中添加自定义 MCP 工具。\"",
+        "optional": true
+      },
+      {
+        "source": "actionTitle:\"Add Custom MCP\"",
+        "target": "actionTitle:\"添加自定义 MCP\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Team MCP Servers\"",
+        "target": "title:\"没有团队 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Team MCP 服务器\"",
+        "target": "title:\"没有团队 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Team admins can configure shared MCP servers in the dashboard.\"",
+        "target": "description:\"团队管理员可以在仪表板中配置共享 MCP 服务器。\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Configure MCP servers in the dashboard to make them available in Cursor on desktop and in the cloud.\"",
+        "target": "description:\"在仪表板中配置 MCP 服务器，使其可在桌面端和云端 Cursor 中使用。\"",
+        "optional": true
+      },
+      {
+        "source": "actionTitle:\"Configure Team MCP Servers\"",
+        "target": "actionTitle:\"配置团队 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "actionTitle:\"Configure Team MCP 服务器\"",
+        "target": "actionTitle:\"配置团队 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Manage\"",
+        "target": "children:\"管理\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Manage\"",
+        "target": "label:\"管理\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Manage\"",
+        "target": "title:\"管理\"",
+        "optional": true
+      },
+      {
+        "source": "Tt(_Bb,{title:\"Worktrees\"",
+        "target": "Tt(_Bb,{title:\"工作树\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Cursor periodically removes old worktrees to free disk space. Tune how aggressively cleanup runs.\"",
+        "target": "description:\"Cursor 会定期移除旧工作树以释放磁盘空间。可调整清理策略的激进程度。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Cleanup\"",
+        "target": "title:\"清理\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Maximum number of Cursor-managed worktrees to retain across all workspaces. Older worktrees are removed first.\"",
+        "target": "description:\"在所有工作区中保留的 Cursor 管理工作树最大数量。较旧的工作树会优先移除。\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Max worktrees\"",
+        "target": "label:\"最大工作树数\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Maximum worktree count\"",
+        "target": "\"aria-label\":\"最大工作树数量\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Maximum total size in GB across all Cursor-managed worktrees. Set to 0 to disable the size limit.\"",
+        "target": "description:\"所有 Cursor 管理工作树的最大总大小（GB）。设为 0 可禁用大小限制。\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Max total size (GB)\"",
+        "target": "label:\"最大总大小 (GB)\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Maximum total worktree size in gigabytes\"",
+        "target": "\"aria-label\":\"最大工作树总大小（GB）\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Cursor-managed worktrees\"",
+        "target": "title:\"Cursor 管理的工作树\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No Cursor-managed worktrees on this machine.\"",
+        "target": "children:\"此机器上没有 Cursor 管理的工作树。\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Cursor-managed worktrees grouped by source repository\"",
+        "target": "\"aria-label\":\"按源仓库分组的 Cursor 管理工作树\"",
+        "optional": true
+      },
+      {
+        "source": "return`${d.length} worktree${d.length===1?\"\":\"s\"}`",
+        "target": "return`${d.length} 个工作树`",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassFileTreeCreateFile\",\"New File\")",
+        "target": "A(\"glassFileTreeCreateFile\",\"新建文件\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassFileTreeCreateFolder\",\"New Folder\")",
+        "target": "A(\"glassFileTreeCreateFolder\",\"新建文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassFileTreeCreateFileLabel\",\"New File\")",
+        "target": "A(\"glassFileTreeCreateFileLabel\",\"新建文件\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassFileTreeCreateFolderLabel\",\"New Folder\")",
+        "target": "A(\"glassFileTreeCreateFolderLabel\",\"新建文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"copyPath\",\"Copy Path\")",
+        "target": "A(\"copyPath\",\"复制路径\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassCopyRelativePath\",\"Copy Relative Path\")",
+        "target": "A(\"glassCopyRelativePath\",\"复制相对路径\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassRevealInWindows\",\"Reveal in File Explorer\")",
+        "target": "A(\"glassRevealInWindows\",\"在文件资源管理器中显示\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassRevealInMac\",\"Reveal in Finder\")",
+        "target": "A(\"glassRevealInMac\",\"在 Finder 中显示\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassOpenContainer\",\"Open Containing Folder\")",
+        "target": "A(\"glassOpenContainer\",\"打开所在文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassFileTreeRename\",\"Rename\")",
+        "target": "A(\"glassFileTreeRename\",\"重命名\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"rename\",\"Rename\")",
+        "target": "A(\"rename\",\"重命名\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"glassDelete\",\"Delete\")",
+        "target": "A(\"glassDelete\",\"删除\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"delete\",\"Delete\")",
+        "target": "A(\"delete\",\"删除\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"cut\",\"Cut\")",
+        "target": "A(\"cut\",\"剪切\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"copy\",\"Copy\")",
+        "target": "A(\"copy\",\"复制\")",
+        "optional": true
+      },
+      {
+        "source": "A(\"paste\",\"Paste\")",
+        "target": "A(\"paste\",\"粘贴\")",
+        "optional": true
+      },
+      {
+        "source": "children:\"Open Editor Window\"",
+        "target": "children:\"打开编辑器窗口\"",
+        "optional": true
+      },
+      {
+        "source": "Ht(6034,\"New Browser Tab\")",
+        "target": "Ht(6034,\"新建浏览器\")",
+        "optional": true
+      },
+      {
+        "source": "Ht(3234,\"Open Folder...\")",
+        "target": "Ht(3234,\"打开文件夹...\")",
+        "optional": true
+      },
+      {
+        "source": "Ht(3235,\"Open Folder...\")",
+        "target": "Ht(3235,\"打开文件夹...\")",
+        "optional": true
+      },
+      {
+        "source": "title:\"New Agent\"",
+        "target": "title:\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"New Agent\"",
+        "target": "label:\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"New Agent\"",
+        "target": "\"aria-label\":\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Open Folder\"",
+        "target": "title:\"打开文件夹\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"New Terminal\"",
+        "target": "title:\"新建终端\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"New Terminal\"",
+        "target": "\"aria-label\":\"新建终端\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"New Browser\"",
+        "target": "title:\"新建浏览器\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Open Editor Window\"",
+        "target": "title:\"打开编辑器窗口\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Quit\"",
+        "target": "title:\"退出\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Exit\"",
+        "target": "title:\"退出\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"New Folder\"",
+        "target": "children:\"新建文件夹\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Copy Relative Path\"",
+        "target": "children:\"复制相对路径\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Copy Path\"",
+        "target": "children:\"复制路径\"",
+        "optional": true
+      },
+      {
+        "source": "Ht(8157,\"Reveal in File Explorer\")",
+        "target": "Ht(8157,\"在文件资源管理器中显示\")",
+        "optional": true
+      },
+      {
+        "source": "Ht(8495,\"Reveal in File Explorer\")",
+        "target": "Ht(8495,\"在文件资源管理器中显示\")",
+        "optional": true
+      },
+      {
+        "source": "label:\"Reveal in File Explorer\"",
+        "target": "label:\"在文件资源管理器中显示\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"New File\"",
+        "target": "title:\"新建文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"New File\"",
+        "target": "\"aria-label\":\"新建文件\"",
+        "optional": true
+      },
+      {
+        "source": "tab:\"Tab\"",
+        "target": "tab:\"Tab 补全\"",
+        "optional": true
+      },
+      {
+        "source": "function GTb(){return Z(RTe,{title:\"Tab\"",
+        "target": "function GTb(){return Z(RTe,{title:\"Tab 补全\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"CPP is temporarily disabled\"",
+        "target": "children:\"CPP 暂时被禁用\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Auto-imports are temporarily disabled\"",
+        "target": "children:\"自动导入暂时被禁用\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"CPP and auto-imports are temporarily disabled\"",
+        "target": "children:\"CPP 和自动导入暂时被禁用\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Cursor Tab\",description:\"Context-aware, multi-line suggestions around your cursor based on recent edits\"",
+        "target": "label:\"Cursor Tab 补全\",description:\"基于最近编辑，在光标附近提供上下文感知的多行建议\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Partial Accepts\"",
+        "target": "label:\"部分接受\"",
+        "optional": true
+      },
+      {
+        "source": "return`Accept the next word of a suggestion via ${n.keybindingService.lookupKeybinding(\"editor.action.inlineSuggest.acceptNextWord\")?.getLabel()??\"Alt+]\"}`",
+        "target": "return`通过 ${n.keybindingService.lookupKeybinding(\"editor.action.inlineSuggest.acceptNextWord\")?.getLabel()??\"Alt+]\"} 接受建议的下一个词`",
+        "optional": true
+      },
+      {
+        "source": "text:\"Keybinding: editor.action.inlineSuggest.acceptNextWord\"",
+        "target": "text:\"快捷键：editor.action.inlineSuggest.acceptNextWord\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Suggestions While Commenting\",description:\"Allow Tab to trigger while in a comment region\"",
+        "target": "label:\"注释中显示建议\",description:\"允许在注释区域触发 Tab 补全\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Whitespace-Only Suggestions\",description:\"Suggest edits like new lines and indentation that modify whitespace only\"",
+        "target": "label:\"仅空白变更建议\",description:\"建议仅修改空白的编辑，例如换行和缩进\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Imports\",description:`Automatically import necessary modules for ${r}`",
+        "target": "label:\"导入\",description:`自动为 ${r} 导入必要模块`",
+        "optional": true
+      },
+      {
+        "source": "\"Auto Import for Python\"",
+        "target": "\"Python 自动导入\"",
+        "optional": true
+      },
+      {
+        "source": "text:\"BETA\"",
+        "target": "text:\"测试版\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Enable auto import for Python. This is a beta feature.\"",
+        "target": "description:\"启用 Python 自动导入。这是测试版功能。\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Ignored Files\",description:\"Glob patterns for files where Cursor Tab will not suggest\"",
+        "target": "label:\"忽略的文件\",description:\"Cursor Tab 不提供建议的文件 Glob 模式\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Preferences\"",
+        "target": "title:\"偏好设置\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Editor Settings\",description:\"Configure font, formatting, minimap and more\"",
+        "target": "label:\"编辑器设置\",description:\"配置字体、格式化、小地图等\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Keyboard Shortcuts\",description:\"Configure keyboard shortcuts\"",
+        "target": "label:\"键盘快捷键\",description:\"配置键盘快捷键\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Import Settings from VS Code\",description:\"Import settings, extensions, and keybindings from VS Code\"",
+        "target": "label:\"从 VS Code 导入设置\",description:\"从 VS Code 导入设置、扩展和键绑定\"",
+        "optional": true
+      },
+      {
+        "source": "fr(()=>!!S())()?\"Success!\":g()?\"Importing\":\"Import\"",
+        "target": "fr(()=>!!S())()?\"成功！\":g()?\"正在导入\":\"导入\"",
+        "optional": true
+      },
+      {
+        "source": "IDS=je(\"<div>Are you sure? This replaces your settings and extensions with your vscode ones. This cannot be undone.\")",
+        "target": "IDS=je(\"<div>确定吗？这会用 VS Code 的设置和扩展替换当前内容，且无法撤销。\")",
+        "optional": true
+      },
+      {
+        "source": "title:\"Cancel\"",
+        "target": "title:\"取消\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Confirm\"",
+        "target": "title:\"确认\"",
+        "optional": true
+      },
+      {
+        "source": "n.notificationService.info(\"VS Code import completed!\")",
+        "target": "n.notificationService.info(\"VS Code 导入完成！\")",
+        "optional": true
+      },
+      {
+        "source": "n.notificationService.error(\"Error importing extensions, please try again.\")",
+        "target": "n.notificationService.error(\"导入扩展时出错，请重试。\")",
+        "optional": true
+      },
+      {
+        "source": "label:'Reset \\\"Don\\\\u2019t Ask Again\\\" Dialogs'",
+        "target": "label:'重置“不要再询问”对话框'",
+        "optional": true
+      },
+      {
+        "source": "description:\"See warnings and tips that you\\\\u2019ve hidden\"",
+        "target": "description:\"查看你已隐藏的警告和提示\"",
+        "optional": true
+      },
+      {
+        "source": "r()?\"Hide\":\"Show\"",
+        "target": "r()?\"隐藏\":\"显示\"",
+        "optional": true
+      },
+      {
+        "source": ">Window Layout<",
+        "target": ">窗口布局<",
+        "optional": true
+      },
+      {
+        "source": ">Switch between Agent and Editor default layouts<",
+        "target": ">在智能体和编辑器默认布局之间切换<",
+        "optional": true
+      },
+      {
+        "source": "<span class=layout-picker-segmented__label>Agent</span>",
+        "target": "<span class=layout-picker-segmented__label>智能体</span>",
+        "optional": true
+      },
+      {
+        "source": "<span class=layout-picker-segmented__label>Editor</span>",
+        "target": "<span class=layout-picker-segmented__label>编辑器</span>",
+        "optional": true
+      },
+      {
+        "source": "dDS=[{id:\"agent\",label:\"Agent\"},{id:\"editor\",label:\"Editor\"}]",
+        "target": "dDS=[{id:\"agent\",label:\"智能体\"},{id:\"editor\",label:\"编辑器\"}]",
+        "optional": true
+      },
+      {
+        "source": "origLabel:\"Window Layout\"",
+        "target": "origLabel:\"窗口布局\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Layout\"",
+        "target": "title:\"布局\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Conversation Density\",description:\"Choose how much detail Agent tool calls show in the conversation\"",
+        "target": "label:\"对话密度\",description:\"选择智能体工具调用在对话中显示的详细程度\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Title Bar\",description:\"Show title bar in agent layout\"",
+        "target": "label:\"标题栏\",description:\"在智能体布局中显示标题栏\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Status Bar\",description:\"Show status bar at the bottom of the window\"",
+        "target": "label:\"状态栏\",description:\"在窗口底部显示状态栏\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Review Control Location\",description:\"Show inline diff review controls in top level breadcrumbs or floating island\"",
+        "target": "label:\"审查控件位置\",description:\"在顶层面包屑或浮动岛中显示内联差异审查控件\"",
+        "optional": true
+      },
+      {
+        "source": "{id:\"breadcrumb\",label:\"Breadcrumb\"},{id:\"island\",label:\"Island\"}",
+        "target": "{id:\"breadcrumb\",label:\"面包屑\"},{id:\"island\",label:\"浮动岛\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Auto-hide editor when empty\",description:\"When all editors are closed, hide the editor area and maximize chat\"",
+        "target": "label:\"空编辑器时自动隐藏\",description:\"当所有编辑器关闭时，隐藏编辑器区域并最大化聊天\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Open chat as editor tabs\"",
+        "target": "label:\"以编辑器标签页打开聊天\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Show chats as editor tabs inside the chat area instead of the legacy stacked view\"",
+        "target": "description:\"在聊天区域内将聊天显示为编辑器标签页，而不是旧版堆叠视图\"",
+        "optional": true
+      },
+      {
+        "source": "Ye=\"Open chat as editor tabs is unavailable while non-chat content is placed in the Secondary Side Bar.\"",
+        "target": "Ye=\"当非聊天内容位于辅助侧边栏时，无法以编辑器标签页打开聊天。\"",
+        "optional": true
+      },
+      {
+        "source": "mrS=n=>n.isGlass?\"Indexing\":\"Indexing & Docs\"",
+        "target": "mrS=n=>n.isGlass?\"索引\":\"索引与文档\"",
+        "optional": true
+      },
+      {
+        "source": "title:e?\"Indexing\":\"Indexing & Docs\"",
+        "target": "title:e?\"索引\":\"索引与文档\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Codebase\"",
+        "target": "title:\"代码库\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Codebase Indexing\"",
+        "target": "label:\"代码库索引\"",
+        "optional": true
+      },
+      {
+        "source": "helpTooltipLabel:\"Learn about codebase indexing\"",
+        "target": "helpTooltipLabel:\"了解代码库索引\"",
+        "optional": true
+      },
+      {
+        "source": "\"Embed codebase for improved contextual understanding and knowledge. Embeddings and metadata are stored in the\"",
+        "target": "\"嵌入代码库以提升上下文理解和知识检索。嵌入和元数据存储在\"",
+        "optional": true
+      },
+      {
+        "source": "DPS=je(\"<span>cloud\")",
+        "target": "DPS=je(\"<span>云端\")",
+        "optional": true
+      },
+      {
+        "source": "\", but all code is stored locally.\"",
+        "target": "\"，但所有代码都存储在本地。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Compute index\"",
+        "target": "title:\"计算索引\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Retry\"",
+        "target": "title:\"重试\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Configure Ignored Files\"",
+        "target": "title:\"配置忽略文件\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Index New Folders\"",
+        "target": "label:\"索引新文件夹\"",
+        "optional": true
+      },
+      {
+        "source": "\"Automatically index any new folders with fewer than\"",
+        "target": "\"自动索引文件数少于\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Ignore Files in .cursorignore\"",
+        "target": "label:\"忽略 .cursorignore 中的文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"Files to exclude from indexing in addition to .gitignore.\"",
+        "target": "\"除 .gitignore 外，还要从索引中排除的文件。\"",
+        "optional": true
+      },
+      {
+        "source": "MPS=je(\"<span class=settings__item_link>View included files.\")",
+        "target": "MPS=je(\"<span class=settings__item_link>查看包含的文件。\")",
+        "optional": true
+      },
+      {
+        "source": "title:\"Edit\"",
+        "target": "title:\"编辑\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Docs\",description:\"Crawl and index custom resources and developer docs\"",
+        "target": "title:\"文档\",description:\"抓取并索引自定义资源和开发者文档\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Add Doc\"",
+        "target": "children:\"添加文档\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Docs Added\"",
+        "target": "title:\"尚未添加文档\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Add documentation to use as context. You can also use @Add in Chat or while editing to add a doc.\"",
+        "target": "description:\"添加文档作为上下文。也可以在聊天或编辑时使用 @Add 添加文档。\"",
+        "optional": true
+      },
+      {
+        "source": "actionTitle:\"Add Doc\"",
+        "target": "actionTitle:\"添加文档\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Open in Editor Window\"",
+        "target": "label:\"在编辑器窗口中打开\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Open in Editor Window\"",
+        "target": "title:\"在编辑器窗口中打开\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Mark All as Read\"",
+        "target": "children:\"全部标为已读\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Archive All\"",
+        "target": "children:\"全部归档\"",
+        "optional": true
+      },
+      {
+        "source": "?\"Confirm\":\"Archive All\"",
+        "target": "?\"确认\":\"全部归档\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Remove from Sidebar\"",
+        "target": "children:\"从侧边栏移除\"",
+        "optional": true
+      },
+      {
+        "source": "YDS=je(\"<div class=settings-hooks-section-header><span></span><span>Configured Hooks (<!>)\")",
+        "target": "YDS=je(\"<div class=settings-hooks-section-header><span></span><span>已配置 Hooks（<!>）\")",
+        "optional": true
+      },
+      {
+        "source": "ZDS=je(\"<div class=settings-hooks-empty-state>No hooks configured\")",
+        "target": "ZDS=je(\"<div class=settings-hooks-empty-state>未配置 Hooks\")",
+        "optional": true
+      },
+      {
+        "source": "rPS=je(\"<div class=settings-hooks-empty-state>No hook executions yet\")",
+        "target": "rPS=je(\"<div class=settings-hooks-empty-state>暂无 Hook 执行记录\")",
+        "optional": true
+      },
+      {
+        "source": "title:\"Execution Log\"",
+        "target": "title:\"执行日志\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear log\"",
+        "target": "children:\"清除日志\"",
+        "optional": true
+      },
+      {
+        "source": "hintText:\"Clear logs\"",
+        "target": "hintText:\"清除日志\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear\"",
+        "target": "children:\"清除\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Zoom In\"",
+        "target": "title:\"放大\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Zoom Out\"",
+        "target": "title:\"缩小\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Reset Zoom\"",
+        "target": "title:\"重置缩放\"",
+        "optional": true
+      },
+      {
+        "source": "\"Zoom In\"",
+        "target": "\"放大\"",
+        "optional": true
+      },
+      {
+        "source": "\"Zoom Out\"",
+        "target": "\"缩小\"",
+        "optional": true
+      },
+      {
+        "source": "\"Reset Zoom\"",
+        "target": "\"重置缩放\"",
+        "optional": true
+      },
+      {
+        "source": "aria-label=\"Window Layout\"",
+        "target": "aria-label=\"窗口布局\"",
+        "optional": true
+      },
+      {
+        "source": "Glass Image Preview: Zoom In",
+        "target": "Glass 图片预览：放大",
+        "optional": true
+      },
+      {
+        "source": "Glass Image Preview: Zoom Out",
+        "target": "Glass 图片预览：缩小",
+        "optional": true
+      },
+      {
+        "source": "Glass Image Preview: Reset Zoom",
+        "target": "Glass 图片预览：重置缩放",
+        "optional": true
+      },
+      {
+        "source": "hrS=()=>\"Rules, Skills, Subagents\"",
+        "target": "hrS=()=>\"规则、技能、子智能体\"",
+        "optional": true
+      },
+      {
+        "source": "wrS={...Cfb,rules:\"Rules, Skills, Subagents\"}",
+        "target": "wrS={...Cfb,rules:\"规则、技能、子智能体\"}",
+        "optional": true
+      },
+      {
+        "source": "We=\"Rules, Skills, Subagents\"",
+        "target": "We=\"规则、技能、子智能体\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Provide domain-specific knowledge and workflows for the agent\"",
+        "target": "description:\"为智能体提供特定领域的知识和工作流\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Include third-party Plugins, Skills, and other configs\",description:\"Automatically import agent configs from other tools\"",
+        "target": "label:\"包含第三方插件、技能和其他配置\",description:\"自动从其他工具导入智能体配置\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Rules\",helpTooltipLabel:\"Learn about Rules\",helpLink:\"https://cursor.com/docs/context/rules\",description:\"Use Rules to guide agent behavior, like enforcing best practices or coding standards. Rules can be applied always, by file path, or manually.\"",
+        "target": "title:\"规则\",helpTooltipLabel:\"了解规则\",helpLink:\"https://cursor.com/docs/context/rules\",description:\"使用规则指导智能体行为，例如强制执行最佳实践或编码标准。规则可始终应用、按文件路径应用或手动应用。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Could Not Load Rules\"",
+        "target": "title:\"无法加载规则\"",
+        "optional": true
+      },
+      {
+        "source": "\"Failed to load workspace rules.\"",
+        "target": "\"无法加载工作区规则。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Rules Yet\",description:\"Create rules to guide Agent behavior\"",
+        "target": "title:\"暂无规则\",description:\"创建规则来指导智能体行为\"",
+        "optional": true
+      },
+      {
+        "source": "\"New User Rule\"",
+        "target": "\"新建用户规则\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Project Rule\"",
+        "target": "\"新建项目规则\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Skills\",helpTooltipLabel:\"Learn about Skills\",helpLink:\"https://cursor.com/docs/context/skills\",description:\"Skills are specialized capabilities that help the agent accomplish specific tasks. Skills will be invoked by the agent when relevant or can be triggered manually with / in chat.\"",
+        "target": "title:\"技能\",helpTooltipLabel:\"了解技能\",helpLink:\"https://cursor.com/docs/context/skills\",description:\"技能是帮助智能体完成特定任务的专用能力。相关时智能体会调用技能，也可以在聊天中使用 / 手动触发。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Could Not Load Skills\"",
+        "target": "title:\"无法加载技能\"",
+        "optional": true
+      },
+      {
+        "source": "\"Failed to load workspace skills.\"",
+        "target": "\"无法加载工作区技能。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Skills Yet\",description:\"Skills help the agent accomplish specific tasks\"",
+        "target": "title:\"暂无技能\",description:\"技能可帮助智能体完成特定任务\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Skill\"",
+        "target": "\"新建技能\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Subagents\",helpTooltipLabel:\"Learn about Subagents\",helpLink:\"https://cursor.com/docs/agent/subagents\",description:\"Create specialized agents for complex tasks. Subagents can be invoked by the agent to handle focused work in parallel.\"",
+        "target": "title:\"子智能体\",helpTooltipLabel:\"了解子智能体\",helpLink:\"https://cursor.com/docs/agent/subagents\",description:\"为复杂任务创建专用智能体。智能体可调用子智能体并行处理聚焦工作。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Could Not Load Subagents\"",
+        "target": "title:\"无法加载子智能体\"",
+        "optional": true
+      },
+      {
+        "source": "\"Failed to load workspace subagents.\"",
+        "target": "\"无法加载工作区子智能体。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Subagents Yet\",description:\"Create specialized agents to handle focused tasks\"",
+        "target": "title:\"暂无子智能体\",description:\"创建专用智能体来处理聚焦任务\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Subagent\"",
+        "target": "\"新建子智能体\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Could Not Load Commands\"",
+        "target": "title:\"无法加载命令\"",
+        "optional": true
+      },
+      {
+        "source": "\"Failed to load workspace commands.\"",
+        "target": "\"无法加载工作区命令。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No Commands Yet\",description:\"Create commands to build reusable workflows\"",
+        "target": "title:\"暂无命令\",description:\"创建命令以构建可复用工作流\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Command\"",
+        "target": "\"新建命令\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"User Command\"",
+        "target": "label:\"用户命令\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Project Command\"",
+        "target": "label:\"项目命令\"",
+        "optional": true
+      },
+      {
+        "source": "DHS=je(\"<div>Loading Rules...\")",
+        "target": "DHS=je(\"<div>正在加载规则...\")",
+        "optional": true
+      },
+      {
+        "source": "FBS=je(\"<div>Loading Skills...\")",
+        "target": "FBS=je(\"<div>正在加载技能...\")",
+        "optional": true
+      },
+      {
+        "source": "OBS=je(\"<div>Loading Subagents...\")",
+        "target": "OBS=je(\"<div>正在加载子智能体...\")",
+        "optional": true
+      },
+      {
+        "source": "UBS=je(\"<div>Loading Commands...\")",
+        "target": "UBS=je(\"<div>正在加载命令...\")",
+        "optional": true
+      },
+      {
+        "source": "BBS=je(\"<div>Loading Rules...\")",
+        "target": "BBS=je(\"<div>正在加载规则...\")",
+        "optional": true
+      },
+      {
+        "source": "dXc=je(\"<button class=show-all-rules-button>Show all (<!> more)\")",
+        "target": "dXc=je(\"<button class=show-all-rules-button>显示全部（<!> 个更多）\")",
+        "optional": true
+      },
+      {
+        "source": "hXc=je(\"<button class=show-all-rules-button>Show less\")",
+        "target": "hXc=je(\"<button class=show-all-rules-button>显示更少\")",
+        "optional": true
+      },
+      {
+        "source": "buttonClass:\"add-rule-dropdown\",get buttonProps(){return{variant:\"secondary\",codicon:et.plus}},disableZeroPadding:!0,children:\"New\"",
+        "target": "buttonClass:\"add-rule-dropdown\",get buttonProps(){return{variant:\"secondary\",codicon:et.plus}},disableZeroPadding:!0,children:\"新建\"",
+        "optional": true
+      },
+      {
+        "source": "class:\"add-rule-dropdown\",onClick:()=>n.onSelectNewItem(n.newItems[0].id),children:\"New\"",
+        "target": "class:\"add-rule-dropdown\",onClick:()=>n.onSelectNewItem(n.newItems[0].id),children:\"新建\"",
+        "optional": true
+      },
+      {
+        "source": "get onClick(){return n.onCreateSkill},variant:\"secondary\",get codicon(){return et.plus},children:\"New\"",
+        "target": "get onClick(){return n.onCreateSkill},variant:\"secondary\",get codicon(){return et.plus},children:\"新建\"",
+        "optional": true
+      },
+      {
+        "source": "get onClick(){return n.onCreateSubagent},variant:\"secondary\",get codicon(){return et.plus},children:\"New\"",
+        "target": "get onClick(){return n.onCreateSubagent},variant:\"secondary\",get codicon(){return et.plus},children:\"新建\"",
+        "optional": true
+      },
+      {
+        "source": "const Y=[{id:e7,label:\"All\"},{id:PMe,label:\"User\"}]",
+        "target": "const Y=[{id:e7,label:\"全部\"},{id:PMe,label:\"用户\"}]",
+        "optional": true
+      },
+      {
+        "source": "return[{id:PMe,label:\"User\"},...f().map(Y=>({id:Y.id,label:Y.label})),{id:lst,label:d()}]",
+        "target": "return[{id:PMe,label:\"用户\"},...f().map(Y=>({id:Y.id,label:Y.label})),{id:lst,label:d()}]",
+        "optional": true
+      },
+      {
+        "source": "children:\"Create with Agent\"",
+        "target": "children:\"用智能体创建\"",
+        "optional": true
+      },
+      {
+        "source": "?\"正在保存...\":\"Done\"",
+        "target": "?\"正在保存...\":\"完成\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder=\"Style request, response language, tone...\"",
+        "target": "placeholder=\"风格要求、回复语言、语气...\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Choose how much detail Agent tool calls show in the conversation\",label:\"Conversation Density\"",
+        "target": "description:\"选择对话中显示智能体工具调用的详细程度\",label:\"对话密度\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Choose between light, dark, or high contrast themes\",label:\"Theme\"",
+        "target": "description:\"在浅色、深色或高对比度主题之间选择\",label:\"主题\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Choose a tint color\",label:\"Hue\"",
+        "target": "description:\"选择色调颜色\",label:\"色相\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Control how strongly the tint is applied\",label:\"Intensity\"",
+        "target": "description:\"控制色调应用强度\",label:\"强度\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Replace translucent surfaces with opaque backgrounds\",label:\"Reduce Transparency\"",
+        "target": "description:\"用不透明背景替换半透明界面\",label:\"降低透明度\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Font size for the Cursor user interface\",label:\"UI Font Size\"",
+        "target": "description:\"Cursor 用户界面的字体大小\",label:\"界面字体大小\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Font size for code editors and diffs\",label:\"Code Font Size\"",
+        "target": "description:\"代码编辑器和差异视图的字体大小\",label:\"代码字体大小\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Override the Cursor user interface typeface\",label:\"UI Font Family\"",
+        "target": "description:\"覆盖 Cursor 用户界面字体\",label:\"界面字体\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"System font\"",
+        "target": "placeholder:\"系统字体\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Code Font Family\"",
+        "target": "label:\"代码字体\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"System monospace\"",
+        "target": "placeholder:\"系统等宽字体\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Partially mask your email address in the Cursor user interface\",label:\"Hide Email Address\"",
+        "target": "description:\"在 Cursor 用户界面中部分隐藏你的邮箱地址\",label:\"隐藏邮箱地址\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Appearance\"",
+        "target": "title:\"外观\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Typography\"",
+        "target": "title:\"字体排版\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Add or search model\"",
+        "target": "placeholder:\"添加或搜索模型\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Models\"",
+        "target": "title:\"模型\"",
+        "optional": true
+      },
+      {
+        "source": "\"API Keys\"",
+        "target": "\"API 密钥\"",
+        "optional": true
+      },
+      {
+        "source": "\"OpenAI API Key\"",
+        "target": "\"OpenAI API 密钥\"",
+        "optional": true
+      },
+      {
+        "source": "\"Override OpenAI Base URL\"",
+        "target": "\"覆盖 OpenAI 基础 URL\"",
+        "optional": true
+      },
+      {
+        "source": "\"Anthropic API Key\"",
+        "target": "\"Anthropic API 密钥\"",
+        "optional": true
+      },
+      {
+        "source": "\"Google API Key\"",
+        "target": "\"Google API 密钥\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Enter your Google AI Studio API Key\"",
+        "target": "placeholder:\"输入你的 Google AI Studio API 密钥\"",
+        "optional": true
+      },
+      {
+        "source": "Configure Azure OpenAI to use OpenAI models through your Azure account.",
+        "target": "配置 Azure OpenAI，通过你的 Azure 账户使用 OpenAI 模型。",
+        "optional": true
+      },
+      {
+        "source": "You can put in your OpenAI key to use OpenAI models at cost.",
+        "target": "你可以填入 OpenAI 密钥，以成本价使用 OpenAI 模型。",
+        "optional": true
+      },
+      {
+        "source": "Change the base URL for OpenAI API requests.",
+        "target": "更改 OpenAI API 请求的基础 URL。",
+        "optional": true
+      },
+      {
+        "source": "You can put in your Google AI Studio key to use Google models at-cost.",
+        "target": "你可以填入 Google AI Studio 密钥，以成本价使用 Google 模型。",
+        "optional": true
+      },
+      {
+        "source": "\u003cspan\u003eOn-Demand Usage",
+        "target": "\u003cspan\u003e按需用量",
+        "optional": true
+      },
+      {
+        "source": "label:\"On-Demand\"",
+        "target": "label:\"按需使用\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"On-Demand Spending\"",
+        "target": "label:\"按需支出\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"On-demand spending is currently disabled\"",
+        "target": "description:\"按需支出当前已禁用\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Monthly Limit\",description:\"Set a fixed amount or make it unlimited.\"",
+        "target": "label:\"月度限额\",description:\"设置固定金额或设为无限制。\"",
+        "optional": true
+      },
+      {
+        "source": "\"Disabled\"",
+        "target": "\"已禁用\"",
+        "optional": true
+      },
+      {
+        "source": "\"Fixed\"",
+        "target": "\"固定\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder=my-rule-name",
+        "target": "placeholder=\"规则名称\"",
+        "optional": true
+      },
+      {
+        "source": "var wMb={uncommitted:\"Uncommitted\",unstaged:\"Unstaged\",staged:\"Staged\",branch:\"Branch\"}",
+        "target": "var wMb={uncommitted:\"未提交\",unstaged:\"未暂存\",staged:\"已暂存\",branch:\"分支\"}",
+        "optional": true
+      },
+      {
+        "source": "\"No Local Changes\"",
+        "target": "\"无本地更改\"",
+        "optional": true
+      },
+      {
+        "source": "\"No committed changes\"",
+        "target": "\"没有已提交更改\"",
+        "optional": true
+      },
+      {
+        "source": "`No ${e} Changes`",
+        "target": "`无${e}更改`",
+        "optional": true
+      },
+      {
+        "source": "`${n.fileCount} ${e} ${n.fileCount===1?\"Change\":\"Changes\"}`",
+        "target": "`${n.fileCount} 个${e}更改`",
+        "optional": true
+      },
+      {
+        "source": "return n===\"branch\"?\"All commits\":wMb[n]",
+        "target": "return n===\"branch\"?\"所有提交\":wMb[n]",
+        "optional": true
+      },
+      {
+        "source": "message:\"Use a Git repository to track changes\"",
+        "target": "message:\"使用 Git 仓库跟踪更改\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Initialize Repository\"",
+        "target": "children:\"初始化仓库\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Hard Reload\"",
+        "target": "children:\"强制重新加载\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Copy Current URL\"",
+        "target": "children:\"复制当前 URL\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Show Bookmark Bar\"",
+        "target": "children:\"显示书签栏\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear Browsing History\"",
+        "target": "children:\"清除浏览历史\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear Cookies\"",
+        "target": "children:\"清除 Cookie\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear Cache\"",
+        "target": "children:\"清除缓存\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Clear Accepted Certificates\"",
+        "target": "children:\"清除已接受的证书\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Take Screenshot\"",
+        "target": "children:\"截取屏幕截图\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Capture Area Screenshot\"",
+        "target": "children:\"截取区域截图\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No favorites or history yet.\"",
+        "target": "children:\"暂无收藏或历史记录。\"",
+        "optional": true
+      },
+      {
+        "source": "'No matches for \"'",
+        "target": "'没有匹配 \"'",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Search or enter URL\"",
+        "target": "\"aria-label\":\"搜索或输入 URL\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Search or enter URL\"",
+        "target": "placeholder:\"搜索或输入 URL\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Search\",ref:m,spellCheck:!1,type:\"text\",value:y",
+        "target": "placeholder:\"搜索\",ref:m,spellCheck:!1,type:\"text\",value:y",
+        "optional": true
+      },
+      {
+        "source": "title:\"Hard Reload Browser Tab\"",
+        "target": "title:\"强制重新加载浏览器标签页\"",
+        "optional": true
+      },
+      {
+        "source": "history:{title:\"Clear Browsing History\",description:\"This will remove all browsing history entries.\"}",
+        "target": "history:{title:\"清除浏览历史\",description:\"这将移除所有浏览历史记录。\"}",
+        "optional": true
+      },
+      {
+        "source": "cookies:{title:\"Clear Cookies\",description:\"This will remove all cookies. You may be signed out of websites.\"}",
+        "target": "cookies:{title:\"清除 Cookie\",description:\"这将移除所有 Cookie。你可能会退出网站登录。\"}",
+        "optional": true
+      },
+      {
+        "source": "cache:{title:\"Clear Cache\",description:\"This will clear the browser cache.\"}",
+        "target": "cache:{title:\"清除缓存\",description:\"这将清除浏览器缓存。\"}",
+        "optional": true
+      },
+      {
+        "source": "certificates:{title:\"Clear Accepted Certificates\",description:\"This will remove all manually accepted certificates.\"}",
+        "target": "certificates:{title:\"清除已接受的证书\",description:\"这将移除所有手动接受的证书。\"}",
+        "optional": true
+      },
+      {
+        "source": "children:\"Search or enter URL\"",
+        "target": "children:\"搜索或输入 URL\"",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "file": "out/main.js",
+    "description": "Cursor 主进程菜单与托盘硬编码文案",
+    "replacements": [
+      {
+        "source": "label:\"New Agent\"",
+        "target": "label:\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Open Cursor\"",
+        "target": "label:\"打开 Cursor\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Quit\"",
+        "target": "label:\"退出\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Exit\"",
+        "target": "label:\"退出\"",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "file": "out/nls.messages.json",
+    "description": "Cursor 原生菜单和命令标题 NLS 兜底文案",
+    "replacements": [
+      {
+        "source": "\"File\"",
+        "target": "\"文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"Edit\"",
+        "target": "\"编辑\"",
+        "optional": true
+      },
+      {
+        "source": "\"View\"",
+        "target": "\"查看\"",
+        "optional": true
+      },
+      {
+        "source": "\"Help\"",
+        "target": "\"帮助\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Agent\"",
+        "target": "\"新建智能体\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open Folder\"",
+        "target": "\"打开文件夹\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open Folder...\"",
+        "target": "\"打开文件夹...\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Terminal\"",
+        "target": "\"新建终端\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Browser\"",
+        "target": "\"新建浏览器\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Browser Tab\"",
+        "target": "\"新建浏览器\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open Editor Window\"",
+        "target": "\"打开编辑器窗口\"",
+        "optional": true
+      },
+      {
+        "source": "\"Exit\"",
+        "target": "\"退出\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&File\"",
+        "target": "\"文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&Edit\"",
+        "target": "\"编辑\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&View\"",
+        "target": "\"查看\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&Help\"",
+        "target": "\"帮助\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&New Terminal\"",
+        "target": "\"新建终端\"",
+        "optional": true
+      },
+      {
+        "source": "\"&&Exit\"",
+        "target": "\"退出\"",
+        "optional": true
+      },
+      {
+        "source": "\"New File...\"",
+        "target": "\"新建文件...\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Folder...\"",
+        "target": "\"新建文件夹...\"",
+        "optional": true
+      },
+      {
+        "source": "\"Copy Path\"",
+        "target": "\"复制路径\"",
+        "optional": true
+      },
+      {
+        "source": "\"Copy Relative Path\"",
+        "target": "\"复制相对路径\"",
+        "optional": true
+      },
+      {
+        "source": "\"Copy Path of Active File\"",
+        "target": "\"复制活动文件路径\"",
+        "optional": true
+      },
+      {
+        "source": "\"Copy Relative Path of Active File\"",
+        "target": "\"复制活动文件相对路径\"",
+        "optional": true
+      },
+      {
+        "source": "\"Reveal in File Explorer\"",
+        "target": "\"在文件资源管理器中显示\"",
+        "optional": true
+      },
+      {
+        "source": "\"Reveal in Finder\"",
+        "target": "\"在 Finder 中显示\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open Containing Folder\"",
+        "target": "\"打开所在文件夹\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open File\"",
+        "target": "\"打开文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"Open File...\"",
+        "target": "\"打开文件...\"",
+        "optional": true
+      },
+      {
+        "source": "\"Command Palette\"",
+        "target": "\"命令面板\"",
+        "optional": true
+      },
+      {
+        "source": "\"Cut\"",
+        "target": "\"剪切\"",
+        "optional": true
+      },
+      {
+        "source": "\"Copy\"",
+        "target": "\"复制\"",
+        "optional": true
+      },
+      {
+        "source": "\"Paste\"",
+        "target": "\"粘贴\"",
+        "optional": true
+      },
+      {
+        "source": "\"Undo\"",
+        "target": "\"撤销\"",
+        "optional": true
+      },
+      {
+        "source": "\"Redo\"",
+        "target": "\"重做\"",
+        "optional": true
+      },
+      {
+        "source": "\"Select All\"",
+        "target": "\"全选\"",
+        "optional": true
+      },
+      {
+        "source": "\"Go Back\"",
+        "target": "\"返回\"",
+        "optional": true
+      },
+      {
+        "source": "\"Go Forward\"",
+        "target": "\"前进\"",
+        "optional": true
+      },
+      {
+        "source": "\"Terminal\"",
+        "target": "\"终端\"",
+        "optional": true
+      }
+    ]
+  }
+]
