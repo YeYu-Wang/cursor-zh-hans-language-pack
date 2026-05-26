@@ -50,6 +50,21 @@ cursor --install-extension dist/cursor-zh-hans-language-pack.vsix
 
 安装后运行命令面板中的 `Configure Display Language` 或本扩展命令 `Cursor 简体中文: 打开显示语言设置`，选择 `zh-cn`，然后重启 Cursor。
 
+## 更新 Cursor 后恢复汉化
+
+Cursor 升级到 3.5 或其他新版本后，可能会重新覆盖应用资源，导致编辑器、设置页、Agent/Composer 等界面重新变成英文。这通常不是语言包损坏，而是升级后需要重新启用语言和补丁。
+
+建议按顺序处理：
+
+1. 重新安装最新的 `dist/cursor-zh-hans-language-pack.vsix`。
+2. 打开命令面板，运行 `Configure Display Language`，确认显示语言为 `zh-cn`。
+3. 运行 `Cursor 简体中文: 应用 Cursor Agent/Composer 主界面汉化补丁`。
+4. 完整退出 Cursor，再重新打开。
+
+如果编辑器、菜单、设置页全部变英文，优先检查第 1、2 步；如果只有 Agent、Composer、设置页局部变英文，优先重新运行第 3 步。
+
+> Cursor 3.5.33 已验证：主程序补丁可重新命中大部分硬编码文案，但仍可能有少量新增或改名文案残留英文，需要后续继续补丁表。
+
 ## 可逆清单补丁
 
 部分 Cursor 专属扩展把标题、配置说明直接写在 `package.json`，不会被标准语言包接管。本扩展提供两个命令：
