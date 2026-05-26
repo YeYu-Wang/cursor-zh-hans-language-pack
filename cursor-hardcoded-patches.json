@@ -3546,6 +3546,16 @@
         "optional": true
       },
       {
+        "source": "var $H0={uncommitted:\"Uncommitted\",unstaged:\"Unstaged\",staged:\"Staged\",branch:\"Branch\"}",
+        "target": "var $H0={uncommitted:\"未提交\",unstaged:\"未暂存\",staged:\"已暂存\",branch:\"分支\"}",
+        "optional": true
+      },
+      {
+        "source": "function OwE(n){return n===\"branch\"?\"All Branch Changes\":$H0[n]}",
+        "target": "function OwE(n){return n===\"branch\"?\"所有分支更改\":$H0[n]}",
+        "optional": true
+      },
+      {
         "source": "\"No Local Changes\"",
         "target": "\"无本地更改\"",
         "optional": true
@@ -3571,6 +3581,406 @@
         "optional": true
       },
       {
+        "source": "b===\"unstaged\"?\"Discard Unstaged Changes\":\"Discard All Changes\"",
+        "target": "b===\"unstaged\"?\"放弃未暂存更改\":\"放弃所有更改\"",
+        "optional": true
+      },
+      {
+        "source": "normalAction:{label:Mn?\"移到回收站\":\"Discard All\"",
+        "target": "normalAction:{label:Mn?\"移到回收站\":\"全部放弃\"",
+        "optional": true
+      },
+      {
+        "source": "normalAction:Mn&&Un?{label:\"Discard All\"",
+        "target": "normalAction:Mn&&Un?{label:\"全部放弃\"",
+        "optional": true
+      },
+      {
+        "source": "t8=f7?vt?\"View PR\":\"View PR Changes\":CJ?\"View Branch Changes\":void 0",
+        "target": "t8=f7?vt?\"查看 PR\":\"查看 PR 更改\":CJ?\"查看分支更改\":void 0",
+        "optional": true
+      },
+      {
+        "source": "i=Xe(()=>n.existingPrUrl?\"View PR\":\"Create PR\")",
+        "target": "i=Xe(()=>n.existingPrUrl?\"查看 PR\":\"创建 PR\")",
+        "optional": true
+      },
+      {
+        "source": "label:\"View PR\",tooltip:\"Open pull request in browser\"",
+        "target": "label:\"查看 PR\",tooltip:\"在浏览器中打开拉取请求\"",
+        "optional": true
+      },
+      {
+        "source": "P=b?\"View PR\":`View PRs ${t.length}`,D=b?\"Open Pull Request tab\":\"Open a Pull Request tab\"",
+        "target": "P=b?\"查看 PR\":`查看 ${t.length} 个 PR`,D=b?\"打开拉取请求标签页\":\"打开一个拉取请求标签页\"",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_COMMIT:return{action:\"Commit\",icon:kt.gitCommit}",
+        "target": "case uy.DIFF_TAB_COMMIT:return{action:\"提交\",icon:kt.gitCommit}",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_COMMIT_AND_PUSH:return{action:\"Commit & Push\",icon:kt.repoPush}",
+        "target": "case uy.DIFF_TAB_COMMIT_AND_PUSH:return{action:\"提交并推送\",icon:kt.repoPush}",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_CREATE_PR:return{action:\"Create PR\",icon:kt.gitPullRequest}",
+        "target": "case uy.DIFF_TAB_CREATE_PR:return{action:\"创建 PR\",icon:kt.gitPullRequest}",
+        "optional": true
+      },
+      {
+        "source": "case uy.MULTITASK_SPLIT_PRS:return{action:\"Create PRs\",icon:kt.gitPullRequest}",
+        "target": "case uy.MULTITASK_SPLIT_PRS:return{action:\"创建多个 PR\",icon:kt.gitPullRequest}",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_PUSH:return{action:\"Push\",icon:kt.cloudUpload}",
+        "target": "case uy.DIFF_TAB_PUSH:return{action:\"推送\",icon:kt.cloudUpload}",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_FIX_MERGE_CONFLICTS:return{action:\"Fix Merge Conflicts\",icon:kt.gitMerge}",
+        "target": "case uy.DIFF_TAB_FIX_MERGE_CONFLICTS:return{action:\"修复合并冲突\",icon:kt.gitMerge}",
+        "optional": true
+      },
+      {
+        "source": "case uy.BABYSIT_PR_IN_CLOUD:return{action:\"Babysit PR\",icon:kt.cloud}",
+        "target": "case uy.BABYSIT_PR_IN_CLOUD:return{action:\"云端看护 PR\",icon:kt.cloud}",
+        "optional": true
+      },
+      {
+        "source": "case uy.APPLY_LOCALLY:return{action:\"Apply Locally\",icon:kt.repoPull}",
+        "target": "case uy.APPLY_LOCALLY:return{action:\"应用到本地\",icon:kt.repoPull}",
+        "optional": true
+      },
+      {
+        "source": "case uy.CHECKOUT_BRANCH:return{action:\"Checkout Branch\",icon:kt.gitCompare}",
+        "target": "case uy.CHECKOUT_BRANCH:return{action:\"签出分支\",icon:kt.gitCompare}",
+        "optional": true
+      },
+      {
+        "source": "case uy.DIFF_TAB_UPDATE_BRANCH:return{action:\"Update Branch\",icon:kt.repoPull}",
+        "target": "case uy.DIFF_TAB_UPDATE_BRANCH:return{action:\"更新分支\",icon:kt.repoPull}",
+        "optional": true
+      },
+      {
+        "source": "var bfE=\"Create PRs\"",
+        "target": "var bfE=\"创建多个 PR\"",
+        "optional": true
+      },
+      {
+        "source": "createBranchAndCommit:{label:\"Create Branch & Commit\",loadingLabel:\"Committing...\"}",
+        "target": "createBranchAndCommit:{label:\"创建分支并提交\",loadingLabel:\"正在提交...\"}",
+        "optional": true
+      },
+      {
+        "source": "createBranchCommitAndPush:{label:\"Create Branch, Commit & Push\",loadingLabel:\"Committing...\"}",
+        "target": "createBranchCommitAndPush:{label:\"创建分支、提交并推送\",loadingLabel:\"正在提交...\"}",
+        "optional": true
+      },
+      {
+        "source": "commit:{label:\"Commit\",loadingLabel:\"Committing...\"}",
+        "target": "commit:{label:\"提交\",loadingLabel:\"正在提交...\"}",
+        "optional": true
+      },
+      {
+        "source": "commitAndPush:{label:\"Commit & Push\",loadingLabel:\"Committing...\"}",
+        "target": "commitAndPush:{label:\"提交并推送\",loadingLabel:\"正在提交...\"}",
+        "optional": true
+      },
+      {
+        "source": "createPrWithChanges:{label:\"Commit & Create PR\",loadingLabel:\"Creating PR...\"}",
+        "target": "createPrWithChanges:{label:\"提交并创建 PR\",loadingLabel:\"正在创建 PR...\"}",
+        "optional": true
+      },
+      {
+        "source": "push:{label:\"Push\",loadingLabel:\"Pushing...\"}",
+        "target": "push:{label:\"推送\",loadingLabel:\"正在推送...\"}",
+        "optional": true
+      },
+      {
+        "source": "createPr:{label:\"Create PR\",loadingLabel:\"Creating PR...\"}",
+        "target": "createPr:{label:\"创建 PR\",loadingLabel:\"正在创建 PR...\"}",
+        "optional": true
+      },
+      {
+        "source": "title:\"Commit & Push\",icon:\"git-branch\",glassCategory:\"View\"",
+        "target": "title:\"提交并推送\",icon:\"git-branch\",glassCategory:\"View\"",
+        "optional": true
+      },
+      {
+        "source": "D({title:\"Discard Changes?\",description:UD_({scope:fn.scope,target:ft.target,trackedCount:pn,untrackedCount:An}),regretAction:{label:\"Cancel\"",
+        "target": "D({title:\"要放弃更改吗？\",description:UD_({scope:fn.scope,target:ft.target,trackedCount:pn,untrackedCount:An}),regretAction:{label:\"取消\"",
+        "optional": true
+      },
+      {
+        "source": "D({title:\"Discard Changes?\",description:UD_({scope:fn.scope,target:ft.target,trackedCount:pn,untrackedCount:An}),destructiveAction:{label:Mn?\"移到回收站\":\"放弃\"",
+        "target": "D({title:\"要放弃更改吗？\",description:UD_({scope:fn.scope,target:ft.target,trackedCount:pn,untrackedCount:An}),destructiveAction:{label:Mn?\"移到回收站\":\"放弃\"",
+        "optional": true
+      },
+      {
+        "source": "case\"stash\":return t?`Stashing changes in ${t}`:\"Stashing changes\";case\"commit\":return t?`Committing changes in ${t}`:\"Committing changes\";case\"discard\":return t?`Discarding changes in ${t}`:\"Discarding changes\";case\"checkout\":return t?`Switching to ${uVt(e)} in ${t}`:`Switching to ${uVt(e)}`",
+        "target": "case\"stash\":return t?`正在储藏 ${t} 中的更改`:\"正在储藏更改\";case\"commit\":return t?`正在提交 ${t} 中的更改`:\"正在提交更改\";case\"discard\":return t?`正在放弃 ${t} 中的更改`:\"正在放弃更改\";case\"checkout\":return t?`正在 ${t} 中切换到 ${uVt(e)}`:`正在切换到 ${uVt(e)}`",
+        "optional": true
+      },
+      {
+        "source": "case\"stash\":return\"Stashing changes\";case\"commit\":return\"Committing changes\";case\"discard\":return\"Discarding changes\";case\"checkout\":return F(\"glass.agentPanel.branchMismatch.switching\",\"Switching to {0}\",uVt(e))",
+        "target": "case\"stash\":return\"正在储藏更改\";case\"commit\":return\"正在提交更改\";case\"discard\":return\"正在放弃更改\";case\"checkout\":return F(\"glass.agentPanel.branchMismatch.switching\",\"正在切换到 {0}\",uVt(e))",
+        "optional": true
+      },
+      {
+        "source": "title:\"Stashing changes...\",cancellable:!1",
+        "target": "title:\"正在储藏更改...\",cancellable:!1",
+        "optional": true
+      },
+      {
+        "source": "var T$f={checkout:\"Checkout\",apply:\"Apply Locally\"}",
+        "target": "var T$f={checkout:\"签出\",apply:\"应用到本地\"}",
+        "optional": true
+      },
+      {
+        "source": "{id:\"apply-all\",label:\"Apply\",tooltip:\"Apply changes locally\"",
+        "target": "{id:\"apply-all\",label:\"应用\",tooltip:\"将更改应用到本地\"",
+        "optional": true
+      },
+      {
+        "source": "{id:\"checkout-branch\",label:\"Checkout Branch\",tooltip:\"Checkout branch locally\"",
+        "target": "{id:\"checkout-branch\",label:\"签出分支\",tooltip:\"在本地签出分支\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Checkout Branch\"",
+        "target": "children:\"签出分支\"",
+        "optional": true
+      },
+      {
+        "source": "id:\"merge-commit\",label:\"Merge commit\",tooltip:\"Create a merge commit\"",
+        "target": "id:\"merge-commit\",label:\"合并提交\",tooltip:\"创建一个合并提交\"",
+        "optional": true
+      },
+      {
+        "source": "id:\"create-pr\",label:\"Create PR\",tooltip:\"Create a new pull request\"",
+        "target": "id:\"create-pr\",label:\"创建 PR\",tooltip:\"创建新的拉取请求\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Open Pull Request tab\"",
+        "target": "\"aria-label\":\"打开拉取请求标签页\"",
+        "optional": true
+      },
+      {
+        "source": "Oe=Ne?bfE:be===\"fixMergeConflicts\"?\"Fix Merge Conflicts\":Te?kTh[Te].label:null",
+        "target": "Oe=Ne?bfE:be===\"fixMergeConflicts\"?\"修复合并冲突\":Te?kTh[Te].label:null",
+        "optional": true
+      },
+      {
+        "source": "F(\"glass.agentPanel.babysitPrInCloudPill\",\"Babysit PR in Cloud\")",
+        "target": "F(\"glass.agentPanel.babysitPrInCloudPill\",\"云端看护 PR\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glass.agentPanel.babysitPrInCloudPillTooltipContentSubagent\",\"Fix CI, conflicts, and comments in cloud subagent\")",
+        "target": "F(\"glass.agentPanel.babysitPrInCloudPillTooltipContentSubagent\",\"在云端子代理中修复 CI、冲突和评论\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glass.agentPanel.babysitPrInCloudPillTooltipContent\",\"Fix CI, conflicts, and comments in cloud.\")",
+        "target": "F(\"glass.agentPanel.babysitPrInCloudPillTooltipContent\",\"在云端修复 CI、冲突和评论。\")",
+        "optional": true
+      },
+      {
+        "source": "static{this.LABEL=\"Checkout Branch Locally\"}",
+        "target": "static{this.LABEL=\"在本地签出分支\"}",
+        "optional": true
+      },
+      {
+        "source": "title:\"Incorrect Branch\",message:`This link refers to branch \"${t}\", but your current workspace is on ${$??\"an unknown branch\"}. Please checkout the correct branch and try again.`,primaryButton:{id:\"checkout\",label:\"Checkout Branch\"},extraButtons:[{id:\"continue\",label:\"Continue Anyway\",type:\"secondary\"}]",
+        "target": "title:\"分支不正确\",message:`此链接指向分支 \"${t}\"，但当前工作区位于 ${$??\"未知分支\"}。请签出正确分支后重试。`,primaryButton:{id:\"checkout\",label:\"签出分支\"},extraButtons:[{id:\"continue\",label:\"仍然继续\",type:\"secondary\"}]",
+        "optional": true
+      },
+      {
+        "source": "title:\"Incorrect Branch\",message:`This link refers to branch \"${t}\", but your current workspace is on ${T??\"an unknown branch\"}. Please checkout the correct branch and try again.`,primaryButton:{id:\"checkout\",label:\"Checkout Branch\"},extraButtons:[{id:\"continue\",label:\"Continue Anyway\",type:\"secondary\"}]",
+        "target": "title:\"分支不正确\",message:`此链接指向分支 \"${t}\"，但当前工作区位于 ${T??\"未知分支\"}。请签出正确分支后重试。`,primaryButton:{id:\"checkout\",label:\"签出分支\"},extraButtons:[{id:\"continue\",label:\"仍然继续\",type:\"secondary\"}]",
+        "optional": true
+      },
+      {
+        "source": "`Checking out branch ${t}...`",
+        "target": "`正在签出分支 ${t}...`",
+        "optional": true
+      },
+      {
+        "source": "title:\"Incorrect Branch\"",
+        "target": "title:\"分支不正确\"",
+        "optional": true
+      },
+      {
+        "source": "This link refers to branch \"${t}\", but your current workspace is on ${$??\"an unknown branch\"}. Please checkout the correct branch and try again.",
+        "target": "此链接指向分支 \"${t}\"，但当前工作区位于 ${$??\"未知分支\"}。请签出正确分支后重试。",
+        "optional": true
+      },
+      {
+        "source": "This link refers to branch \"${t}\", but your current workspace is on ${T??\"an unknown branch\"}. Please checkout the correct branch and try again.",
+        "target": "此链接指向分支 \"${t}\"，但当前工作区位于 ${T??\"未知分支\"}。请签出正确分支后重试。",
+        "optional": true
+      },
+      {
+        "source": "primaryButton:{id:\"checkout\",label:\"Checkout Branch\"}",
+        "target": "primaryButton:{id:\"checkout\",label:\"签出分支\"}",
+        "optional": true
+      },
+      {
+        "source": "{id:\"continue\",label:\"Continue Anyway\",type:\"secondary\"}",
+        "target": "{id:\"continue\",label:\"仍然继续\",type:\"secondary\"}",
+        "optional": true
+      },
+      {
+        "source": "{id:\"continue\",label:\"Continue Anyway\"}",
+        "target": "{id:\"continue\",label:\"仍然继续\"}",
+        "optional": true
+      },
+      {
+        "source": "`Uncommitted changes in ${n.repoLabel}`",
+        "target": "`${n.repoLabel} 中有未提交更改`",
+        "optional": true
+      },
+      {
+        "source": "\"Uncommitted changes\"",
+        "target": "\"未提交更改\"",
+        "optional": true
+      },
+      {
+        "source": "`Checkout ${e} in ${n.repoLabel}?`",
+        "target": "`在 ${n.repoLabel} 中签出 ${e}?`",
+        "optional": true
+      },
+      {
+        "source": "`Checkout ${e}?`",
+        "target": "`签出 ${e}?`",
+        "optional": true
+      },
+      {
+        "source": "`Local changes detected before checking out ${zi}.`",
+        "target": "`签出 ${zi} 前检测到本地更改。`",
+        "optional": true
+      },
+      {
+        "source": "`Local changes detected before checking out ${s}.`",
+        "target": "`签出 ${s} 前检测到本地更改。`",
+        "optional": true
+      },
+      {
+        "source": "`Local changes detected before checking out ${t}.`",
+        "target": "`签出 ${t} 前检测到本地更改。`",
+        "optional": true
+      },
+      {
+        "source": "F(\"glass.migration.worktreeToLocal.uncommitted.title\",\"Local changes detected\")",
+        "target": "F(\"glass.migration.worktreeToLocal.uncommitted.title\",\"检测到本地更改\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glass.migration.worktreeToLocal.uncommitted.description\",\"Your local workspace has uncommitted changes. How would you like to handle them before switching branches?\")",
+        "target": "F(\"glass.migration.worktreeToLocal.uncommitted.description\",\"当前工作区有未提交更改。切换分支前要如何处理？\")",
+        "optional": true
+      },
+      {
+        "source": "\"Save changes to a stash and restore them later\"",
+        "target": "\"将更改储藏起来，之后可恢复\"",
+        "optional": true
+      },
+      {
+        "source": "\"Permanently discard your current changes before switching branches\"",
+        "target": "\"切换分支前永久放弃当前更改\"",
+        "optional": true
+      },
+      {
+        "source": "\"Cancel the checkout operation\"",
+        "target": "\"取消签出操作\"",
+        "optional": true
+      },
+      {
+        "source": "Failed to checkout branch",
+        "target": "签出分支失败",
+        "optional": true
+      },
+      {
+        "source": "Failed to checkout locally",
+        "target": "本地签出失败",
+        "optional": true
+      },
+      {
+        "source": "`Failed to checkout: ${o}`",
+        "target": "`签出失败：${o}`",
+        "optional": true
+      },
+      {
+        "source": "Do you have changes in submodules?",
+        "target": "是否有子模块更改？",
+        "optional": true
+      },
+      {
+        "source": "label:\"Continue Locally\"",
+        "target": "label:\"继续在本地处理\"",
+        "optional": true
+      },
+      {
+        "source": "\"Unable to continue locally: composer not found.\"",
+        "target": "\"无法继续在本地处理：未找到 Composer。\"",
+        "optional": true
+      },
+      {
+        "source": "static{this.LABEL=\"Checkout Background Composer Locally\"}",
+        "target": "static{this.LABEL=\"在本地签出后台 Composer\"}",
+        "optional": true
+      },
+      {
+        "source": "\"Preparing migrated conversation...\"",
+        "target": "\"正在准备迁移会话...\"",
+        "optional": true
+      },
+      {
+        "source": "\"Pushing to remote...\"",
+        "target": "\"正在推送到远程...\"",
+        "optional": true
+      },
+      {
+        "source": "`In ${i}, you're on ${e}. Switch to ${t} for this agent, or stay on the current branch.`",
+        "target": "`在 ${i} 中，当前位于 ${e}。可为此智能体切换到 ${t}，或停留在当前分支。`",
+        "optional": true
+      },
+      {
+        "source": "`You have uncommitted changes in ${n.repoLabel} before switching to ${uVt(n.agentBranch)}. How would you like to handle them?`",
+        "target": "`切换到 ${uVt(n.agentBranch)} 前，${n.repoLabel} 中有未提交更改。要如何处理？`",
+        "optional": true
+      },
+      {
+        "source": "\"You have uncommitted changes on your current branch. How would you like to handle them before switching?\"",
+        "target": "\"当前分支有未提交更改。切换前要如何处理？\"",
+        "optional": true
+      },
+      {
+        "source": "\"Switch to this agent's working branch to continue, or stay on your current\"",
+        "target": "\"切换到此智能体的工作分支以继续，或停留在当前\"",
+        "optional": true
+      },
+      {
+        "source": "),\" \",\"branch.\"]})",
+        "target": "),\" \",\"分支。\"]})",
+        "optional": true
+      },
+      {
+        "source": "V($c,{color:\"primary\",kbs:p,onClick:r,variant:\"primary\",children:\"Checkout\"},\"checkout\")",
+        "target": "V($c,{color:\"primary\",kbs:p,onClick:r,variant:\"primary\",children:\"签出\"},\"checkout\")",
+        "optional": true
+      },
+      {
+        "source": "V($c,{color:\"primary\",kbs:h,onClick:s,variant:\"primary\",children:\"Continue\"})",
+        "target": "V($c,{color:\"primary\",kbs:h,onClick:s,variant:\"primary\",children:\"继续\"})",
+        "optional": true
+      },
+      {
         "source": "message:\"Use a Git repository to track changes\"",
         "target": "message:\"使用 Git 仓库跟踪更改\"",
         "optional": true
@@ -3578,6 +3988,236 @@
       {
         "source": "children:\"Initialize Repository\"",
         "target": "children:\"初始化仓库\"",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Close Tab\",original:\"Close Tab\"}",
+        "target": "title:{value:\"关闭标签页\",original:\"Close Tab\"}",
+        "optional": true
+      },
+      {
+        "source": "title:\"Close Running Tab?\",message:\"The chat is currently running. Are you sure you want to close it?\",primaryButton:{id:\"close\",label:\"Close Tab\"},cancelButton:{id:\"cancel\",label:\"Cancel\"}",
+        "target": "title:\"关闭正在运行的标签页？\",message:\"聊天当前仍在运行。确定要关闭吗？\",primaryButton:{id:\"close\",label:\"关闭标签页\"},cancelButton:{id:\"cancel\",label:\"取消\"}",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Close Other Tabs\",original:\"Close Other Tabs\"}",
+        "target": "title:{value:\"关闭其他标签页\",original:\"Close Other Tabs\"}",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Close All Tabs\",original:\"Close All Tabs\"}",
+        "target": "title:{value:\"关闭所有标签页\",original:\"Close All Tabs\"}",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Open Tab as Editor\",original:\"Open Tab as Editor\"}",
+        "target": "title:{value:\"作为编辑器打开标签页\",original:\"Open Tab as Editor\"}",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Export Transcript\",original:\"Export Transcript\"}",
+        "target": "title:{value:\"导出对话记录\",original:\"Export Transcript\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Export Transcript\"",
+        "target": "label:\"导出对话记录\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Export Transcript\"",
+        "target": "title:\"导出对话记录\"",
+        "optional": true
+      },
+      {
+        "source": "saveLabel:\"Export\"",
+        "target": "saveLabel:\"导出\"",
+        "optional": true
+      },
+      {
+        "source": "`Chat exported to ${te.fsPath}`",
+        "target": "`聊天记录已导出到 ${te.fsPath}`",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Share Transcript\",original:\"Share Transcript\"}",
+        "target": "title:{value:\"分享对话记录\",original:\"Share Transcript\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Share Transcript\"",
+        "target": "label:\"分享对话记录\"",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Copy Request ID\",original:\"Copy Request ID\"}",
+        "target": "title:{value:\"复制请求 ID\",original:\"Copy Request ID\"}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Copy Request ID\"",
+        "target": "label:\"复制请求 ID\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Copy Request ID\"",
+        "target": "title:\"复制请求 ID\"",
+        "optional": true
+      },
+      {
+        "source": "\u003cspan\u003eCopy Request ID: ",
+        "target": "\u003cspan\u003e复制请求 ID：",
+        "optional": true
+      },
+      {
+        "source": "\"Request ID copied to clipboard\"",
+        "target": "\"请求 ID 已复制到剪贴板\"",
+        "optional": true
+      },
+      {
+        "source": "\"No request ID found\"",
+        "target": "\"未找到请求 ID\"",
+        "optional": true
+      },
+      {
+        "source": "title:{value:\"Agent Settings\",original:\"Agent Settings\"}",
+        "target": "title:{value:\"智能体设置\",original:\"Agent Settings\"}",
+        "optional": true
+      },
+      {
+        "source": "title:\"Agent Settings\"",
+        "target": "title:\"智能体设置\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Toggle Chat Pane\"",
+        "target": "title:\"切换聊天面板\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Maximize Chat\"",
+        "target": "title:\"最大化聊天\"",
+        "optional": true
+      },
+      {
+        "source": "ln(3117,\"Maximize Chat Size\")",
+        "target": "ln(3117,\"最大化聊天尺寸\")",
+        "optional": true
+      },
+      {
+        "source": "b=a===void 0?\"Context\":a",
+        "target": "b=a===void 0?\"上下文\":a",
+        "optional": true
+      },
+      {
+        "source": "const O=o??`${D}% Full`",
+        "target": "const O=o??`已用 ${D}%`",
+        "optional": true
+      },
+      {
+        "source": "children:[$,\" / \",K,\" Tokens\"]",
+        "target": "children:[$,\" / \",K,\" 令牌\"]",
+        "optional": true
+      },
+      {
+        "source": "children:t.label}),e[6]=t.label",
+        "target": "children:({systemPrompt:\"系统提示词\",tools:\"工具\",summarizedConversation:\"已总结对话\",conversation:\"对话\",other:\"其他\"}[t.id]??t.label)}),e[6]=t.label",
+        "optional": true
+      },
+      {
+        "source": "children:t.label}),e[6]=t.label,e[7]=h):h=e[7]",
+        "target": "children:({systemPrompt:\"系统提示词\",tools:\"工具\",summarizedConversation:\"已总结对话\",conversation:\"对话\",other:\"其他\",system_prompt:\"系统提示词\",summarized_conversation:\"已总结对话\"}[t.id]??t.label)}),e[6]=t.label,e[7]=h):h=e[7]",
+        "optional": true
+      },
+      {
+        "source": "function QHC({totalTokensUsed:n,contextWindowSize:e}){if(e<=0)return\"0% Full\";const t=n/e*100;return`${Math.round(t)}% Full`}",
+        "target": "function QHC({totalTokensUsed:n,contextWindowSize:e}){if(e<=0)return\"已用 0%\";const t=n/e*100;return`已用 ${Math.round(t)}%`}",
+        "optional": true
+      },
+      {
+        "source": "label:o.label,tokens:a,displayTokens:kgi(a),color:MtS[o.id]",
+        "target": "label:{systemPrompt:\"系统提示词\",tools:\"工具\",summarizedConversation:\"已总结对话\",conversation:\"对话\",other:\"其他\",system_prompt:\"系统提示词\",summarized_conversation:\"已总结对话\"}[o.id]??o.label,tokens:a,displayTokens:kgi(a),color:MtS[o.id]",
+        "optional": true
+      },
+      {
+        "source": "children:[$,\" / \",K,\" Token\"]",
+        "target": "children:[$,\" / \",K,\" 令牌\"]",
+        "optional": true
+      },
+      {
+        "source": "static{this.LABEL=\"Copy Request ID\"}",
+        "target": "static{this.LABEL=\"复制请求 ID\"}",
+        "optional": true
+      },
+      {
+        "source": "eGh=\"Copy Request ID\"",
+        "target": "eGh=\"复制请求 ID\"",
+        "optional": true
+      },
+      {
+        "source": "tGh=\"Copy Branch Name\"",
+        "target": "tGh=\"复制分支名称\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Copy Branch Name\"",
+        "target": "label:\"复制分支名称\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Copy Agent Deeplink\"",
+        "target": "label:\"复制智能体深层链接\"",
+        "optional": true
+      },
+      {
+        "source": "ln(3571,\"Close All Tabs\")",
+        "target": "ln(3571,\"关闭所有标签页\")",
+        "optional": true
+      },
+      {
+        "source": "mu({id:\"closeActiveTab\",title:\"Close Tab\"",
+        "target": "mu({id:\"closeActiveTab\",title:\"关闭标签页\"",
+        "optional": true
+      },
+      {
+        "source": "{id:\"canvas\",label:\"Canvas\",icon:\"layers\"}",
+        "target": "{id:\"canvas\",label:\"画布\",icon:\"layers\"}",
+        "optional": true
+      },
+      {
+        "source": "onSelect:e.onCreateCanvasTab,children:\"Canvas\"",
+        "target": "onSelect:e.onCreateCanvasTab,children:\"画布\"",
+        "optional": true
+      },
+      {
+        "source": "children:h?`Canvases in ${h}`:\"Canvases\"",
+        "target": "children:h?`${h} 中的画布`:\"画布\"",
+        "optional": true
+      },
+      {
+        "source": "children:g?`Canvases in ${g}`:\"Canvases\"",
+        "target": "children:g?`${g} 中的画布`:\"画布\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No canvases found\"",
+        "target": "children:\"暂无画布\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Create new canvas\"",
+        "target": "children:\"新建画布\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Featured Canvas Skills from Marketplace\"",
+        "target": "children:\"市场中的精选画布技能\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":`Delete ${g.name}`",
+        "target": "\"aria-label\":`删除 ${g.name}`",
         "optional": true
       },
       {
