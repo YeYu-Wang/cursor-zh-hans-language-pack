@@ -89,6 +89,46 @@
         "optional": true
       },
       {
+        "source": "zDm=\"Cursor Settings\"",
+        "target": "zDm=\"Cursor 设置\"",
+        "optional": true
+      },
+      {
+        "source": "UvS=\"Open VS Code Settings\"",
+        "target": "UvS=\"打开 VS Code 设置\"",
+        "optional": true
+      },
+      {
+        "source": "ALm={marketplace:\"Marketplace\",docs:\"Docs\",contact:\"Contact\"}",
+        "target": "ALm={marketplace:\"应用市场\",docs:\"文档\",contact:\"联系\"}",
+        "optional": true
+      },
+      {
+        "source": "zDx=()=>\"Rules, Skills, Subagents\"",
+        "target": "zDx=()=>\"规则、技能、子智能体\"",
+        "optional": true
+      },
+      {
+        "source": "lwS={general:\"General\",\"vscode-settings\":\"VS Code Settings\",appearance:\"Appearance\",\"plan-usage\":\"Plan & Usage\",chat:\"Agents\",tab:\"Tab\",models:\"Models\",rules:\"Rules, Skills, Subagents\",plugins:\"Plugins\",indexing:\"Indexing & Docs\",mcp:\"Tools & MCPs\",hooks:\"Hooks\",\"local-automations\":\"Automations\",beta:\"Beta\",network:\"Network\",\"background-composer\":\"Cloud Agents\",worktrees:\"Worktrees\"}",
+        "target": "lwS={general:\"通用\",\"vscode-settings\":\"VS Code 设置\",appearance:\"外观\",\"plan-usage\":\"套餐与用量\",chat:\"智能体\",tab:\"Tab 补全\",models:\"模型\",rules:\"规则、技能、子智能体\",plugins:\"插件\",indexing:\"索引与文档\",mcp:\"工具与 MCP\",hooks:\"钩子\",\"local-automations\":\"自动化\",beta:\"测试版\",network:\"网络\",\"background-composer\":\"云端智能体\",worktrees:\"工作树\"}",
+        "optional": true
+      },
+      {
+        "source": "jDx=n=>n.isGlass?\"Indexing\":\"Indexing & Docs\"",
+        "target": "jDx=n=>n.isGlass?\"索引\":\"索引与文档\"",
+        "optional": true
+      },
+      {
+        "source": "Co(Un,\"placeholder\",`Search settings ${_e()}`)",
+        "target": "Co(Un,\"placeholder\",`搜索设置 ${_e()}`)",
+        "optional": true
+      },
+      {
+        "source": "lwS={general:\"General\",\"vscode-settings\":\"VS Code Settings\",appearance:\"Appearance\",\"plan-usage\":\"Plan & Usage\",chat:\"Agents\",tab:\"Tab 补全\",models:\"Models\",rules:\"Rules, Skills, Subagents\",plugins:\"Plugins\",indexing:\"Indexing & Docs\",mcp:\"Tools & MCPs\",hooks:\"Hooks\",\"local-automations\":\"Automations\",beta:\"Beta\",network:\"Network\",\"background-composer\":\"Cloud Agents\",worktrees:\"Worktrees\"}",
+        "target": "lwS={general:\"通用\",\"vscode-settings\":\"VS Code 设置\",appearance:\"外观\",\"plan-usage\":\"套餐与用量\",chat:\"智能体\",tab:\"Tab 补全\",models:\"模型\",rules:\"规则、技能、子智能体\",plugins:\"插件\",indexing:\"索引与文档\",mcp:\"工具与 MCP\",hooks:\"钩子\",\"local-automations\":\"自动化\",beta:\"测试版\",network:\"网络\",\"background-composer\":\"云端智能体\",worktrees:\"工作树\"}",
+        "optional": true
+      },
+      {
         "source": "label:\"Cursor Account\",description:\"Manage your account and billing\"",
         "target": "label:\"Cursor 账户\",description:\"管理你的账户和账单\""
       },
