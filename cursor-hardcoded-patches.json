@@ -2511,6 +2511,91 @@
         "optional": true
       },
       {
+        "source": "F(\"glassFileTreeCreateFile\",\"New File\")",
+        "target": "F(\"glassFileTreeCreateFile\",\"新建文件\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassFileTreeCreateFolder\",\"New Folder\")",
+        "target": "F(\"glassFileTreeCreateFolder\",\"新建文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassFileTreeCreateFileLabel\",\"New File\")",
+        "target": "F(\"glassFileTreeCreateFileLabel\",\"新建文件\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassFileTreeCreateFolderLabel\",\"New Folder\")",
+        "target": "F(\"glassFileTreeCreateFolderLabel\",\"新建文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"copyPath\",\"Copy Path\")",
+        "target": "F(\"copyPath\",\"复制路径\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassCopyRelativePath\",\"Copy Relative Path\")",
+        "target": "F(\"glassCopyRelativePath\",\"复制相对路径\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassRevealInWindows\",\"Reveal in File Explorer\")",
+        "target": "F(\"glassRevealInWindows\",\"在文件资源管理器中显示\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassRevealInMac\",\"Reveal in Finder\")",
+        "target": "F(\"glassRevealInMac\",\"在 Finder 中显示\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassOpenContainer\",\"Open Containing Folder\")",
+        "target": "F(\"glassOpenContainer\",\"打开所在文件夹\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassFileTreeRename\",\"Rename\")",
+        "target": "F(\"glassFileTreeRename\",\"重命名\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassDelete\",\"Delete\")",
+        "target": "F(\"glassDelete\",\"删除\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"cut\",\"Cut\")",
+        "target": "F(\"cut\",\"剪切\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"copy\",\"Copy\")",
+        "target": "F(\"copy\",\"复制\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"paste\",\"Paste\")",
+        "target": "F(\"paste\",\"粘贴\")",
+        "optional": true
+      },
+      {
+        "source": "F(\"glassRecycle\",\"Move to Recycle Bin\")",
+        "target": "F(\"glassRecycle\",\"移到回收站\")",
+        "optional": true
+      },
+      {
+        "source": "Nkf=ln(7945,\"New File...\")",
+        "target": "Nkf=ln(7945,\"新建文件...\")",
+        "optional": true
+      },
+      {
+        "source": "Mkf=ln(7946,\"New Folder...\")",
+        "target": "Mkf=ln(7946,\"新建文件夹...\")",
+        "optional": true
+      },
+      {
         "source": "children:\"Open Editor Window\"",
         "target": "children:\"打开编辑器窗口\"",
         "optional": true

@@ -2,7 +2,7 @@
   "name": "cursor-zh-hans-language-pack",
   "displayName": "Cursor 简体中文全局汉化包",
   "description": "为 Cursor 提供全局简体中文界面语言包，并附带可逆的 Cursor 扩展清单和 Agent/Composer 主界面汉化补丁。",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "local",
   "license": "MIT",
   "repository": {
@@ -30,6 +30,7 @@
   ],
   "main": "./extension.js",
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:cursorZhHans.applyManifestPatch",
     "onCommand:cursorZhHans.revertManifestPatch",
     "onCommand:cursorZhHans.applyWorkbenchPatch",
@@ -88,6 +89,11 @@
           "type": "string",
           "default": "",
           "description": "Cursor 应用资源目录。留空时自动定位当前 Cursor 的 resources/app 目录。"
+        },
+        "cursorZhHans.autoApplyWorkbenchPatch": {
+          "type": "boolean",
+          "default": true,
+          "description": "启动 Cursor 时自动检查并补回主程序硬编码汉化补丁，降低升级覆盖后的回退概率。"
         }
       }
     },

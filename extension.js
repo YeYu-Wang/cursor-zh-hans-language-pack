@@ -63,9 +63,38 @@ function activate(context) {
     vscode.commands.registerCommand('cursorZhHans.configureDisplayLanguage', configureDisplayLanguage),
     vscode.commands.registerCommand('cursorZhHans.openGuide', openGuide)
   );
+
+  void autoApplyWorkbenchPatchOnStartup();
 }
 
 function deactivate() {}
+
+async function autoApplyWorkbenchPatchOnStartup() {
+  const enabled = vscode.workspace.getConfiguration('cursorZhHans').get('autoApplyWorkbenchPatch', true);
+  if (!enabled) {
+    return;
+  }
+
+  const result = await runWorkbenchPatchOperation(() => applyWorkbenchPatch({
+    cursorAppRoot: getCursorAppRoot()
+  }), {
+    silent: true
+  });
+
+  if (!result || result.changedFiles === 0) {
+    return;
+  }
+
+  const details = formatWorkbenchPatchDetails(result);
+  const action = await vscode.window.showInformationMessage(
+    `已自动补回 Cursor 主程序汉化补丁：${result.replacements} 处替换。重新加载窗口或完整重启 Cursor 后生效。${details}`,
+    '重新加载窗口'
+  );
+
+  if (action === '重新加载窗口') {
+    await vscode.commands.executeCommand('workbench.action.reloadWindow');
+  }
+}
 
 async function applyManifestPatch() {
   const extensionsRoot = getExtensionsRoot();
@@ -164,12 +193,14 @@ async function inspectWorkbenchPatchCommand() {
   void vscode.window.showInformationMessage(message);
 }
 
-async function runWorkbenchPatchOperation(operation) {
+async function runWorkbenchPatchOperation(operation, options = {}) {
   try {
     return operation();
   } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    void vscode.window.showErrorMessage(`Cursor 主程序汉化补丁失败：${message}`);
+    if (!options.silent) {
+      const message = error instanceof Error ? error.message : String(error);
+      void vscode.window.showErrorMessage(`Cursor 主程序汉化补丁失败：${message}`);
+    }
     return undefined;
   }
 }

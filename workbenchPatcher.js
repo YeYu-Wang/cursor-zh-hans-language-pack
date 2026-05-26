@@ -1,8 +1,11 @@
 const fs = require('fs');
+const crypto = require('crypto');
 const os = require('os');
 const path = require('path');
 
 const WORKBENCH_BACKUP_SUFFIX = '.cursor-zh-hans-workbench.bak';
+const WORKBENCH_METADATA_SUFFIX = '.cursor-zh-hans-workbench.json';
+const WORKBENCH_ENTRY_FILE = 'out/vs/workbench/workbench.desktop.main.js';
 const PATCHES_PATH = path.join(__dirname, 'cursor-hardcoded-patches.json');
 
 function applyWorkbenchPatch(options = {}) {
@@ -47,10 +50,14 @@ function applyWorkbenchPatch(options = {}) {
       continue;
     }
 
-    const backupPath = `${targetPath}${WORKBENCH_BACKUP_SUFFIX}`;
-    if (!fs.existsSync(backupPath)) {
-      fs.copyFileSync(targetPath, backupPath);
+    const backup = ensureWorkbenchBackup(targetPath, original, next, patchSet.file, {
+      alreadyPatched: fileAlreadyPatched > 0
+    });
+    if (backup.created) {
       result.createdBackups += 1;
+    }
+    if (backup.refreshed) {
+      result.refreshedBackups += 1;
     }
 
     fs.writeFileSync(targetPath, next, 'utf8');
@@ -67,7 +74,8 @@ function revertWorkbenchPatch(options = {}) {
   const result = {
     appRoot,
     restoredFiles: 0,
-    missingBackups: []
+    missingBackups: [],
+    staleBackups: []
   };
 
   for (const patchSet of patchSets) {
@@ -78,8 +86,17 @@ function revertWorkbenchPatch(options = {}) {
       continue;
     }
 
+    const current = fs.readFileSync(targetPath, 'utf8');
+    const backup = fs.readFileSync(backupPath, 'utf8');
+    const metadata = readJsonIfExists(`${targetPath}${WORKBENCH_METADATA_SUFFIX}`);
+    if (metadata && (metadata.originalSha256 !== sha256(backup) || metadata.patchedSha256 !== sha256(current))) {
+      result.staleBackups.push(patchSet.file);
+      continue;
+    }
+
     fs.copyFileSync(backupPath, targetPath);
     fs.rmSync(backupPath, { force: true });
+    fs.rmSync(`${targetPath}${WORKBENCH_METADATA_SUFFIX}`, { force: true });
     result.restoredFiles += 1;
   }
 
@@ -119,29 +136,69 @@ function inspectWorkbenchPatch(options = {}) {
 function resolveCursorAppRoot(configuredRoot) {
   const configured = typeof configuredRoot === 'string' ? configuredRoot.trim() : '';
   if (configured) {
-    return expandHome(configured);
+    return normalizeCursorAppRoot(expandHome(configured));
   }
 
+  const candidates = getCursorAppRootCandidates();
+  return candidates.find(isCursorAppRoot) || candidates.find((candidate) => fs.existsSync(candidate)) || candidates[0];
+}
+
+function getCursorAppRootCandidates() {
   const candidates = [];
+  const push = (candidate) => {
+    if (typeof candidate === 'string' && candidate.trim()) {
+      candidates.push(path.normalize(candidate));
+    }
+  };
+
   if (process.resourcesPath) {
-    candidates.push(path.join(process.resourcesPath, 'app'));
+    push(path.join(process.resourcesPath, 'app'));
+    push(process.resourcesPath);
   }
 
   if (process.execPath) {
-    candidates.push(path.join(path.dirname(process.execPath), 'resources', 'app'));
+    const executableDir = path.dirname(process.execPath);
+    push(path.join(executableDir, 'resources', 'app'));
+    push(path.resolve(executableDir, '..', 'Resources', 'app'));
+    push(path.resolve(executableDir, '..', 'resources', 'app'));
+    push(path.resolve(executableDir, '..', 'share', 'cursor', 'resources', 'app'));
+  }
+
+  if (process.env.APPDIR) {
+    push(path.join(process.env.APPDIR, 'resources', 'app'));
+    push(path.join(process.env.APPDIR, 'usr', 'share', 'cursor', 'resources', 'app'));
   }
 
   if (process.platform === 'win32') {
-    candidates.push(path.join(os.homedir(), 'AppData', 'Local', 'Programs', 'cursor', 'resources', 'app'));
+    push(path.join(os.homedir(), 'AppData', 'Local', 'Programs', 'cursor', 'resources', 'app'));
+    push(path.join(process.env.LOCALAPPDATA || '', 'Programs', 'cursor', 'resources', 'app'));
   } else if (process.platform === 'darwin') {
-    candidates.push('/Applications/Cursor.app/Contents/Resources/app');
+    push('/Applications/Cursor.app/Contents/Resources/app');
+    push(path.join(os.homedir(), 'Applications', 'Cursor.app', 'Contents', 'Resources', 'app'));
   } else {
-    candidates.push('/usr/share/cursor/resources/app');
-    candidates.push('/opt/Cursor/resources/app');
-    candidates.push('/opt/cursor/resources/app');
+    push('/usr/share/cursor/resources/app');
+    push('/usr/lib/cursor/resources/app');
+    push('/opt/Cursor/resources/app');
+    push('/opt/cursor/resources/app');
+    push('/app/share/cursor/resources/app');
+    push('/snap/cursor/current/usr/share/cursor/resources/app');
   }
 
-  return candidates.find((candidate) => fs.existsSync(candidate)) || candidates[0];
+  return [...new Set(candidates)];
+}
+
+function normalizeCursorAppRoot(value) {
+  const candidates = [
+    value,
+    path.join(value, 'resources', 'app'),
+    path.join(value, 'Contents', 'Resources', 'app'),
+    path.join(value, 'Resources', 'app')
+  ];
+  return candidates.find(isCursorAppRoot) || value;
+}
+
+function isCursorAppRoot(candidate) {
+  return Boolean(candidate) && fs.existsSync(resolvePatchTarget(candidate, WORKBENCH_ENTRY_FILE));
 }
 
 function loadPatchSets(patchesPath = PATCHES_PATH) {
@@ -191,6 +248,7 @@ function createResult(appRoot) {
     replacements: 0,
     alreadyPatched: 0,
     createdBackups: 0,
+    refreshedBackups: 0,
     missingFiles: [],
     missingReplacements: []
   };
@@ -210,6 +268,65 @@ function countOccurrences(value, needle) {
   }
 
   return count;
+}
+
+function ensureWorkbenchBackup(targetPath, original, patched, patchSetFile, options = {}) {
+  const backupPath = `${targetPath}${WORKBENCH_BACKUP_SUFFIX}`;
+  const metadataPath = `${targetPath}${WORKBENCH_METADATA_SUFFIX}`;
+  const originalSha256 = sha256(original);
+  const patchedSha256 = sha256(patched);
+  const backupExists = fs.existsSync(backupPath);
+  const backupMatchesOriginal = backupExists && sha256(fs.readFileSync(backupPath, 'utf8')) === originalSha256;
+  const metadata = readJsonIfExists(metadataPath);
+  const metadataMatches = metadata
+    && metadata.originalSha256 === originalSha256
+    && metadata.patchedSha256 === patchedSha256;
+
+  if (backupMatchesOriginal && metadataMatches) {
+    return { created: false, refreshed: false };
+  }
+
+  if (backupExists && options.alreadyPatched) {
+    if (backupMatchesOriginal && !metadataMatches) {
+      writeWorkbenchMetadata(metadataPath, targetPath, patchSetFile, originalSha256, patchedSha256);
+    }
+    return { created: false, refreshed: false };
+  }
+
+  fs.writeFileSync(backupPath, original, 'utf8');
+  writeWorkbenchMetadata(metadataPath, targetPath, patchSetFile, originalSha256, patchedSha256);
+
+  return {
+    created: !backupExists,
+    refreshed: backupExists
+  };
+}
+
+function writeWorkbenchMetadata(metadataPath, targetPath, patchSetFile, originalSha256, patchedSha256) {
+  const metadata = {
+    targetPath,
+    patchSetFile,
+    originalSha256,
+    patchedSha256,
+    createdAt: new Date().toISOString()
+  };
+  fs.writeFileSync(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8');
+}
+
+function readJsonIfExists(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return undefined;
+  }
+
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch {
+    return undefined;
+  }
+}
+
+function sha256(value) {
+  return crypto.createHash('sha256').update(value).digest('hex');
 }
 
 function expandHome(value) {
