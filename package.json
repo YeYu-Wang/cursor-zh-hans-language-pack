@@ -2,7 +2,7 @@
   "name": "cursor-zh-hans-language-pack",
   "displayName": "Cursor 简体中文全局汉化包",
   "description": "为 Cursor 提供全局简体中文界面语言包，并附带可逆的 Cursor 扩展清单和 Agent/Composer 主界面汉化补丁。",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "local",
   "license": "MIT",
   "repository": {
