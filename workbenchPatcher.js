@@ -5,6 +5,8 @@ const path = require('path');
 
 const WORKBENCH_BACKUP_SUFFIX = '.cursor-zh-hans-workbench.bak';
 const WORKBENCH_METADATA_SUFFIX = '.cursor-zh-hans-workbench.json';
+const PRODUCT_BACKUP_SUFFIX = '.cursor-zh-hans-product.bak';
+const PRODUCT_FILE = 'product.json';
 const WORKBENCH_ENTRY_FILE = 'out/vs/workbench/workbench.desktop.main.js';
 const PATCHES_PATH = path.join(__dirname, 'cursor-hardcoded-patches.json');
 
@@ -47,6 +49,7 @@ function applyWorkbenchPatch(options = {}) {
     result.alreadyPatched += fileAlreadyPatched;
 
     if (next === original) {
+      result.updatedProductChecksums += syncProductChecksum(appRoot, patchSet.file, original);
       continue;
     }
 
@@ -61,6 +64,7 @@ function applyWorkbenchPatch(options = {}) {
     }
 
     fs.writeFileSync(targetPath, next, 'utf8');
+    result.updatedProductChecksums += syncProductChecksum(appRoot, patchSet.file, next);
     result.changedFiles += 1;
     result.replacements += fileReplacements;
   }
@@ -74,6 +78,7 @@ function revertWorkbenchPatch(options = {}) {
   const result = {
     appRoot,
     restoredFiles: 0,
+    updatedProductChecksums: 0,
     missingBackups: [],
     staleBackups: []
   };
@@ -95,6 +100,7 @@ function revertWorkbenchPatch(options = {}) {
     }
 
     fs.copyFileSync(backupPath, targetPath);
+    result.updatedProductChecksums += syncProductChecksum(appRoot, patchSet.file, backup);
     fs.rmSync(backupPath, { force: true });
     fs.rmSync(`${targetPath}${WORKBENCH_METADATA_SUFFIX}`, { force: true });
     result.restoredFiles += 1;
@@ -249,6 +255,7 @@ function createResult(appRoot) {
     alreadyPatched: 0,
     createdBackups: 0,
     refreshedBackups: 0,
+    updatedProductChecksums: 0,
     missingFiles: [],
     missingReplacements: []
   };
@@ -325,8 +332,39 @@ function readJsonIfExists(filePath) {
   }
 }
 
+function syncProductChecksum(appRoot, patchSetFile, content) {
+  const checksumKey = patchSetFile.startsWith('out/') ? patchSetFile.slice(4) : patchSetFile;
+  const productPath = resolvePatchTarget(appRoot, PRODUCT_FILE);
+  if (!fs.existsSync(productPath)) {
+    return 0;
+  }
+
+  const product = readJsonIfExists(productPath);
+  if (!product?.checksums || typeof product.checksums[checksumKey] !== 'string') {
+    return 0;
+  }
+
+  const nextChecksum = sha256Base64NoPadding(content);
+  if (product.checksums[checksumKey] === nextChecksum) {
+    return 0;
+  }
+
+  const backupPath = `${productPath}${PRODUCT_BACKUP_SUFFIX}`;
+  if (!fs.existsSync(backupPath)) {
+    fs.copyFileSync(productPath, backupPath);
+  }
+
+  product.checksums[checksumKey] = nextChecksum;
+  fs.writeFileSync(productPath, `${JSON.stringify(product, null, '\t')}\n`, 'utf8');
+  return 1;
+}
+
 function sha256(value) {
   return crypto.createHash('sha256').update(value).digest('hex');
+}
+
+function sha256Base64NoPadding(value) {
+  return crypto.createHash('sha256').update(value).digest('base64').replace(/=+$/, '');
 }
 
 function expandHome(value) {

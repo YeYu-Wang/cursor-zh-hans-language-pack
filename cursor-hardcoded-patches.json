@@ -4319,6 +4319,571 @@
         "source": "children:\"Search or enter URL\"",
         "target": "children:\"搜索或输入 URL\"",
         "optional": true
+      },
+      {
+        "source": "children:\"New Automation\"",
+        "target": "children:\"新建自动化\"",
+        "optional": true
+      },
+      {
+        "source": "actionTitle:\"New Automation\"",
+        "target": "actionTitle:\"新建自动化\"",
+        "optional": true
+      },
+      {
+        "source": "\"New Automation\"]",
+        "target": "\"新建自动化\"]",
+        "optional": true
+      },
+      {
+        "source": "va=dg?`${dg}\\u2019s Automation`:\"New Automation\"",
+        "target": "va=dg?`${dg} 的自动化`:\"新建自动化\"",
+        "optional": true
+      },
+      {
+        "source": "return!Id||Id===\"Untitled\"?\"New Automation\":Id",
+        "target": "return!Id||Id===\"Untitled\"?\"新建自动化\":Id",
+        "optional": true
+      },
+      {
+        "source": "titlePlaceholder:Yt?\"Untitled Automation\":va",
+        "target": "titlePlaceholder:Yt?\"未命名自动化\":va",
+        "optional": true
+      },
+      {
+        "source": "||\"Untitled Automation\"",
+        "target": "||\"未命名自动化\"",
+        "optional": true
+      },
+      {
+        "source": "?\"Untitled Automation\":va",
+        "target": "?\"未命名自动化\":va",
+        "optional": true
+      },
+      {
+        "source": "title:\"Automations\",description:\"Automate repetitive tasks with always-on cloud agents that respond to environment triggers.\"",
+        "target": "title:\"自动化\",description:\"使用持续运行的云端智能体自动处理重复任务，并响应环境触发器。\"",
+        "optional": true
+      },
+      {
+        "source": "description:\"Automate repetitive tasks with always-on cloud agents that respond to environment triggers.\"",
+        "target": "description:\"使用持续运行的云端智能体自动处理重复任务，并响应环境触发器。\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Unable to load automations.\"",
+        "target": "children:\"无法加载自动化。\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Retry\"",
+        "target": "children:\"重试\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Run agents on a schedule or automatically in response to events. Billed at plan rates.\"",
+        "target": "children:\"按计划运行智能体，或在事件发生时自动响应。按套餐费率计费。\"",
+        "optional": true
+      },
+      {
+        "source": "const Ot=Te?\"Active\":\"Inactive\"",
+        "target": "const Ot=Te?\"启用\":\"停用\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Triggers\"",
+        "target": "children:\"触发器\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"Add Trigger\"",
+        "target": "children:\"添加触发器\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Search Triggers...\"",
+        "target": "placeholder:\"搜索触发器...\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No triggers found\"",
+        "target": "children:\"未找到触发器\"",
+        "optional": true
+      },
+      {
+        "source": "var kZT=[{label:\"Draft opened\",type:\"git-draft-opened\"},{label:\"Pull request...\",items:[{label:\"Opened\",type:\"git-pr-opened\"},{label:\"Pushed\",type:\"git-pr-pushed\"},{label:\"Merged\",type:\"git-pr-merged\"}]},{label:\"Comment added\",type:\"git-pr-commented\"},{label:\"New push to branch\",type:\"git-push\"}]",
+        "target": "var kZT=[{label:\"草稿已打开\",type:\"git-draft-opened\"},{label:\"拉取请求...\",items:[{label:\"已打开\",type:\"git-pr-opened\"},{label:\"已推送\",type:\"git-pr-pushed\"},{label:\"已合并\",type:\"git-pr-merged\"}]},{label:\"已添加评论\",type:\"git-pr-commented\"},{label:\"新推送到分支\",type:\"git-push\"}]",
+        "optional": true
+      },
+      {
+        "source": "CZT=[{label:\"Label change\",type:\"git-label\"},{label:\"Checks completed\",type:\"git-ci-completed\"}]",
+        "target": "CZT=[{label:\"标签变更\",type:\"git-label\"},{label:\"检查已完成\",type:\"git-ci-completed\"}]",
+        "optional": true
+      },
+      {
+        "source": "{id:\"scheduled\",label:\"Scheduled\",icon:V(dd,{name:\"clock\",size:\"sm\",color:\"secondary\"}),items:[{label:\"Hourly\",type:\"every-hour\"},{label:\"Daily\",type:\"every-day\"},{label:\"Weekly\",type:\"every-week\"},{label:\"Custom (cron)\",type:\"custom\"}]}",
+        "target": "{id:\"scheduled\",label:\"定时\",icon:V(dd,{name:\"clock\",size:\"sm\",color:\"secondary\"}),items:[{label:\"每小时\",type:\"every-hour\"},{label:\"每天\",type:\"every-day\"},{label:\"每周\",type:\"every-week\"},{label:\"自定义 (cron)\",type:\"custom\"}]}",
+        "optional": true
+      },
+      {
+        "source": "{title:\"GitHub Only\",items:CZT}",
+        "target": "{title:\"仅 GitHub\",items:CZT}",
+        "optional": true
+      },
+      {
+        "source": "items:[{label:\"New message in channel\",type:\"slack-message\"},{label:\"Channel created\",type:\"slack-channel-created\"}]",
+        "target": "items:[{label:\"频道中有新消息\",type:\"slack-message\"},{label:\"频道已创建\",type:\"slack-channel-created\"}]",
+        "optional": true
+      },
+      {
+        "source": "items:[{label:\"New message in channel\",type:\"microsoft-teams-message\"},{label:\"Channel created\",type:\"microsoft-teams-channel-created\"}]",
+        "target": "items:[{label:\"频道中有新消息\",type:\"microsoft-teams-message\"},{label:\"频道已创建\",type:\"microsoft-teams-channel-created\"}]",
+        "optional": true
+      },
+      {
+        "source": "{label:\"Issue...\",items:[{label:\"Created\",type:\"sentry-issue-created\"},{label:\"Resolved\",type:\"sentry-issue-resolved\"},{label:\"Assigned\",type:\"sentry-issue-assigned\"},{label:\"Archived\",type:\"sentry-issue-archived\"},{label:\"Unresolved\",type:\"sentry-issue-unresolved\"}]},{label:\"Any issue event\",type:\"sentry-issue-any\"}",
+        "target": "{label:\"问题...\",items:[{label:\"已创建\",type:\"sentry-issue-created\"},{label:\"已解决\",type:\"sentry-issue-resolved\"},{label:\"已分配\",type:\"sentry-issue-assigned\"},{label:\"已归档\",type:\"sentry-issue-archived\"},{label:\"未解决\",type:\"sentry-issue-unresolved\"}]},{label:\"任意问题事件\",type:\"sentry-issue-any\"}",
+        "optional": true
+      },
+      {
+        "source": "{label:\"Issue...\",items:[{label:\"Created\",type:\"linear-issue-created\"},{label:\"Status changed\",type:\"linear-status-changed\"}]},{label:\"End of cycle\",type:\"linear-end-of-cycle\"}",
+        "target": "{label:\"议题...\",items:[{label:\"已创建\",type:\"linear-issue-created\"},{label:\"状态已变更\",type:\"linear-status-changed\"}]},{label:\"周期结束\",type:\"linear-end-of-cycle\"}",
+        "optional": true
+      },
+      {
+        "source": "{id:\"webhook\",label:\"Webhook Triggered\",icon:V(dd,{name:\"plug\",size:\"sm\",color:\"secondary\"}),items:[{label:\"Webhook Triggered\",type:\"webhook\",disabled:n.hasWebhookTrigger,onSelect:n.onWebhookClick}]}",
+        "target": "{id:\"webhook\",label:\"Webhook 已触发\",icon:V(dd,{name:\"plug\",size:\"sm\",color:\"secondary\"}),items:[{label:\"Webhook 已触发\",type:\"webhook\",disabled:n.hasWebhookTrigger,onSelect:n.onWebhookClick}]}",
+        "optional": true
+      },
+      {
+        "source": "{label:\"Incident...\",items:[{label:\"Triggered\",type:\"pagerduty-incident-triggered\"},{label:\"Acknowledged\",type:\"pagerduty-incident-acknowledged\"},{label:\"Resolved\",type:\"pagerduty-incident-resolved\"}]},{label:\"Any incident event\",type:\"pagerduty-incident-any\"}",
+        "target": "{label:\"事件...\",items:[{label:\"已触发\",type:\"pagerduty-incident-triggered\"},{label:\"已确认\",type:\"pagerduty-incident-acknowledged\"},{label:\"已解决\",type:\"pagerduty-incident-resolved\"}]},{label:\"任意事件\",type:\"pagerduty-incident-any\"}",
+        "optional": true
+      },
+      {
+        "source": "children:\"Add Tool or MCP\"",
+        "target": "children:\"添加工具或 MCP\"",
+        "optional": true
+      },
+      {
+        "source": "const Le=u?\"Added\":void 0",
+        "target": "const Le=u?\"已添加\":void 0",
+        "optional": true
+      },
+      {
+        "source": "title:\"Built-in\",noDivider:!0",
+        "target": "title:\"内置\",noDivider:!0",
+        "optional": true
+      },
+      {
+        "source": "children:\"Memories\"",
+        "target": "children:\"记忆\"",
+        "optional": true
+      },
+      {
+        "source": "Yt=w||(b?\"Select\":\"Select repository\"),nn=N?\"Search repositories\":(me?.length??0)>0?\"Search repositories, environments...\":\"Search repositories...\",en=C??\"Connect GitHub to see repositories\"",
+        "target": "Yt=w||(b?\"选择\":\"选择仓库\"),nn=N?\"搜索仓库\":(me?.length??0)>0?\"搜索仓库和环境...\":\"搜索仓库...\",en=C??\"连接 GitHub 以查看仓库\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"All repositories\"",
+        "target": "children:\"所有仓库\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Search repositories\"",
+        "target": "\"aria-label\":\"搜索仓库\"",
+        "optional": true
+      },
+      {
+        "source": "placeholder:\"Search repositories...\"",
+        "target": "placeholder:\"搜索仓库...\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Repository scope\"",
+        "target": "\"aria-label\":\"仓库范围\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No repositories found\"",
+        "target": "children:\"未找到仓库\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Local Automations\",description:\"Run recurring agent tasks locally on this machine. Each automation can target a specific model.\"",
+        "target": "title:\"本地自动化\",description:\"在此机器上本地运行重复性智能体任务。每个自动化都可以指定模型。\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"No local automations yet\",description:\"Create one to get started\"",
+        "target": "title:\"还没有本地自动化\",description:\"创建一个即可开始\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Loading local automations...\"",
+        "target": "title:\"正在加载本地自动化...\"",
+        "optional": true
+      },
+      {
+        "source": "saveLabel:\"Create\"",
+        "target": "saveLabel:\"创建\"",
+        "optional": true
+      },
+      {
+        "source": "doneLabel:i4?Yt?\"正在保存...\":\"Creating...\":Yt?\"保存\":\"Create\"",
+        "target": "doneLabel:i4?Yt?\"正在保存...\":\"正在创建...\":Yt?\"保存\":\"创建\"",
+        "optional": true
+      },
+      {
+        "source": "lt=mt?Pqo:ct?Ce:ut?\"Trigger repository\":\"Select repository\",Tt=mt?void 0:ct?pt:ut?\"Runs will use the repository from each PR / push trigger.\":be&&Te?\"Required because some of your triggers (Slack, cron, etc.) don't run on a specific repository. Git triggers will still use their own repo unless this is set to a multi-repo environment.\":void 0,Ct=ut?\"Trigger repository\":Pqo",
+        "target": "lt=mt?Pqo:ct?Ce:ut?\"触发器仓库\":\"选择仓库\",Tt=mt?void 0:ct?pt:ut?\"将使用每个 PR / push 触发器中的仓库。\":be&&Te?\"必填，因为部分触发器（Slack、cron 等）不会在特定仓库上运行。Git 触发器仍会使用自己的仓库，除非这里设置为多仓库环境。\":void 0,Ct=ut?\"触发器仓库\":Pqo",
+        "optional": true
+      },
+      {
+        "source": "V(Cue,{label:\"Repository\",children:et(Ia,{placement:\"bottom-start\",children:[V(Ia.Trigger,{children:V(Hxh,{label:V(\"span\",{className:\"automations-truncate\",children:ee||\"Select repo\"})})}),V(Ia.Content,{\"aria-label\":\"Select repository\",minWidth:240",
+        "target": "V(Cue,{label:\"仓库\",children:et(Ia,{placement:\"bottom-start\",children:[V(Ia.Trigger,{children:V(Hxh,{label:V(\"span\",{className:\"automations-truncate\",children:ee||\"选择仓库\"})})}),V(Ia.Content,{\"aria-label\":\"选择仓库\",minWidth:240",
+        "optional": true
+      },
+      {
+        "source": "sn.length===1?V(Cue,{label:\"Repository\",children:V(\"div\",{className:\"automations-test-modal__readonly\",children:sn[0]})}):null",
+        "target": "sn.length===1?V(Cue,{label:\"仓库\",children:V(\"div\",{className:\"automations-test-modal__readonly\",children:sn[0]})}):null",
+        "optional": true
+      },
+      {
+        "source": "Yn=Bn!==void 0?b0n(`${Bn.owner}/${Bn.name}`):\"Select environment\",mr=Ni?nr:$i!==void 0?$i:Yn,Oi=nn.length>0?Ybi(nn.length):\"Select repos\",Dr=Bn!==void 0||Tt!==void 0||Mr!==void 0||Ut,Gs=vt||h&&!Dr,Uo=Gs?Pqo:Ut?Oi:Dr?mr:\"Select environment\"",
+        "target": "Yn=Bn!==void 0?b0n(`${Bn.owner}/${Bn.name}`):\"选择环境\",mr=Ni?nr:$i!==void 0?$i:Yn,Oi=nn.length>0?Ybi(nn.length):\"选择仓库\",Dr=Bn!==void 0||Tt!==void 0||Mr!==void 0||Ut,Gs=vt||h&&!Dr,Uo=Gs?Pqo:Ut?Oi:Dr?mr:\"选择环境\"",
+        "optional": true
+      },
+      {
+        "source": "var iKT={\"draft-opened\":\"Draft opened\",\"pr-opened\":\"PR opened\",\"pr-pushed\":\"PR pushed\",\"pr-merged\":\"PR merged\",\"pr-commented\":\"PR commented\"},rKT={issue_created:\"Issue created\",status_changed:\"Status changed\",end_of_cycle:\"End of cycle\"},sKT={incident_triggered:\"Incident triggered\",incident_acknowledged:\"Incident acknowledged\",incident_resolved:\"Incident resolved\",incident_escalated:\"Incident escalated\",incident_any:\"Any incident event\"},oKT={issue_created:\"Issue created\",issue_resolved:\"Issue resolved\",issue_assigned:\"Issue assigned\",issue_archived:\"Issue archived\",issue_unresolved:\"Issue unresolved\",issue_any:\"Any issue event\"}",
+        "target": "var iKT={\"draft-opened\":\"草稿已打开\",\"pr-opened\":\"PR 已打开\",\"pr-pushed\":\"PR 已推送\",\"pr-merged\":\"PR 已合并\",\"pr-commented\":\"PR 已评论\"},rKT={issue_created:\"议题已创建\",status_changed:\"状态已变更\",end_of_cycle:\"周期结束\"},sKT={incident_triggered:\"事件已触发\",incident_acknowledged:\"事件已确认\",incident_resolved:\"事件已解决\",incident_escalated:\"事件已升级\",incident_any:\"任意事件\"},oKT={issue_created:\"问题已创建\",issue_resolved:\"问题已解决\",issue_assigned:\"问题已分配\",issue_archived:\"问题已归档\",issue_unresolved:\"问题未解决\",issue_any:\"任意问题事件\"}",
+        "optional": true
+      },
+      {
+        "source": "var aKT={gitPr:\"Pull Request\",prComment:\"PR Comment\",slack:\"Send Slack Message\",microsoftTeams:\"Send Microsoft Teams Message\",mcp:\"MCP\",requestReviewers:\"Reviewers\",readSlack:\"Read Slack\",readMicrosoftTeams:\"Read Microsoft Teams\"}",
+        "target": "var aKT={gitPr:\"拉取请求\",prComment:\"PR 评论\",slack:\"发送 Slack 消息\",microsoftTeams:\"发送 Microsoft Teams 消息\",mcp:\"MCP\",requestReviewers:\"审阅者\",readSlack:\"读取 Slack\",readMicrosoftTeams:\"读取 Microsoft Teams\"}",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Search repositories and environments\"",
+        "target": "\"aria-label\":\"搜索仓库和环境\"",
+        "optional": true
+      },
+      {
+        "source": "children:Ct?\"Searching...\":Ke?\"No Results\":ot?gt?\"Loading repositories...\":\"No repositories available\":en",
+        "target": "children:Ct?\"正在搜索...\":Ke?\"无结果\":ot?gt?\"正在加载仓库...\":\"没有可用仓库\":en",
+        "optional": true
+      },
+      {
+        "source": "title:\"Multi-Repo Environments\"",
+        "target": "title:\"多仓库环境\"",
+        "optional": true
+      },
+      {
+        "source": "Xt=o!==void 0?b0n(`${o.owner}/${o.name}`):\"Select environment\",e[32]=o,e[33]=Xt",
+        "target": "Xt=o!==void 0?b0n(`${o.owner}/${o.name}`):\"选择环境\",e[32]=o,e[33]=Xt",
+        "optional": true
+      },
+      {
+        "source": "An=Le?pn>0?Ybi(pn):\"Select repos\":fn",
+        "target": "An=Le?pn>0?Ybi(pn):\"选择仓库\":fn",
+        "optional": true
+      },
+      {
+        "source": "const gv=Id?\"Untitled Automation\":Rt.name;gv!==e.name&&r(e.id,{name:gv}).catch(()=>{vt.error(\"Failed to save title\")})",
+        "target": "const gv=Id?\"未命名自动化\":Rt.name;gv!==e.name&&r(e.id,{name:gv}).catch(()=>{vt.error(\"保存标题失败\")})",
+        "optional": true
+      },
+      {
+        "source": "{id:\"pagerduty\",label:\"Pager Duty\"",
+        "target": "{id:\"pagerduty\",label:\"PagerDuty\"",
+        "optional": true
+      },
+      {
+        "source": "switch(i){case\"every-hour\":return\"Every hour\";case\"every-day\":return`Every day at ${`${r.toString().padStart(2,\"0\")}:${o.toString().padStart(2,\"0\")}`} ${Jbi()}`;case\"every-week\":return`Every ${dRg[s]} at ${a} ${Jbi()}`;case\"custom\":return\"Custom schedule\"}}if(e===\"git_pr\")",
+        "target": "switch(i){case\"every-hour\":return\"每小时\";case\"every-day\":return`每天 ${`${r.toString().padStart(2,\"0\")}:${o.toString().padStart(2,\"0\")}`} ${Jbi()}`;case\"every-week\":return`每周 ${dRg[s]} ${a} ${Jbi()}`;case\"custom\":return\"自定义计划\"}}if(e===\"git_pr\")",
+        "optional": true
+      },
+      {
+        "source": "if(e===\"git_label\")return\"Label\";if(e===\"git_push\")return\"Push\";if(e===\"git_ci_completed\")return\"Checks completed\";if(e===\"slack\")return\"New message in channel\";if(e===\"microsoft_teams\")return\"New message in Teams channel\";if(e===\"microsoft_teams_channel_created\"||e===\"slack_channel_created\")return\"Channel created\";if(e===\"linear\")",
+        "target": "if(e===\"git_label\")return\"标签\";if(e===\"git_push\")return\"推送\";if(e===\"git_ci_completed\")return\"检查已完成\";if(e===\"slack\")return\"频道中有新消息\";if(e===\"microsoft_teams\")return\"Teams 频道中有新消息\";if(e===\"microsoft_teams_channel_created\"||e===\"slack_channel_created\")return\"频道已创建\";if(e===\"linear\")",
+        "optional": true
+      },
+      {
+        "source": "function jC0(n,e){if(e===\"cron\"){const t=CSh(n);switch(ySh(t.expression)){case\"every-hour\":return\"Every hour\";case\"every-day\":return\"Every day\";case\"every-week\":return\"Every week\";case\"custom\":return\"Custom schedule\"}}return $Jr(n)}",
+        "target": "function jC0(n,e){if(e===\"cron\"){const t=CSh(n);switch(ySh(t.expression)){case\"every-hour\":return\"每小时\";case\"every-day\":return\"每天\";case\"every-week\":return\"每周\";case\"custom\":return\"自定义计划\"}}return $Jr(n)}",
+        "optional": true
+      },
+      {
+        "source": "S_[\"agent-triggers-section\"]=\"Select repositories or organizations for the Pull Request trigger\"",
+        "target": "S_[\"agent-triggers-section\"]=\"为拉取请求触发器选择仓库或组织\"",
+        "optional": true
+      },
+      {
+        "source": "S_[\"agent-triggers-section\"]=\"Specify a branch for the Push trigger\"",
+        "target": "S_[\"agent-triggers-section\"]=\"为推送触发器指定分支\"",
+        "optional": true
+      },
+      {
+        "source": "S_[\"agent-triggers-section\"]=\"Select a repository for the Checks completed trigger\"",
+        "target": "S_[\"agent-triggers-section\"]=\"为检查完成触发器选择仓库\"",
+        "optional": true
+      },
+      {
+        "source": "S_[\"agent-triggers-section\"]=\"Select a Slack channel for the Slack trigger\"",
+        "target": "S_[\"agent-triggers-section\"]=\"为 Slack 触发器选择频道\"",
+        "optional": true
+      },
+      {
+        "source": "noItemsText:\"No repositories available\"",
+        "target": "noItemsText:\"没有可用仓库\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Multi-Repo Environments\"",
+        "target": "label:\"多仓库环境\"",
+        "optional": true
+      },
+      {
+        "source": "id:\"recent\",label:\"Recent\"",
+        "target": "id:\"recent\",label:\"最近\"",
+        "optional": true
+      },
+      {
+        "source": "id:\"repositories\",label:\"All Repositories\"",
+        "target": "id:\"repositories\",label:\"所有仓库\"",
+        "optional": true
+      },
+      {
+        "source": "children:u?\"No Results Found\":\"No Automations Yet\"",
+        "target": "children:u?\"未找到结果\":\"还没有自动化\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"No Results\"}),V(\"span\",{className:\"automations-run-history-table__empty-description\",children:\"Try different filters\"})",
+        "target": "children:\"未找到结果\"}),V(\"span\",{className:\"automations-run-history-table__empty-description\",children:\"尝试不同的筛选条件\"})",
+        "optional": true
+      },
+      {
+        "source": "children:\"No Runs Yet\"",
+        "target": "children:\"还没有运行记录\"",
+        "optional": true
+      },
+      {
+        "source": "currentLabel:\"Run History\"",
+        "target": "currentLabel:\"运行历史\"",
+        "optional": true
+      },
+      {
+        "source": "\"Select repositories for this test run, or use the default environment.\"",
+        "target": "\"为本次测试运行选择仓库，或使用默认环境。\"",
+        "optional": true
+      },
+      {
+        "source": "`This test run will use ${Ybi(nn.length)}. Save the automation to make this target the default.`",
+        "target": "`本次测试运行将使用 ${Ybi(nn.length)}。保存自动化后会将此目标设为默认值。`",
+        "optional": true
+      },
+      {
+        "source": "`This test run will use ${mr}. Save the automation to make this target the default.`",
+        "target": "`本次测试运行将使用 ${mr}。保存自动化后会将此目标设为默认值。`",
+        "optional": true
+      },
+      {
+        "source": "\"Only the creator can add MCP servers for this automation\"",
+        "target": "\"只有创建者可以为此自动化添加 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "\"Save this automation before adding or configuring MCP servers\"",
+        "target": "\"请先保存此自动化，再添加或配置 MCP 服务器\"",
+        "optional": true
+      },
+      {
+        "source": "title:a?\"Insufficient permissions to update setting\":void 0",
+        "target": "title:a?\"没有更新设置的权限\":void 0",
+        "optional": true
+      },
+      {
+        "source": "\"data-tooltip-content\":a?\"Insufficient permissions to update setting\":void 0",
+        "target": "\"data-tooltip-content\":a?\"没有更新设置的权限\":void 0",
+        "optional": true
+      },
+      {
+        "source": "children:[\"Run History\",\" \",V(dd,{name:\"arrow-right\"",
+        "target": "children:[\"运行历史\",\" \",V(dd,{name:\"arrow-right\"",
+        "optional": true
+      },
+      {
+        "source": "title:\"Run History\"",
+        "target": "title:\"运行历史\"",
+        "optional": true
+      },
+      {
+        "source": "breadcrumbLabel:\"Run History\"",
+        "target": "breadcrumbLabel:\"运行历史\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Settings\"},{id:\"runs\",label:\"Run History\"",
+        "target": "label:\"设置\"},{id:\"runs\",label:\"运行历史\"",
+        "optional": true
+      },
+      {
+        "source": "xt?\"Stopping...\":\"Stop All Runs\"",
+        "target": "xt?\"正在停止...\":\"停止所有运行\"",
+        "optional": true
+      },
+      {
+        "source": "`This test run will use ${Yn}${lt.trim()!==\"\"?` on branch ${lt.trim()}`:\"\"}. Save the automation to make this target the default.`",
+        "target": "`本次测试运行将使用 ${Yn}${lt.trim()!==\"\"?`，分支 ${lt.trim()}`:\"\"}。保存自动化后会将此目标设为默认值。`",
+        "optional": true
+      },
+      {
+        "source": "\"This test run will use No Repository. Save the automation to make this target the default.\"",
+        "target": "\"本次测试运行将不使用仓库。保存自动化后会将此目标设为默认值。\"",
+        "optional": true
+      },
+      {
+        "source": "`Tests with ${vt?\"No Repository\":\"Default Environment\"} selected. Pick another environment or repo to override.`",
+        "target": "`测试将使用所选的${vt?\"无仓库\":\"默认环境\"}。选择其它环境或仓库即可覆盖。`",
+        "optional": true
+      },
+      {
+        "source": "`Defaults to configured environment (${Xt.name?.trim()||\"environment\"}). You can override",
+        "target": "`默认使用已配置的环境（${Xt.name?.trim()||\"环境\"}）。你可以覆盖",
+        "optional": true
+      },
+      {
+        "source": "{href:\"#run-history\",label:\"Run History\",onClick:o(t.returnView)}",
+        "target": "{href:\"#run-history\",label:\"运行历史\",onClick:o(t.returnView)}",
+        "optional": true
+      },
+      {
+        "source": "label:\"Open Pull Request\",description:\"Allows the agent to open a pull request with its changes\"",
+        "target": "label:\"打开拉取请求\",description:\"允许智能体使用其更改打开拉取请求\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Comment on Pull Request\",description:\"Allows the agent to comment on the triggering pull request\"",
+        "target": "label:\"评论拉取请求\",description:\"允许智能体评论触发它的拉取请求\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Request Reviewers\",description:\"Allows the agent to request reviewers on a pull request\"",
+        "target": "label:\"请求审阅者\",description:\"允许智能体为拉取请求请求审阅者\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Send to Slack\",description:\"Allows the agent to send messages to Slack\"",
+        "target": "label:\"发送到 Slack\",description:\"允许智能体向 Slack 发送消息\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Read Public Slack Channels\",description:\"Allows the agent to list and read messages from public Slack channels\"",
+        "target": "label:\"读取公开 Slack 频道\",description:\"允许智能体列出并读取公开 Slack 频道中的消息\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Send to Microsoft Teams\",description:\"Allows the agent to send messages to Microsoft Teams\"",
+        "target": "label:\"发送到 Microsoft Teams\",description:\"允许智能体向 Microsoft Teams 发送消息\"",
+        "optional": true
+      },
+      {
+        "source": "label:\"Read Microsoft Teams Channels\",description:\"Allows the agent to list and read messages from Microsoft Teams channels\"",
+        "target": "label:\"读取 Microsoft Teams 频道\",description:\"允许智能体列出并读取 Microsoft Teams 频道中的消息\"",
+        "optional": true
+      },
+      {
+        "source": "message:\"Only works for runs triggered by the Pull Request trigger\",shortLabel:\"PR-triggered runs only\"",
+        "target": "message:\"仅适用于由拉取请求触发器启动的运行\",shortLabel:\"仅限 PR 触发的运行\"",
+        "optional": true
+      },
+      {
+        "source": "message:\"GitHub connection required\"",
+        "target": "message:\"需要连接 GitHub\"",
+        "optional": true
+      },
+      {
+        "source": "message:\"Slack connection required\"",
+        "target": "message:\"需要连接 Slack\"",
+        "optional": true
+      },
+      {
+        "source": "message:\"Microsoft Teams connection required\"",
+        "target": "message:\"需要连接 Microsoft Teams\"",
+        "optional": true
+      },
+      {
+        "source": "aa?'Required when Send to Slack is set to \\\"Any Channel\\\"':'Required when Send to Microsoft Teams is set to \\\"Any channel\\\"'",
+        "target": "aa?'当发送到 Slack 设置为“任意频道”时必需':'当发送到 Microsoft Teams 设置为“任意频道”时必需'",
+        "optional": true
+      },
+      {
+        "source": "aa?'Required when Send to Slack is set to \"Any Channel\"':'Required when Send to Microsoft Teams is set to \"Any channel\"'",
+        "target": "aa?'当发送到 Slack 设置为“任意频道”时必需':'当发送到 Microsoft Teams 设置为“任意频道”时必需'",
+        "optional": true
+      },
+      {
+        "source": "y2p={skill:\"Skills\",command:\"Commands\",mode:\"Modes\",subagent:\"Subagents\",action:\"Actions\",mention:\"Mentions\",heading:\"Other\",divider:\"Other\"}",
+        "target": "y2p={skill:\"技能\",command:\"命令\",mode:\"模式\",subagent:\"子智能体\",action:\"操作\",mention:\"提及\",heading:\"其他\",divider:\"其他\"}",
+        "optional": true
+      },
+      {
+        "source": "children:\"Memory Notes\"",
+        "target": "children:\"记忆笔记\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"View and edit memory-tool files that agents use\"",
+        "target": "children:\"查看和编辑智能体使用的记忆工具文件\"",
+        "optional": true
+      },
+      {
+        "source": "children:\"File\"}),et(J1h,{value:g??\"\",onChange:te=>b(te!==\"\"?te:null),disabled:a.length===0||u,placeholder:u?\"Loading...\":\"Select a file\"",
+        "target": "children:\"文件\"}),et(J1h,{value:g??\"\",onChange:te=>b(te!==\"\"?te:null),disabled:a.length===0||u,placeholder:u?\"正在加载...\":\"选择文件\"",
+        "optional": true
+      },
+      {
+        "source": "\"aria-label\":\"Memory file\"",
+        "target": "\"aria-label\":\"记忆文件\"",
+        "optional": true
+      },
+      {
+        "source": "e!==!0?\"Memory tool is disabled for this automation\":n===null?\"Save this automation to enable and configure memory notes\":d!==null?\"Failed to load memory files. Please try again later.\":a.length===0&& !u?\"No memory files yet. The agent will create notes after it runs.\":null:\"Memory configuration is not available in this surface.\"",
+        "target": "e!==!0?\"此自动化未启用记忆工具\":n===null?\"保存此自动化后即可启用并配置记忆笔记\":d!==null?\"加载记忆文件失败。请稍后重试。\":a.length===0&& !u?\"还没有记忆文件。智能体运行后会创建笔记。\":null:\"此界面不支持记忆配置。\"",
+        "optional": true
+      },
+      {
+        "source": "e!==!0?\"Memory tool is disabled for this automation\":n===null?\"Save this automation to enable and configure memory notes\":d!==null?\"Failed to load memory files. Please try again later.\":a.length===0&&!u?\"No memory files yet. The agent will create notes after it runs.\":null:\"Memory configuration is not available in this surface.\"",
+        "target": "e!==!0?\"此自动化未启用记忆工具\":n===null?\"保存此自动化后即可启用并配置记忆笔记\":d!==null?\"加载记忆文件失败。请稍后重试。\":a.length===0&&!u?\"还没有记忆文件。智能体运行后会创建笔记。\":null:\"此界面不支持记忆配置。\"",
+        "optional": true
+      },
+      {
+        "source": "cv_=wt(\"<div>New project\"),kCf=wt(\"<div>Open project\")",
+        "target": "cv_=wt(\"<div>新建项目\"),kCf=wt(\"<div>打开项目\")",
+        "optional": true
+      },
+      {
+        "source": "vv_=wt(\"<div>Clone repo\"),bv_=wt(\"<div>Connect via SSH\")",
+        "target": "vv_=wt(\"<div>克隆仓库\"),bv_=wt(\"<div>通过 SSH 连接\")",
+        "optional": true
+      },
+      {
+        "source": "yv_=wt(\"<div>New Window\")",
+        "target": "yv_=wt(\"<div>新建窗口\")",
+        "optional": true
+      },
+      {
+        "source": "dv_=wt(\"<div class=empty-screen-view-all>View all (<!>)\"),mv_=wt(\"<div><div><div><span>Recent projects</span>\")",
+        "target": "dv_=wt(\"<div class=empty-screen-view-all>查看全部 (<!>)\"),mv_=wt(\"<div><div><div><span>最近的项目</span>\")",
+        "optional": true
+      },
+      {
+        "source": "hv_=wt('<div class=empty-screen-glass-cta>Try a new window for running parallel agents<span class=\"cursor-icon ui-icon\"aria-hidden=true>')",
+        "target": "hv_=wt('<div class=empty-screen-glass-cta>尝试用新窗口并行运行智能体<span class=\"cursor-icon ui-icon\"aria-hidden=true>')",
+        "optional": true
       }
     ]
   },

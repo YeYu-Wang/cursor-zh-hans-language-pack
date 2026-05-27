@@ -210,8 +210,8 @@ function formatWorkbenchPatchDetails(result) {
   if (result.missingFiles?.length) {
     parts.push(`缺失文件 ${result.missingFiles.length} 个`);
   }
-  if (result.missingReplacements?.length) {
-    parts.push(`未匹配片段 ${result.missingReplacements.length} 个`);
+  if (result.updatedProductChecksums) {
+    parts.push(`已同步校验 ${result.updatedProductChecksums} 个`);
   }
   return parts.length ? `（${parts.join('，')}）` : '';
 }
